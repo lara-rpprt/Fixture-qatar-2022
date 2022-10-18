@@ -1,22 +1,42 @@
 package fixture.model;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Partido implements Serializable {
 
     private int id;
-    private Date fechaYHora;
+    private LocalDateTime fechaYHora;
     private Fase fase;
     private Equipo equipo1, equipo2;
     private int golesEquipo1, golesEquipo2, penalesEquipo1, penalesEquipo2;
+    private Estadio estadio;
 
-    public Partido(int id, Date fechaYHora, Fase fase, Equipo equipo1, Equipo equipo2) {
+    public Estadio getEstadio() {
+        return estadio;
+    }
+
+    public void setEstadio(Estadio estadio) {
+        this.estadio = estadio;
+    }
+
+    public Partido(int id, LocalDateTime fechaYHora, Fase fase, Estadio estadio, Equipo equipo1, Equipo equipo2) {
         this.id = id;
         this.fechaYHora = fechaYHora;
         this.fase = fase;
+        this.estadio = estadio;
         this.equipo1 = equipo1;
         this.equipo2 = equipo2;
+    }
+    
+        public Partido(int id, LocalDateTime fechaYHora, Fase fase, Estadio estadio) {
+        this.id = id;
+        this.fechaYHora = fechaYHora;
+        this.fase = fase;
+        this.estadio = estadio;
+        this.equipo1 = null;
+        this.equipo2 = null;
     }
 
     public int getId() {
@@ -27,11 +47,11 @@ public class Partido implements Serializable {
         this.id = id;
     }
 
-    public Date getFechaYHora() {
+    public LocalDateTime getFechaYHora() {
         return fechaYHora;
     }
 
-    public void setFechaYHora(Date fechaYHora) {
+    public void setFechaYHora(LocalDateTime fechaYHora) {
         this.fechaYHora = fechaYHora;
     }
 
@@ -89,6 +109,11 @@ public class Partido implements Serializable {
 
     public void setPenalesEquipo2(int penalesEquipo2) {
         this.penalesEquipo2 = penalesEquipo2;
+    }
+
+    @Override
+    public String toString() {
+        return getId() + " - " + getFechaYHora() + " - " + getFase() + " - " + getEquipo1() + " vs " + getEquipo2();
     }
 
 }
