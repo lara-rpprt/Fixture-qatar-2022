@@ -1,4 +1,4 @@
-package fixture.repository;
+package fixture.repository.migrations;
 
 import fixture.model.Fase;
 import java.util.ArrayList;

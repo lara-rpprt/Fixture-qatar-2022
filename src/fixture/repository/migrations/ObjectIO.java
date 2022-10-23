@@ -1,4 +1,4 @@
-package fixture.repository;
+package fixture.repository.migrations;
  
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -1,6 +1,5 @@
-package fixture.repository;
+package fixture.repository.migrations;
 
-import fixture.model.Equipo;
 import fixture.model.Estadio;
 import java.util.ArrayList;
 

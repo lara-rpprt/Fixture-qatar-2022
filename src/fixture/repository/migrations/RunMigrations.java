@@ -1,6 +1,6 @@
-package fixture.repository;
+package fixture.repository.migrations;
 
-public class Migrations {
+public class RunMigrations {
     public static void main(String[] args) {
         EquiposMigrations equiposMigrations = new EquiposMigrations();
         GruposMigrations gruposMigrations = new GruposMigrations();

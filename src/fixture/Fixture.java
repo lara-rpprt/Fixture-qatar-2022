@@ -1,8 +1,8 @@
 package fixture;
 
 import fixture.model.Partido;
-import fixture.repository.ObjectIO;
-import fixture.vista.Ventana;
+import fixture.repository.migrations.ObjectIO;
+import fixture.view.Ventana;
 import java.util.ArrayList;
 
 public class Fixture {

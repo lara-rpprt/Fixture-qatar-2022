@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package fixture.vista;
+package fixture.view;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
@@ -55,9 +55,7 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
         setBounds(new java.awt.Rectangle(0, 0, 1000, 800));
-        setMaximumSize(new java.awt.Dimension(1280, 720));
         setMinimumSize(new java.awt.Dimension(1280, 720));
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
 
         panelMain.setMaximumSize(new java.awt.Dimension(1920, 1080));

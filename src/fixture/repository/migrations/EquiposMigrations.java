@@ -1,4 +1,4 @@
-package fixture.repository;
+package fixture.repository.migrations;
 
 import fixture.model.Equipo;
 import java.util.ArrayList;
