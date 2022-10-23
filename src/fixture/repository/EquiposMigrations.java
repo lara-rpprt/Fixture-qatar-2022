@@ -8,7 +8,7 @@ public class EquiposMigrations {
     ArrayList<Equipo> equipos = new ArrayList<>();
 
     public void up() {
-        equipos.add(new Equipo("HOLANDA", "Holanda"));
+        equipos.add(new Equipo("PAISES_BAJOS", "Paises Bajos"));
         equipos.add(new Equipo("SENEGAL", "Senegal"));
         equipos.add(new Equipo("ECUADOR", "Ecuador"));
         equipos.add(new Equipo("QATAR", "Qatar"));
