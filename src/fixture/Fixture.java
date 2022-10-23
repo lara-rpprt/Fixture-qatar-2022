@@ -19,8 +19,8 @@ public class Fixture {
         ArrayList<Partido> partidos;
         partidos = (ArrayList<Partido>) objectIO.ReadObjectFromFile("partidos");
 
-        // Ventana ventana = new Ventana();
-        //ventana.setVisible(true);
+         Ventana ventana = new Ventana();
+        ventana.setVisible(true);
 
         for (Partido partido : partidos) {
             System.out.println(partido);
