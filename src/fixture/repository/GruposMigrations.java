@@ -22,7 +22,7 @@ public class GruposMigrations {
         ArrayList<Equipo> equipos = (ArrayList<Equipo>) objectIO.ReadObjectFromFile("equipos");
 
         Equipo[] equiposGrupoA = {
-            equipos.stream().filter(equipo -> equipo.getId().equals("HOLANDA")).findAny().orElse(null),
+            equipos.stream().filter(equipo -> equipo.getId().equals("PAISES_BAJOS")).findAny().orElse(null),
             equipos.stream().filter(equipo -> equipo.getId().equals("SENEGAL")).findAny().orElse(null),
             equipos.stream().filter(equipo -> equipo.getId().equals("ECUADOR")).findAny().orElse(null),
             equipos.stream().filter(equipo -> equipo.getId().equals("QATAR")).findAny().orElse(null)

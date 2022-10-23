@@ -30,7 +30,7 @@ public class PartidosMigrations {
         Equipo QATAR = equipos.stream().filter(equipo -> equipo.getId().equals("QATAR")).findAny().orElse(null);
         Equipo ECUADOR = equipos.stream().filter(equipo -> equipo.getId().equals("ECUADOR")).findAny().orElse(null);
         Equipo SENEGAL = equipos.stream().filter(equipo -> equipo.getId().equals("SENEGAL")).findAny().orElse(null);
-        Equipo HOLANDA = equipos.stream().filter(equipo -> equipo.getId().equals("HOLANDA")).findAny().orElse(null);
+        Equipo PAISES_BAJOS = equipos.stream().filter(equipo -> equipo.getId().equals("PAISES_BAJOS")).findAny().orElse(null);
         Equipo INGLATERRA = equipos.stream().filter(equipo -> equipo.getId().equals("INGLATERRA")).findAny().orElse(null);
         Equipo IRAN = equipos.stream().filter(equipo -> equipo.getId().equals("IRAN")).findAny().orElse(null);
         Equipo ESTADOS_UNIDOS = equipos.stream().filter(equipo -> equipo.getId().equals("ESTADOS_UNIDOS")).findAny().orElse(null);
@@ -128,7 +128,7 @@ public class PartidosMigrations {
         ArrayList<Partido> partidos = new ArrayList<>();
 
         partidos.add(new Partido(1, fechaPartido1, Fase.DE_GRUPOS, AL_BAIT, QATAR, ECUADOR));
-        partidos.add(new Partido(2, fechaPartido2, Fase.DE_GRUPOS, AL_ZUMAMA, SENEGAL, HOLANDA));
+        partidos.add(new Partido(2, fechaPartido2, Fase.DE_GRUPOS, AL_ZUMAMA, SENEGAL, PAISES_BAJOS));
         partidos.add(new Partido(3, fechaPartido3, Fase.DE_GRUPOS, INTERNACIONAL_JALIFA, INGLATERRA, IRAN));
         partidos.add(new Partido(4, fechaPartido4, Fase.DE_GRUPOS, AHMAD_BIN_ALI, ESTADOS_UNIDOS, GALES));
         partidos.add(new Partido(5, fechaPartido5, Fase.DE_GRUPOS, AL_YANUB, FRANCIA, AUSTRALIA));
@@ -145,7 +145,7 @@ public class PartidosMigrations {
         partidos.add(new Partido(16, fechaPartido16, Fase.DE_GRUPOS, DE_LUSAIL, BRASIL, SERBIA));
         partidos.add(new Partido(17, fechaPartido17, Fase.DE_GRUPOS, AHMAD_BIN_ALI, GALES, IRAN));
         partidos.add(new Partido(18, fechaPartido18, Fase.DE_GRUPOS, AL_ZUMAMA, QATAR, SENEGAL));
-        partidos.add(new Partido(19, fechaPartido19, Fase.DE_GRUPOS, INTERNACIONAL_JALIFA, HOLANDA, ECUADOR));
+        partidos.add(new Partido(19, fechaPartido19, Fase.DE_GRUPOS, INTERNACIONAL_JALIFA, PAISES_BAJOS, ECUADOR));
         partidos.add(new Partido(20, fechaPartido20, Fase.DE_GRUPOS, AL_BAIT, INGLATERRA, ESTADOS_UNIDOS));
         partidos.add(new Partido(21, fechaPartido21, Fase.DE_GRUPOS, AL_YANUB, AUSTRALIA, TUNEZ));
         partidos.add(new Partido(22, fechaPartido22, Fase.DE_GRUPOS, DE_LA_CIUDAD_DE_LA_EDUCACION, POLONIA, ARABIA_SAUDITA));
@@ -162,7 +162,7 @@ public class PartidosMigrations {
         partidos.add(new Partido(33, fechaPartido33, Fase.DE_GRUPOS, AHMAD_BIN_ALI, GALES, INGLATERRA));
         partidos.add(new Partido(34, fechaPartido34, Fase.DE_GRUPOS, AL_ZUMAMA, ESTADOS_UNIDOS, IRAN));
         partidos.add(new Partido(35, fechaPartido35, Fase.DE_GRUPOS, INTERNACIONAL_JALIFA, ECUADOR, SENEGAL));
-        partidos.add(new Partido(36, fechaPartido36, Fase.DE_GRUPOS, AL_BAIT, QATAR, HOLANDA));
+        partidos.add(new Partido(36, fechaPartido36, Fase.DE_GRUPOS, AL_BAIT, QATAR, PAISES_BAJOS));
         partidos.add(new Partido(37, fechaPartido37, Fase.DE_GRUPOS, AL_YANUB, AUSTRALIA, DINAMARCA));
         partidos.add(new Partido(38, fechaPartido38, Fase.DE_GRUPOS, DE_LA_CIUDAD_DE_LA_EDUCACION, TUNEZ, FRANCIA));
         partidos.add(new Partido(39, fechaPartido39, Fase.DE_GRUPOS, est_974, POLONIA, ARGENTINA));
