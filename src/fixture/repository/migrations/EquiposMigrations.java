@@ -1,5 +1,6 @@
 package fixture.repository.migrations;
 
+import fixture.repository.filesystem.ObjectIO;
 import fixture.model.Equipo;
 import java.util.ArrayList;
 

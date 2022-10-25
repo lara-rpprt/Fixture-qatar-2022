@@ -2,7 +2,6 @@ package fixture.model;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Partido implements Serializable {
 
@@ -113,7 +112,7 @@ public class Partido implements Serializable {
 
     @Override
     public String toString() {
-        return getId() + " - " + getFechaYHora() + " - " + getFase() + " - " + getEquipo1() + " vs " + getEquipo2();
+        return getId() + " - " + getFechaYHora() + " - " + getFase() + " - " + getEquipo1() + " vs " + getEquipo2() + " - " + getEstadio();
     }
 
 }
