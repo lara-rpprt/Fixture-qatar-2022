@@ -1,5 +1,6 @@
 package fixture.repository.migrations;
 
+import fixture.repository.filesystem.ObjectIO;
 import fixture.model.Equipo;
 import fixture.model.Estadio;
 import fixture.model.Fase;

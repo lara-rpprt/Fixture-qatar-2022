@@ -4,8 +4,13 @@
  */
 package fixture.view;
 
-import java.awt.Image;
+import fixture.model.Partido;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.ArrayList;
+import static java.util.Objects.nonNull;
 import javax.swing.ImageIcon;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -13,8 +18,29 @@ import javax.swing.ImageIcon;
  */
 public class Ventana extends javax.swing.JFrame {
 
-    private ImageIcon logoImage;
-    
+    private ArrayList<Partido> partidos;
+
+    public ArrayList<Partido> getPartidos() {
+        return partidos;
+    }
+
+    public void setPartidos(ArrayList<Partido> partidos) {
+        this.partidos = partidos;
+        updateTable();
+    }
+
+    private void updateTable() {
+        DefaultTableModel tablePartidosModel = (DefaultTableModel) tablaPartidos.getModel();
+        
+        for (Partido partido : partidos) {
+            System.out.println(partido);
+            if (nonNull(partido.getEquipo1())) {
+                Object[] partidoRow = {partido.getId(), partido.getFechaYHora().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)), partido.getEquipo1().getNombre(), partido.getGolesEquipo1(), partido.getGolesEquipo2(), partido.getEquipo2().getNombre(), partido.getEstadio().getNombre()};
+                tablePartidosModel.addRow(partidoRow);
+            }
+        }
+    }
+
     /**
      * Creates new form Ventana
      */
@@ -35,6 +61,10 @@ public class Ventana extends javax.swing.JFrame {
         panelBody = new javax.swing.JPanel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoA = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaPartidos = new javax.swing.JTable();
         panelGrupoB = new javax.swing.JPanel();
         panelGrupoC = new javax.swing.JPanel();
         panelGrupoD = new javax.swing.JPanel();
@@ -65,15 +95,61 @@ public class Ventana extends javax.swing.JFrame {
 
         tabbedPane.setMaximumSize(panelBody.getMinimumSize());
 
+        panelGrupoA.setPreferredSize(new java.awt.Dimension(500, 437));
+
+        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.PAGE_AXIS));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("PARTIDOS");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(jLabel1);
+
+        tablaPartidos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "id", "Fecha y hora", "Equipo 1", "Goles equipo 1", "Goles equipo 2", "Equipo 2", "Estadio"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Object.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, true, true, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tablaPartidos.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tablaPartidos);
+        if (tablaPartidos.getColumnModel().getColumnCount() > 0) {
+            tablaPartidos.getColumnModel().getColumn(0).setPreferredWidth(5);
+        }
+
+        jPanel2.add(jScrollPane1);
+
         javax.swing.GroupLayout panelGrupoALayout = new javax.swing.GroupLayout(panelGrupoA);
         panelGrupoA.setLayout(panelGrupoALayout);
         panelGrupoALayout.setHorizontalGroup(
             panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelGrupoALayout.createSequentialGroup()
+                .addContainerGap(129, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(159, 159, 159))
         );
         panelGrupoALayout.setVerticalGroup(
             panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelGrupoALayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         tabbedPane.addTab("A", panelGrupoA);
@@ -304,7 +380,7 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(panelMainLayout.createSequentialGroup()
                 .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(panelBody, javax.swing.GroupLayout.DEFAULT_SIZE, 514, Short.MAX_VALUE))
+                .addComponent(panelBody, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -320,7 +396,7 @@ public class Ventana extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelMain, javax.swing.GroupLayout.DEFAULT_SIZE, 926, Short.MAX_VALUE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -364,6 +440,9 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelSubtitulo;
     private javax.swing.JLabel labelTitulo;
@@ -384,5 +463,6 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JPanel panelSemifinales;
     private javax.swing.JPanel panelTercerPuesto;
     private javax.swing.JTabbedPane tabbedPane;
+    private javax.swing.JTable tablaPartidos;
     // End of variables declaration//GEN-END:variables
 }

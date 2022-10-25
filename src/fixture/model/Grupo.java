@@ -1,17 +1,16 @@
 package fixture.model;
 
 import java.io.Serializable;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Grupo implements Serializable{
     private int id;
     private char letra;
-    private Equipo[] equipos;
+    private ArrayList<Equipo> equipos;
 
     public Grupo(int id, char letra) {
         this.id = id;
         this.letra = letra;
-        this.equipos = new Equipo[4];
     }
 
     public int getId() {
@@ -30,12 +29,20 @@ public class Grupo implements Serializable{
         this.letra = letra;
     }
 
-    public Equipo[] getEquipos() {
+    public ArrayList<Equipo> getEquipos() {
         return equipos;
     }
 
-    public void setEquipos(Equipo[] equipos) {
+    public void setEquipos(ArrayList<Equipo>equipos) {
         this.equipos = equipos;
+    }
+    
+    public ArrayList<String> getEquiposIds(){
+        ArrayList<String> equiposIds = new ArrayList();
+        for(Equipo equipo: equipos){
+            equiposIds.add(equipo.getId());
+        }
+        return equiposIds;
     }
 
     /**
@@ -44,6 +51,6 @@ public class Grupo implements Serializable{
      */
     @Override
     public String toString() {
-        return getId() + "-" + getLetra() + " - " + Arrays.toString(getEquipos()) ;
+        return getId() + "-" + getLetra() + " - " + getEquipos() ;
     }
 }

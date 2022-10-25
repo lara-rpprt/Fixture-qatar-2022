@@ -1,5 +1,6 @@
 package fixture.repository.migrations;
 
+import fixture.repository.filesystem.ObjectIO;
 import fixture.model.Estadio;
 import java.util.ArrayList;
 
@@ -14,7 +15,7 @@ public class EstadiosMigrations {
         estadios.add(new Estadio("AHMAD_BIN_ALI", "Ahmad Bin Ali"));
         estadios.add(new Estadio("DE_LUSAIL", "De Lusail"));
         estadios.add(new Estadio("974", "974"));
-        estadios.add(new Estadio("DE_LA_CIUDAD_DE_LA_EDUCACIÓN", "de la Ciudad de la Educación"));
+        estadios.add(new Estadio("DE_LA_CIUDAD_DE_LA_EDUCACION", "de la Ciudad de la Educación"));
         estadios.add(new Estadio("AL_YANUB", "Al Yanub"));
 
         ObjectIO objectIO = new ObjectIO();

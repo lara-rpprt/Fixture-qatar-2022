@@ -1,24 +1,24 @@
 package fixture;
 
-import fixture.model.Partido;
-import fixture.repository.migrations.ObjectIO;
+import fixture.model.Fase;
+import fixture.repository.GrupoRepository;
+import fixture.repository.PartidoRepository;
 import fixture.view.Ventana;
 import java.util.ArrayList;
 
 public class Fixture {
 
     public static void main(String[] args) {
-        ObjectIO objectIO = new ObjectIO();
-        ArrayList<Partido> partidos;
-        partidos = (ArrayList<Partido>) objectIO.ReadObjectFromFile("partidos");
+        
 
         Ventana ventana = new Ventana();
         ventana.setVisible(true);
-
-        for (Partido partido : partidos) {
-            System.out.println(partido);
-        }
-
+        
+        // ventana set partidos
+        PartidoRepository partidoRepository = new PartidoRepository();
+        GrupoRepository grupoRepository = new GrupoRepository();
+        
+        ventana.setPartidos(partidoRepository.findBy(Fase.DE_GRUPOS, grupoRepository.get('a')));
     }
 
 }
