@@ -2,7 +2,6 @@ package fixture.model;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Partido implements Serializable {
 
