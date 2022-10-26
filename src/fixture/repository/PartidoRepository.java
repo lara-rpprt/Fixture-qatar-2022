@@ -4,7 +4,10 @@ import fixture.model.Fase;
 import fixture.model.Grupo;
 import fixture.model.Partido;
 import fixture.repository.filesystem.ObjectIO;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import static java.util.Objects.nonNull;
 import java.util.stream.Collectors;
@@ -41,7 +44,21 @@ public class PartidoRepository {
                 }
             }
         }
-        return (ArrayList<Partido>) partidosGrupo.stream().collect(Collectors.toList());
+        
+        ArrayList<Partido> partidosGrupoList = (ArrayList<Partido>) partidosGrupo.stream().collect(Collectors.toList());
+        
+        Collections.sort(partidosGrupoList, new Comparator<Partido>() {
+            public int compare(Partido o1, Partido o2) {
+                if (o1.getFechaYHora()== null || o2.getFechaYHora() == null)
+                  return 0;
+                return o1.getFechaYHora().compareTo(o2.getFechaYHora());
+            }
+          });
+        
+        return partidosGrupoList;
+        
         //return (ArrayList<Partido>) partidosFase.stream().filter(partido -> grupo.getEquipos().containsAll(grupo.getEquipos())).collect(Collectors.toList());
     }
+    
+    
 }
