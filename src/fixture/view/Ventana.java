@@ -10,6 +10,7 @@ import fixture.model.Partido;
 import fixture.repository.GrupoRepository;
 import fixture.repository.PartidoRepository;
 import fixture.repository.migrations.GruposMigrations;
+import fixture.repository.migrations.PartidosMigrations;
 import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -62,8 +63,8 @@ public class Ventana extends javax.swing.JFrame {
         labelLogo = new javax.swing.JLabel();
         lblFechaPartido0 = new javax.swing.JLabel();
         lblEquipoLocal0 = new javax.swing.JLabel();
-        lblNombreEstadio = new javax.swing.JLabel();
-        lblEquipoVisitante = new javax.swing.JLabel();
+        lblNombreEstadio6 = new javax.swing.JLabel();
+        lblEquipoVisitante6 = new javax.swing.JLabel();
         lblFechaPartido1 = new javax.swing.JLabel();
         lblFechaPartido2 = new javax.swing.JLabel();
         lblFechaPartido3 = new javax.swing.JLabel();
@@ -80,6 +81,16 @@ public class Ventana extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
+        lblNombreEstadio1 = new javax.swing.JLabel();
+        lblNombreEstadio2 = new javax.swing.JLabel();
+        lblNombreEstadio3 = new javax.swing.JLabel();
+        lblNombreEstadio4 = new javax.swing.JLabel();
+        lblNombreEstadio5 = new javax.swing.JLabel();
+        lblEquipoVisitante1 = new javax.swing.JLabel();
+        lblEquipoVisitante2 = new javax.swing.JLabel();
+        lblEquipoVisitante3 = new javax.swing.JLabel();
+        lblEquipoVisitante4 = new javax.swing.JLabel();
+        lblEquipoVisitante5 = new javax.swing.JLabel();
         panelHeader = new javax.swing.JPanel();
         labelTitulo = new javax.swing.JLabel();
         labelSubtitulo = new javax.swing.JLabel();
@@ -267,12 +278,12 @@ public class Ventana extends javax.swing.JFrame {
         lblEquipoLocal0.setText("Equipo Local");
         panelGrupoA.add(lblEquipoLocal0, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 111, -1, -1));
 
-        lblNombreEstadio.setText("NombreEstadio");
-        panelGrupoA.add(lblNombreEstadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, -1, -1));
+        lblNombreEstadio6.setText("NombreEstadio");
+        panelGrupoA.add(lblNombreEstadio6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, -1, -1));
 
-        lblEquipoVisitante.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblEquipoVisitante.setText("Equipo Visitante");
-        panelGrupoA.add(lblEquipoVisitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 111, -1, -1));
+        lblEquipoVisitante6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitante6.setText("Equipo Visitante");
+        panelGrupoA.add(lblEquipoVisitante6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, -1, -1));
 
         lblFechaPartido1.setText("FechaPartido");
         panelGrupoA.add(lblFechaPartido1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, -1));
@@ -314,6 +325,41 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoA.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 371, 10));
         panelGrupoA.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 371, 10));
         panelGrupoA.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 371, 10));
+
+        lblNombreEstadio1.setText("NombreEstadio");
+        panelGrupoA.add(lblNombreEstadio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
+
+        lblNombreEstadio2.setText("NombreEstadio");
+        panelGrupoA.add(lblNombreEstadio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, -1, -1));
+
+        lblNombreEstadio3.setText("NombreEstadio");
+        panelGrupoA.add(lblNombreEstadio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, -1, -1));
+
+        lblNombreEstadio4.setText("NombreEstadio");
+        panelGrupoA.add(lblNombreEstadio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, -1, -1));
+
+        lblNombreEstadio5.setText("NombreEstadio");
+        panelGrupoA.add(lblNombreEstadio5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, -1, -1));
+
+        lblEquipoVisitante1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitante1.setText("Equipo Visitante");
+        panelGrupoA.add(lblEquipoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 111, -1, -1));
+
+        lblEquipoVisitante2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitante2.setText("Equipo Visitante");
+        panelGrupoA.add(lblEquipoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, -1, -1));
+
+        lblEquipoVisitante3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitante3.setText("Equipo Visitante");
+        panelGrupoA.add(lblEquipoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, -1, -1));
+
+        lblEquipoVisitante4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitante4.setText("Equipo Visitante");
+        panelGrupoA.add(lblEquipoVisitante4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
+
+        lblEquipoVisitante5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitante5.setText("Equipo Visitante");
+        panelGrupoA.add(lblEquipoVisitante5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, -1, -1));
 
         tabbedPane.addTab("A", panelGrupoA);
 
@@ -468,14 +514,24 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel lblEquipoLocal3;
     private javax.swing.JLabel lblEquipoLocal4;
     private javax.swing.JLabel lblEquipoLocal5;
-    private javax.swing.JLabel lblEquipoVisitante;
+    private javax.swing.JLabel lblEquipoVisitante1;
+    private javax.swing.JLabel lblEquipoVisitante2;
+    private javax.swing.JLabel lblEquipoVisitante3;
+    private javax.swing.JLabel lblEquipoVisitante4;
+    private javax.swing.JLabel lblEquipoVisitante5;
+    private javax.swing.JLabel lblEquipoVisitante6;
     private javax.swing.JLabel lblFechaPartido0;
     private javax.swing.JLabel lblFechaPartido1;
     private javax.swing.JLabel lblFechaPartido2;
     private javax.swing.JLabel lblFechaPartido3;
     private javax.swing.JLabel lblFechaPartido4;
     private javax.swing.JLabel lblFechaPartido5;
-    private javax.swing.JLabel lblNombreEstadio;
+    private javax.swing.JLabel lblNombreEstadio1;
+    private javax.swing.JLabel lblNombreEstadio2;
+    private javax.swing.JLabel lblNombreEstadio3;
+    private javax.swing.JLabel lblNombreEstadio4;
+    private javax.swing.JLabel lblNombreEstadio5;
+    private javax.swing.JLabel lblNombreEstadio6;
     private javax.swing.JPanel panelBody;
     private javax.swing.JPanel panelCuartos;
     private javax.swing.JPanel panelFinal;
@@ -515,10 +571,29 @@ public class Ventana extends javax.swing.JFrame {
            lblEquipoLocal5,
        };
        
+       javax.swing.JLabel [] estadiosA = {
+           lblNombreEstadio1,
+           lblNombreEstadio2,
+           lblNombreEstadio3,
+           lblNombreEstadio4,
+           lblNombreEstadio5,
+           lblNombreEstadio6,
+       };
+       
+       javax.swing.JLabel [] equiposVisitantes = {
+           lblEquipoVisitante1,
+           lblEquipoVisitante2,
+           lblEquipoVisitante3,
+           lblEquipoVisitante4,
+           lblEquipoVisitante5,
+           lblEquipoVisitante6,
+       };
+       
+       
        GruposMigrations.up();
+       PartidosMigrations.up();
        
        GrupoRepository grupoRepository = new GrupoRepository();
-       
        PartidoRepository partidoRepository = new PartidoRepository();
         
        Grupo grupoA = grupoRepository.get('a');
@@ -526,11 +601,9 @@ public class Ventana extends javax.swing.JFrame {
        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoA);
     
       Collections.sort(partidos, new Comparator<Partido>(){
-           @Override
            public int compare(Partido p1, Partido p2) {
                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
           }
-          
       });
       
       List<Partido> partidosOrdenados =  partidos.stream()
@@ -539,8 +612,14 @@ public class Ventana extends javax.swing.JFrame {
       
        int i= 0;
        for(Partido p : partidos ){
+           
            fechasA[i].setText(p.getFechaYHora().toString());
-           equipoLocales[i++].setText(p.getEquipo1().getNombre());
+           
+           equipoLocales[i].setText(p.getEquipo1().getNombre());
+           
+           estadiosA[i].setText(p.getEstadio().getNombre());
+           
+           equiposVisitantes[i++].setText(p.getEquipo2().getNombre());
        }
         
     }

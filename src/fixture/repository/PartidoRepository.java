@@ -32,6 +32,7 @@ public class PartidoRepository {
 
     // Buscar por Fase y Grupo
     public ArrayList<Partido> findBy(Fase fase, Grupo grupo) {
+        
         ArrayList<Partido> partidosFase = findBy(fase);
         HashSet<Partido> partidosGrupo = new HashSet();
 
@@ -42,6 +43,8 @@ public class PartidoRepository {
                 }
             }
         }
+        
         return (ArrayList<Partido>) partidosGrupo.stream().collect(Collectors.toList());
+        
     }
 }
