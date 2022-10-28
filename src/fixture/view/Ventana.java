@@ -32,7 +32,12 @@ public class Ventana extends javax.swing.JFrame {
      */
     public Ventana() {
         initComponents();
+        
+        cargarRepositorios();
+        
         loadPartidosGrupoA();
+        
+        loadPartidosGrupoB();
     }
 
     /**
@@ -48,6 +53,16 @@ public class Ventana extends javax.swing.JFrame {
         panelBody = new javax.swing.JPanel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoB = new javax.swing.JPanel();
+        labelLogo2 = new javax.swing.JLabel();
+        lblFechaPartidoB0 = new javax.swing.JLabel();
+        lblEquipoLocalB = new javax.swing.JLabel();
+        lblEquipoVisitantelB = new javax.swing.JLabel();
+        lblNombreEstadioB = new javax.swing.JLabel();
+        jSeparator7 = new javax.swing.JSeparator();
+        lblFechaPartidoB2 = new javax.swing.JLabel();
+        lblEquipoLocalB1 = new javax.swing.JLabel();
+        lblNombreEstadioB1 = new javax.swing.JLabel();
+        lblEquipoVisitantelB1 = new javax.swing.JLabel();
         panelGrupoC = new javax.swing.JPanel();
         panelGrupoD = new javax.swing.JPanel();
         panelGrupoE = new javax.swing.JPanel();
@@ -109,16 +124,40 @@ public class Ventana extends javax.swing.JFrame {
 
         tabbedPane.setMaximumSize(panelBody.getMinimumSize());
 
-        javax.swing.GroupLayout panelGrupoBLayout = new javax.swing.GroupLayout(panelGrupoB);
-        panelGrupoB.setLayout(panelGrupoBLayout);
-        panelGrupoBLayout.setHorizontalGroup(
-            panelGrupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
-        );
-        panelGrupoBLayout.setVerticalGroup(
-            panelGrupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        panelGrupoB.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        labelLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/grupoA.png"))); // NOI18N
+        labelLogo2.setText("LOGO");
+        panelGrupoB.add(labelLogo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 82, 308, 228));
+
+        lblFechaPartidoB0.setText("Fecha Partido");
+        panelGrupoB.add(lblFechaPartidoB0, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, -1, -1));
+
+        lblEquipoLocalB.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoLocalB.setText("Equipo Local B");
+        panelGrupoB.add(lblEquipoLocalB, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, -1, -1));
+
+        lblEquipoVisitantelB.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitantelB.setText("Equipo Local B");
+        panelGrupoB.add(lblEquipoVisitantelB, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, -1, -1));
+
+        lblNombreEstadioB.setText("Fecha Partido");
+        panelGrupoB.add(lblNombreEstadioB, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 130, -1, -1));
+        panelGrupoB.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 290, 10));
+
+        lblFechaPartidoB2.setText("Fecha Partido");
+        panelGrupoB.add(lblFechaPartidoB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, -1, -1));
+
+        lblEquipoLocalB1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoLocalB1.setText("Equipo Local B");
+        panelGrupoB.add(lblEquipoLocalB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, -1, -1));
+
+        lblNombreEstadioB1.setText("Fecha Partido");
+        panelGrupoB.add(lblNombreEstadioB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, -1, -1));
+
+        lblEquipoVisitantelB1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitantelB1.setText("Equipo Local B");
+        panelGrupoB.add(lblEquipoVisitantelB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, -1, -1));
 
         tabbedPane.addTab("B", panelGrupoB);
 
@@ -415,7 +454,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addComponent(labelTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(labelSubtitulo)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
             .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelHeaderLayout.createSequentialGroup()
                     .addContainerGap()
@@ -438,7 +477,7 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(panelMainLayout.createSequentialGroup()
                 .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(panelBody, javax.swing.GroupLayout.DEFAULT_SIZE, 507, Short.MAX_VALUE))
+                .addComponent(panelBody, javax.swing.GroupLayout.DEFAULT_SIZE, 501, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -497,6 +536,9 @@ public class Ventana extends javax.swing.JFrame {
         });
     }
 
+    private GrupoRepository grupoRepository;
+    private PartidoRepository partidoRepository ;  
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -504,8 +546,10 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelLogo1;
+    private javax.swing.JLabel labelLogo2;
     private javax.swing.JLabel labelSubtitulo;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JLabel lblEquipoLocal0;
@@ -514,24 +558,32 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel lblEquipoLocal3;
     private javax.swing.JLabel lblEquipoLocal4;
     private javax.swing.JLabel lblEquipoLocal5;
+    private javax.swing.JLabel lblEquipoLocalB;
+    private javax.swing.JLabel lblEquipoLocalB1;
     private javax.swing.JLabel lblEquipoVisitante1;
     private javax.swing.JLabel lblEquipoVisitante2;
     private javax.swing.JLabel lblEquipoVisitante3;
     private javax.swing.JLabel lblEquipoVisitante4;
     private javax.swing.JLabel lblEquipoVisitante5;
     private javax.swing.JLabel lblEquipoVisitante6;
+    private javax.swing.JLabel lblEquipoVisitantelB;
+    private javax.swing.JLabel lblEquipoVisitantelB1;
     private javax.swing.JLabel lblFechaPartido0;
     private javax.swing.JLabel lblFechaPartido1;
     private javax.swing.JLabel lblFechaPartido2;
     private javax.swing.JLabel lblFechaPartido3;
     private javax.swing.JLabel lblFechaPartido4;
     private javax.swing.JLabel lblFechaPartido5;
+    private javax.swing.JLabel lblFechaPartidoB0;
+    private javax.swing.JLabel lblFechaPartidoB2;
     private javax.swing.JLabel lblNombreEstadio1;
     private javax.swing.JLabel lblNombreEstadio2;
     private javax.swing.JLabel lblNombreEstadio3;
     private javax.swing.JLabel lblNombreEstadio4;
     private javax.swing.JLabel lblNombreEstadio5;
     private javax.swing.JLabel lblNombreEstadio6;
+    private javax.swing.JLabel lblNombreEstadioB;
+    private javax.swing.JLabel lblNombreEstadioB1;
     private javax.swing.JPanel panelBody;
     private javax.swing.JPanel panelCuartos;
     private javax.swing.JPanel panelFinal;
@@ -589,13 +641,7 @@ public class Ventana extends javax.swing.JFrame {
            lblEquipoVisitante6,
        };
        
-       
-       GruposMigrations.up();
-       PartidosMigrations.up();
-       
-       GrupoRepository grupoRepository = new GrupoRepository();
-       PartidoRepository partidoRepository = new PartidoRepository();
-        
+               
        Grupo grupoA = grupoRepository.get('a');
     
        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoA);
@@ -622,5 +668,35 @@ public class Ventana extends javax.swing.JFrame {
            equiposVisitantes[i++].setText(p.getEquipo2().getNombre());
        }
         
+    }
+
+    private void loadPartidosGrupoB() {
+
+        javax.swing.JLabel [] fechasB = {
+           lblFechaPartidoB0,
+           lblFechaPartidoB2
+       };
+       
+       Grupo grupoB = grupoRepository.get('b');
+    
+       ArrayList<Partido> partidosGrupoB = partidoRepository.findBy(Fase.DE_GRUPOS, grupoB);
+    
+       int i= 0;
+       for(Partido p : partidosGrupoB ){
+           fechasB[i++].setText(p.getFechaYHora().toString());
+           if(i == 2){
+               break;
+           }
+       }
+    }
+ 
+    
+    private void cargarRepositorios() {
+    
+       GruposMigrations.up();
+       PartidosMigrations.up();
+       
+       grupoRepository = new GrupoRepository();
+       partidoRepository = new PartidoRepository();
     }
 }
