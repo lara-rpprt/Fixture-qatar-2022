@@ -5,7 +5,9 @@
 package fixture.view;
 
 import fixture.model.Partido;
+import java.awt.Image;
 import java.time.format.DateTimeFormatter;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -24,7 +26,18 @@ public class PartidoRow extends javax.swing.JPanel {
         
         horarioLabel.setText(partido.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu")));
         estadioLabel.setText(partido.getEstadio().getNombre());
+        
+        
+        ImageIcon imageIconEquipo1 = new ImageIcon(new ImageIcon(getClass().getResource("/static/img/banderas/" + partido.getEquipo1().getId() + ".png")).getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH)); 
+        equipo1Label.setIcon(imageIconEquipo1);
+        equipo1Label.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        equipo1Label.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         equipo1Label.setText(partido.getEquipo1().getNombre());
+        
+        ImageIcon imageIconEquipo2 = new ImageIcon(new ImageIcon(getClass().getResource("/static/img/banderas/" + partido.getEquipo2().getId() + ".png")).getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH)); 
+        equipo2Label.setIcon(imageIconEquipo2);
+        equipo2Label.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        equipo2Label.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         equipo2Label.setText(partido.getEquipo2().getNombre());
     }
 
@@ -48,9 +61,11 @@ public class PartidoRow extends javax.swing.JPanel {
         equipo2TextField = new javax.swing.JFormattedTextField();
         equipo2Label = new javax.swing.JLabel();
 
-        setMinimumSize(new java.awt.Dimension(734, 80));
-        setPreferredSize(new java.awt.Dimension(734, 80));
+        setMinimumSize(new java.awt.Dimension(734, 100));
+        setPreferredSize(new java.awt.Dimension(734, 100));
         setLayout(new java.awt.GridLayout(2, 1));
+
+        jPanel2.setPreferredSize(new java.awt.Dimension(734, 40));
 
         estadioLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioLabel.setText("jLabel1");
@@ -73,24 +88,27 @@ public class PartidoRow extends javax.swing.JPanel {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addGap(12, 12, 12)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(horarioLabel)
                         .addComponent(estadioLabel))
-                    .addContainerGap(12, Short.MAX_VALUE)))
+                    .addContainerGap(72, Short.MAX_VALUE)))
         );
 
         add(jPanel2);
 
-        panelFilaPartido.setMinimumSize(new java.awt.Dimension(734, 80));
-        panelFilaPartido.setPreferredSize(new java.awt.Dimension(734, 80));
+        panelFilaPartido.setMinimumSize(new java.awt.Dimension(734, 100));
+        panelFilaPartido.setPreferredSize(new java.awt.Dimension(734, 100));
 
         equipo1Label.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         equipo1Label.setText("jLabel1");
         equipo1Label.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        equipo1Label.setMaximumSize(null);
+        equipo1Label.setMinimumSize(null);
+        equipo1Label.setPreferredSize(null);
         panelFilaPartido.add(equipo1Label);
 
         equipo1TextField.setBackground(new java.awt.Color(255, 255, 255));
@@ -132,6 +150,9 @@ public class PartidoRow extends javax.swing.JPanel {
         equipo2Label.setText("jLabel1");
         equipo2Label.setToolTipText("");
         equipo2Label.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        equipo2Label.setMaximumSize(null);
+        equipo2Label.setMinimumSize(null);
+        equipo2Label.setPreferredSize(null);
         panelFilaPartido.add(equipo2Label);
 
         add(panelFilaPartido);
