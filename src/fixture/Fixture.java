@@ -11,9 +11,6 @@ public class Fixture {
 
     public static void main(String[] args) {
         
-        Ventana ventana = new Ventana();
-        ventana.setVisible(true);
-        
         // Preparo todos los partidos de Fase de Grupos
         PartidoRepository partidoRepository = new PartidoRepository();
         GrupoRepository grupoRepository = new GrupoRepository();
@@ -26,6 +23,10 @@ public class Fixture {
         ArrayList<Partido> partidosGrupoF = partidoRepository.findBy(Fase.DE_GRUPOS, grupoRepository.get('f'));
         ArrayList<Partido> partidosGrupoG = partidoRepository.findBy(Fase.DE_GRUPOS, grupoRepository.get('g'));
         ArrayList<Partido> partidosGrupoH = partidoRepository.findBy(Fase.DE_GRUPOS, grupoRepository.get('h'));
+        
+        
+        Ventana ventana = new Ventana();
+        ventana.setVisible(true);
         
         ventana.setGrupoPartido('a', partidosGrupoA);
         ventana.setGrupoPartido('b', partidosGrupoB);

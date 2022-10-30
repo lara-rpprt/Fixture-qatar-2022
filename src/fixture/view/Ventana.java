@@ -15,11 +15,21 @@ import java.util.HashMap;
 public class Ventana extends javax.swing.JFrame {
 
     private HashMap<Character, ArrayList<Partido>> grupoPartidos;
-    
-    public void setGrupoPartido(char letraGrupo, ArrayList<Partido> partidos){
+
+    public void setGrupoPartido(char letraGrupo, ArrayList<Partido> partidos) {
         this.grupoPartidos.put(letraGrupo, partidos);
+
+        switch (letraGrupo) {
+            case 'a':
+                this.panelGrupoA.add(new GrupoTab('a', this.grupoPartidos.get('a')));                
+                break;
+            case 'n':
+                this.panelGrupoA.add(new GrupoTab('b', this.grupoPartidos.get('b')));
+                break;
+        }
+        this.pack();
     }
-    
+
     /**
      * Creates new form Ventana
      */
@@ -41,9 +51,7 @@ public class Ventana extends javax.swing.JFrame {
         panelBody = new javax.swing.JPanel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoA = new javax.swing.JPanel();
-        grupoTab1 = new fixture.view.GrupoTab('a');
         panelGrupoB = new javax.swing.JPanel();
-        grupoTab2 = new fixture.view.GrupoTab('b');
         panelGrupoC = new javax.swing.JPanel();
         panelGrupoD = new javax.swing.JPanel();
         panelGrupoE = new javax.swing.JPanel();
@@ -80,29 +88,6 @@ public class Ventana extends javax.swing.JFrame {
         panelBody.setPreferredSize(new java.awt.Dimension(720, 405));
 
         tabbedPane.setMaximumSize(null);
-
-        panelGrupoA.setMaximumSize(null);
-        panelGrupoA.setMinimumSize(null);
-
-        grupoTab1.setPreferredSize(null);
-
-        javax.swing.GroupLayout panelGrupoALayout = new javax.swing.GroupLayout(panelGrupoA);
-        panelGrupoA.setLayout(panelGrupoALayout);
-        panelGrupoALayout.setHorizontalGroup(
-            panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelGrupoALayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(grupoTab1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        panelGrupoALayout.setVerticalGroup(
-            panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelGrupoALayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(grupoTab1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         tabbedPane.addTab("A", panelGrupoA);
 
         panelGrupoB.setMaximumSize(null);
@@ -112,17 +97,11 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoB.setLayout(panelGrupoBLayout);
         panelGrupoBLayout.setHorizontalGroup(
             panelGrupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelGrupoBLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(grupoTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 864, Short.MAX_VALUE)
         );
         panelGrupoBLayout.setVerticalGroup(
             panelGrupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelGrupoBLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(grupoTab2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 418, Short.MAX_VALUE)
         );
 
         tabbedPane.addTab("B", panelGrupoB);
@@ -429,8 +408,6 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private fixture.view.GrupoTab grupoTab1;
-    private fixture.view.GrupoTab grupoTab2;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelSubtitulo;
     private javax.swing.JLabel labelTitulo;

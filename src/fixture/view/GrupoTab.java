@@ -4,6 +4,10 @@
  */
 package fixture.view;
 
+import fixture.model.Partido;
+import java.util.ArrayList;
+import static java.util.Objects.nonNull;
+
 /**
  *
  * @author abreg
@@ -11,10 +15,28 @@ package fixture.view;
 public class GrupoTab extends javax.swing.JPanel {
 
     private char letraGrupo;
-    
-    public GrupoTab(char letra) {
+    private ArrayList<Partido> partidos;
+
+    public GrupoTab(char letra, ArrayList<Partido> partidos) {
         this.letraGrupo = letra;
+        this.partidos = partidos;
         initComponents();
+        updateRows();
+    }
+
+    private void updateRows() {
+        // Inicializo una lista de filas de partidos
+        //     ArrayList<PartidoRow> partidoRows = new ArrayList();
+
+        // las instancio con la información de cada uno de los partidos del grupo
+        // y las voy agregando al listado
+        for (Partido partido : partidos) {
+            if (nonNull(partido)) {
+                //System.out.println(partido);
+                panelContenedorGrupo.add(new PartidoRow(partido));
+            }
+        }
+        revalidate();
     }
 
     /**
@@ -26,105 +48,26 @@ public class GrupoTab extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelContenedorGrupoA = new javax.swing.JPanel();
         tituloGrupoA = new javax.swing.JLabel();
-        contenedorPartidosGrupoA = new javax.swing.JPanel();
-        panelFilaPartido = new javax.swing.JPanel();
-        horarioLabel = new javax.swing.JLabel();
-        estadioLabel = new javax.swing.JLabel();
-        equipo1Label = new javax.swing.JLabel();
-        equipo2Label = new javax.swing.JLabel();
-        equipo1TextField = new javax.swing.JFormattedTextField();
-        equipo2TextField = new javax.swing.JFormattedTextField();
+        panelContenedorGrupo = new javax.swing.JPanel();
 
-        panelContenedorGrupoA.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 0)));
-        panelContenedorGrupoA.setLayout(new java.awt.BorderLayout());
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.Y_AXIS));
 
         tituloGrupoA.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         tituloGrupoA.setForeground(new java.awt.Color(154, 16, 50));
         tituloGrupoA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         tituloGrupoA.setText("GRUPO " + Character.toUpperCase(letraGrupo));
-        panelContenedorGrupoA.add(tituloGrupoA, java.awt.BorderLayout.NORTH);
+        tituloGrupoA.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        add(tituloGrupoA);
 
-        contenedorPartidosGrupoA.setLayout(new java.awt.GridLayout(6, 1, 0, 2));
-
-        horarioLabel.setText("jLabel1");
-
-        estadioLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        estadioLabel.setText("jLabel1");
-
-        equipo1Label.setText("jLabel1");
-
-        equipo2Label.setText("jLabel1");
-
-        equipo1TextField.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getIntegerInstance())));
-
-        equipo2TextField.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getIntegerInstance())));
-
-        javax.swing.GroupLayout panelFilaPartidoLayout = new javax.swing.GroupLayout(panelFilaPartido);
-        panelFilaPartido.setLayout(panelFilaPartidoLayout);
-        panelFilaPartidoLayout.setHorizontalGroup(
-            panelFilaPartidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFilaPartidoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(horarioLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(estadioLabel)
-                .addContainerGap())
-            .addGroup(panelFilaPartidoLayout.createSequentialGroup()
-                .addGap(167, 167, 167)
-                .addComponent(equipo1Label)
-                .addGap(57, 57, 57)
-                .addComponent(equipo1TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(equipo2TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85)
-                .addComponent(equipo2Label)
-                .addGap(164, 164, 164))
-        );
-        panelFilaPartidoLayout.setVerticalGroup(
-            panelFilaPartidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFilaPartidoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelFilaPartidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(horarioLabel)
-                    .addComponent(estadioLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelFilaPartidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(equipo1Label)
-                    .addComponent(equipo2Label)
-                    .addComponent(equipo1TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(equipo2TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        contenedorPartidosGrupoA.add(panelFilaPartido);
-
-        panelContenedorGrupoA.add(contenedorPartidosGrupoA, java.awt.BorderLayout.CENTER);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelContenedorGrupoA, javax.swing.GroupLayout.PREFERRED_SIZE, 736, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelContenedorGrupoA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        panelContenedorGrupo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 0)));
+        panelContenedorGrupo.setLayout(new javax.swing.BoxLayout(panelContenedorGrupo, javax.swing.BoxLayout.Y_AXIS));
+        add(panelContenedorGrupo);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel contenedorPartidosGrupoA;
-    private javax.swing.JLabel equipo1Label;
-    private javax.swing.JFormattedTextField equipo1TextField;
-    private javax.swing.JLabel equipo2Label;
-    private javax.swing.JFormattedTextField equipo2TextField;
-    private javax.swing.JLabel estadioLabel;
-    private javax.swing.JLabel horarioLabel;
-    private javax.swing.JPanel panelContenedorGrupoA;
-    private javax.swing.JPanel panelFilaPartido;
+    private javax.swing.JPanel panelContenedorGrupo;
     private javax.swing.JLabel tituloGrupoA;
     // End of variables declaration//GEN-END:variables
 }
