@@ -80,18 +80,15 @@ public class Ventana extends javax.swing.JFrame {
         panelMain.setAlignmentX(0.0F);
         panelMain.setAlignmentY(0.0F);
         panelMain.setMaximumSize(null);
-        panelMain.setMinimumSize(null);
         panelMain.setName(""); // NOI18N
 
         panelBody.setMaximumSize(null);
-        panelBody.setMinimumSize(null);
         panelBody.setPreferredSize(new java.awt.Dimension(720, 405));
 
         tabbedPane.setMaximumSize(null);
         tabbedPane.addTab("A", panelGrupoA);
 
         panelGrupoB.setMaximumSize(null);
-        panelGrupoB.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoBLayout = new javax.swing.GroupLayout(panelGrupoB);
         panelGrupoB.setLayout(panelGrupoBLayout);
@@ -107,7 +104,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("B", panelGrupoB);
 
         panelGrupoC.setMaximumSize(null);
-        panelGrupoC.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoCLayout = new javax.swing.GroupLayout(panelGrupoC);
         panelGrupoC.setLayout(panelGrupoCLayout);
@@ -123,7 +119,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("C", panelGrupoC);
 
         panelGrupoD.setMaximumSize(null);
-        panelGrupoD.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoDLayout = new javax.swing.GroupLayout(panelGrupoD);
         panelGrupoD.setLayout(panelGrupoDLayout);
@@ -139,7 +134,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("D", panelGrupoD);
 
         panelGrupoE.setMaximumSize(null);
-        panelGrupoE.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoELayout = new javax.swing.GroupLayout(panelGrupoE);
         panelGrupoE.setLayout(panelGrupoELayout);
@@ -155,7 +149,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("E", panelGrupoE);
 
         panelGrupoF.setMaximumSize(null);
-        panelGrupoF.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoFLayout = new javax.swing.GroupLayout(panelGrupoF);
         panelGrupoF.setLayout(panelGrupoFLayout);
@@ -171,7 +164,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("F", panelGrupoF);
 
         panelGrupoG.setMaximumSize(null);
-        panelGrupoG.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoGLayout = new javax.swing.GroupLayout(panelGrupoG);
         panelGrupoG.setLayout(panelGrupoGLayout);
@@ -187,7 +179,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("G", panelGrupoG);
 
         panelGrupoH.setMaximumSize(null);
-        panelGrupoH.setMinimumSize(null);
 
         javax.swing.GroupLayout panelGrupoHLayout = new javax.swing.GroupLayout(panelGrupoH);
         panelGrupoH.setLayout(panelGrupoHLayout);
@@ -203,7 +194,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("H", panelGrupoH);
 
         panelOctavos.setMaximumSize(null);
-        panelOctavos.setMinimumSize(null);
 
         javax.swing.GroupLayout panelOctavosLayout = new javax.swing.GroupLayout(panelOctavos);
         panelOctavos.setLayout(panelOctavosLayout);
@@ -219,7 +209,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("OCTAVOS", panelOctavos);
 
         panelCuartos.setMaximumSize(null);
-        panelCuartos.setMinimumSize(null);
 
         javax.swing.GroupLayout panelCuartosLayout = new javax.swing.GroupLayout(panelCuartos);
         panelCuartos.setLayout(panelCuartosLayout);
@@ -235,7 +224,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("CUARTOS", panelCuartos);
 
         panelSemifinales.setMaximumSize(null);
-        panelSemifinales.setMinimumSize(null);
 
         javax.swing.GroupLayout panelSemifinalesLayout = new javax.swing.GroupLayout(panelSemifinales);
         panelSemifinales.setLayout(panelSemifinalesLayout);
@@ -251,7 +239,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("SEMIFINALES", panelSemifinales);
 
         panelTercerPuesto.setMaximumSize(null);
-        panelTercerPuesto.setMinimumSize(null);
 
         javax.swing.GroupLayout panelTercerPuestoLayout = new javax.swing.GroupLayout(panelTercerPuesto);
         panelTercerPuesto.setLayout(panelTercerPuestoLayout);
@@ -267,7 +254,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("3er PUESTO", panelTercerPuesto);
 
         panelFinal.setMaximumSize(null);
-        panelFinal.setMinimumSize(null);
 
         javax.swing.GroupLayout panelFinalLayout = new javax.swing.GroupLayout(panelFinal);
         panelFinal.setLayout(panelFinalLayout);
@@ -296,7 +282,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.getAccessibleContext().setAccessibleName("tabB");
 
         panelHeader.setMaximumSize(null);
-        panelHeader.setMinimumSize(null);
 
         labelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/qatar_2022_logo.png"))); // NOI18N
         labelLogo.setText("LOGO");

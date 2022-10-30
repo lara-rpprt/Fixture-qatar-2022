@@ -25,14 +25,8 @@ public class GrupoTab extends javax.swing.JPanel {
     }
 
     private void updateRows() {
-        // Inicializo una lista de filas de partidos
-        //     ArrayList<PartidoRow> partidoRows = new ArrayList();
-
-        // las instancio con la información de cada uno de los partidos del grupo
-        // y las voy agregando al listado
         for (Partido partido : partidos) {
             if (nonNull(partido)) {
-                //System.out.println(partido);
                 panelContenedorGrupo.add(new PartidoRow(partido));
             }
         }
