@@ -5,12 +5,7 @@
 package fixture.view;
 
 import fixture.model.Partido;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.ArrayList;
-import static java.util.Objects.nonNull;
-import javax.swing.ImageIcon;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -26,19 +21,6 @@ public class Ventana extends javax.swing.JFrame {
 
     public void setPartidos(ArrayList<Partido> partidos) {
         this.partidos = partidos;
-        updateTable();
-    }
-
-    private void updateTable() {
-        DefaultTableModel tablePartidosModel = (DefaultTableModel) tablaPartidos.getModel();
-        
-        for (Partido partido : partidos) {
-            System.out.println(partido);
-            if (nonNull(partido.getEquipo1())) {
-                Object[] partidoRow = {partido.getId(), partido.getFechaYHora().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)), partido.getEquipo1().getNombre(), partido.getGolesEquipo1(), partido.getGolesEquipo2(), partido.getEquipo2().getNombre(), partido.getEstadio().getNombre()};
-                tablePartidosModel.addRow(partidoRow);
-            }
-        }
     }
 
     /**
@@ -62,10 +44,6 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoA = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tablaPartidos = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
         panelGrupoB = new javax.swing.JPanel();
         panelGrupoC = new javax.swing.JPanel();
         panelGrupoD = new javax.swing.JPanel();
@@ -86,7 +64,10 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
         setBounds(new java.awt.Rectangle(0, 0, 1000, 800));
-        setMinimumSize(new java.awt.Dimension(1280, 720));
+        setMaximumSize(new java.awt.Dimension(1920, 1080));
+        setMinimumSize(new java.awt.Dimension(720, 405));
+        setName("frameBase"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(800, 450));
         setSize(new java.awt.Dimension(1280, 720));
 
         panelMain.setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -98,63 +79,16 @@ public class Ventana extends javax.swing.JFrame {
 
         panelGrupoA.setPreferredSize(new java.awt.Dimension(500, 437));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PARTIDOS");
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        tablaPartidos.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "id", "Fecha y hora", "Equipo 1", "Goles equipo 1", "Goles equipo 2", "Equipo 2", "Estadio"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Object.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, true, true, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tablaPartidos.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(tablaPartidos);
-        if (tablaPartidos.getColumnModel().getColumnCount() > 0) {
-            tablaPartidos.getColumnModel().getColumn(0).setPreferredWidth(5);
-        }
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(jLabel1))
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(0, 953, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 0, 0)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 452, Short.MAX_VALUE)
         );
-
-        jButton1.setText("Guardar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout panelGrupoALayout = new javax.swing.GroupLayout(panelGrupoA);
         panelGrupoA.setLayout(panelGrupoALayout);
@@ -162,9 +96,7 @@ public class Ventana extends javax.swing.JFrame {
             panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelGrupoALayout.createSequentialGroup()
                 .addContainerGap(129, Short.MAX_VALUE)
-                .addGroup(panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(159, 159, 159))
         );
         panelGrupoALayout.setVerticalGroup(
@@ -172,9 +104,7 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(panelGrupoALayout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addContainerGap())
+                .addGap(224, 224, 224))
         );
 
         tabbedPane.addTab("A", panelGrupoA);
@@ -429,13 +359,6 @@ public class Ventana extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        for(int i = 0; i < tablaPartidos.getRowCount(); i++){
-            System.out.println(tablaPartidos.getValueAt(i, 3) + " " + tablaPartidos.getValueAt(i, 4));
-        }
-        tablaPartidos.getRowCount();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -472,10 +395,7 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelSubtitulo;
     private javax.swing.JLabel labelTitulo;
@@ -496,6 +416,5 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JPanel panelSemifinales;
     private javax.swing.JPanel panelTercerPuesto;
     private javax.swing.JTabbedPane tabbedPane;
-    private javax.swing.JTable tablaPartidos;
     // End of variables declaration//GEN-END:variables
 }
