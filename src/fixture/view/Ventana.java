@@ -21,10 +21,28 @@ public class Ventana extends javax.swing.JFrame {
 
         switch (letraGrupo) {
             case 'a':
-                this.panelGrupoA.add(new GrupoTab('a', this.grupoPartidos.get('a')));                
+                this.panelGrupoA.add(new GrupoTab('a', this.grupoPartidos.get('a')));
                 break;
-            case 'n':
-                this.panelGrupoA.add(new GrupoTab('b', this.grupoPartidos.get('b')));
+            case 'b':
+                this.panelGrupoB.add(new GrupoTab('b', this.grupoPartidos.get('b')));
+                break;
+            case 'c':
+                this.panelGrupoC.add(new GrupoTab('c', this.grupoPartidos.get('c')));
+                break;
+            case 'd':
+                this.panelGrupoD.add(new GrupoTab('d', this.grupoPartidos.get('d')));
+                break;
+            case 'e':
+                this.panelGrupoE.add(new GrupoTab('e', this.grupoPartidos.get('e')));
+                break;
+            case 'f':
+                this.panelGrupoF.add(new GrupoTab('f', this.grupoPartidos.get('f')));
+                break;
+            case 'g':
+                this.panelGrupoG.add(new GrupoTab('g', this.grupoPartidos.get('g')));
+                break;
+            case 'h':
+                this.panelGrupoH.add(new GrupoTab('h', this.grupoPartidos.get('h')));
                 break;
         }
         this.pack();
@@ -71,10 +89,8 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
         setBounds(new java.awt.Rectangle(0, 0, 800, 800));
-        setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(800, 450));
         setName("frameBase"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(800, 450));
         setSize(new java.awt.Dimension(1280, 720));
 
         panelMain.setAlignmentX(0.0F);
@@ -89,183 +105,39 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.addTab("A", panelGrupoA);
 
         panelGrupoB.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoBLayout = new javax.swing.GroupLayout(panelGrupoB);
-        panelGrupoB.setLayout(panelGrupoBLayout);
-        panelGrupoBLayout.setHorizontalGroup(
-            panelGrupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 864, Short.MAX_VALUE)
-        );
-        panelGrupoBLayout.setVerticalGroup(
-            panelGrupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 418, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("B", panelGrupoB);
 
         panelGrupoC.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoCLayout = new javax.swing.GroupLayout(panelGrupoC);
-        panelGrupoC.setLayout(panelGrupoCLayout);
-        panelGrupoCLayout.setHorizontalGroup(
-            panelGrupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelGrupoCLayout.setVerticalGroup(
-            panelGrupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("C", panelGrupoC);
 
         panelGrupoD.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoDLayout = new javax.swing.GroupLayout(panelGrupoD);
-        panelGrupoD.setLayout(panelGrupoDLayout);
-        panelGrupoDLayout.setHorizontalGroup(
-            panelGrupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelGrupoDLayout.setVerticalGroup(
-            panelGrupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("D", panelGrupoD);
 
         panelGrupoE.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoELayout = new javax.swing.GroupLayout(panelGrupoE);
-        panelGrupoE.setLayout(panelGrupoELayout);
-        panelGrupoELayout.setHorizontalGroup(
-            panelGrupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelGrupoELayout.setVerticalGroup(
-            panelGrupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("E", panelGrupoE);
 
         panelGrupoF.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoFLayout = new javax.swing.GroupLayout(panelGrupoF);
-        panelGrupoF.setLayout(panelGrupoFLayout);
-        panelGrupoFLayout.setHorizontalGroup(
-            panelGrupoFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelGrupoFLayout.setVerticalGroup(
-            panelGrupoFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("F", panelGrupoF);
 
         panelGrupoG.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoGLayout = new javax.swing.GroupLayout(panelGrupoG);
-        panelGrupoG.setLayout(panelGrupoGLayout);
-        panelGrupoGLayout.setHorizontalGroup(
-            panelGrupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelGrupoGLayout.setVerticalGroup(
-            panelGrupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("G", panelGrupoG);
 
         panelGrupoH.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelGrupoHLayout = new javax.swing.GroupLayout(panelGrupoH);
-        panelGrupoH.setLayout(panelGrupoHLayout);
-        panelGrupoHLayout.setHorizontalGroup(
-            panelGrupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelGrupoHLayout.setVerticalGroup(
-            panelGrupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("H", panelGrupoH);
 
         panelOctavos.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelOctavosLayout = new javax.swing.GroupLayout(panelOctavos);
-        panelOctavos.setLayout(panelOctavosLayout);
-        panelOctavosLayout.setHorizontalGroup(
-            panelOctavosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelOctavosLayout.setVerticalGroup(
-            panelOctavosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("OCTAVOS", panelOctavos);
 
         panelCuartos.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelCuartosLayout = new javax.swing.GroupLayout(panelCuartos);
-        panelCuartos.setLayout(panelCuartosLayout);
-        panelCuartosLayout.setHorizontalGroup(
-            panelCuartosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelCuartosLayout.setVerticalGroup(
-            panelCuartosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("CUARTOS", panelCuartos);
 
         panelSemifinales.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelSemifinalesLayout = new javax.swing.GroupLayout(panelSemifinales);
-        panelSemifinales.setLayout(panelSemifinalesLayout);
-        panelSemifinalesLayout.setHorizontalGroup(
-            panelSemifinalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelSemifinalesLayout.setVerticalGroup(
-            panelSemifinalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("SEMIFINALES", panelSemifinales);
 
         panelTercerPuesto.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelTercerPuestoLayout = new javax.swing.GroupLayout(panelTercerPuesto);
-        panelTercerPuesto.setLayout(panelTercerPuestoLayout);
-        panelTercerPuestoLayout.setHorizontalGroup(
-            panelTercerPuestoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelTercerPuestoLayout.setVerticalGroup(
-            panelTercerPuestoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("3er PUESTO", panelTercerPuesto);
 
         panelFinal.setMaximumSize(null);
-
-        javax.swing.GroupLayout panelFinalLayout = new javax.swing.GroupLayout(panelFinal);
-        panelFinal.setLayout(panelFinalLayout);
-        panelFinalLayout.setHorizontalGroup(
-            panelFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelFinalLayout.setVerticalGroup(
-            panelFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
         tabbedPane.addTab("FINAL", panelFinal);
 
         javax.swing.GroupLayout panelBodyLayout = new javax.swing.GroupLayout(panelBody);
