@@ -1,6 +1,7 @@
 package fixture;
 
 import fixture.model.Fase;
+import fixture.model.Partido;
 import fixture.repository.GrupoRepository;
 import fixture.repository.PartidoRepository;
 import fixture.view.Ventana;
@@ -17,7 +18,8 @@ public class Fixture {
         PartidoRepository partidoRepository = new PartidoRepository();
         GrupoRepository grupoRepository = new GrupoRepository();
         
-        ventana.setPartidos(partidoRepository.findBy(Fase.DE_GRUPOS, grupoRepository.get('a')));
+        ArrayList<Partido> partidosGrupoA = partidoRepository.findBy(Fase.DE_GRUPOS, grupoRepository.get('a'));
+        ventana.setPartidos(partidoRepository.sortByDate(partidosGrupoA));
     }
 
 }

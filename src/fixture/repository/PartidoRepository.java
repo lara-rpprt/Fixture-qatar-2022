@@ -4,7 +4,6 @@ import fixture.model.Fase;
 import fixture.model.Grupo;
 import fixture.model.Partido;
 import fixture.repository.filesystem.ObjectIO;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -13,26 +12,27 @@ import static java.util.Objects.nonNull;
 import java.util.stream.Collectors;
 
 public class PartidoRepository {
-    // Instancia de "base de datos"
+
+    // Instancia de la "base de datos"
     ObjectIO objectIO = new ObjectIO();
     ArrayList<Partido> partidos;
 
-    // Constructor. Guarda en memoria todos los datos
+    // Constructor
     public PartidoRepository() {
         partidos = (ArrayList<Partido>) objectIO.ReadObjectFromFile("partidos");
     }
 
-    // Recupero todos los datos
+    // Traer todos los partidos
     public ArrayList<Partido> findAll() {
         return partidos;
     }
 
-    // Busco por Fase
+    // Buscar por Fase
     public ArrayList<Partido> findBy(Fase fase) {
         return (ArrayList<Partido>) partidos.stream().filter(partido -> partido.getFase().equals(fase)).collect(Collectors.toList());
     }
 
-    // Busco por Fase y Grupo
+    // Buscar por Fase y Grupo
     public ArrayList<Partido> findBy(Fase fase, Grupo grupo) {
         ArrayList<Partido> partidosFase = findBy(fase);
         HashSet<Partido> partidosGrupo = new HashSet();
@@ -44,10 +44,11 @@ public class PartidoRepository {
                 }
             }
         }
-        
-        ArrayList<Partido> partidosGrupoList = (ArrayList<Partido>) partidosGrupo.stream().collect(Collectors.toList());
-        
-        Collections.sort(partidosGrupoList, new Comparator<Partido>() {
+        return (ArrayList<Partido>) partidosGrupo.stream().collect(Collectors.toList());
+    }
+    
+    public ArrayList<Partido> sortByDate(ArrayList<Partido> partidos){
+        Collections.sort(partidos, new Comparator<Partido>() {
             public int compare(Partido o1, Partido o2) {
                 if (o1.getFechaYHora()== null || o2.getFechaYHora() == null)
                   return 0;
@@ -55,10 +56,6 @@ public class PartidoRepository {
             }
           });
         
-        return partidosGrupoList;
-        
-        //return (ArrayList<Partido>) partidosFase.stream().filter(partido -> grupo.getEquipos().containsAll(grupo.getEquipos())).collect(Collectors.toList());
+        return partidos;
     }
-    
-    
 }
