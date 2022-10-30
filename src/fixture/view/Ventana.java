@@ -13,16 +13,6 @@ import java.util.ArrayList;
  */
 public class Ventana extends javax.swing.JFrame {
 
-    private ArrayList<Partido> partidos;
-
-    public ArrayList<Partido> getPartidos() {
-        return partidos;
-    }
-
-    public void setPartidos(ArrayList<Partido> partidos) {
-        this.partidos = partidos;
-    }
-
     /**
      * Creates new form Ventana
      */
@@ -43,9 +33,6 @@ public class Ventana extends javax.swing.JFrame {
         panelBody = new javax.swing.JPanel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoA = new javax.swing.JPanel();
-        panelContenedorGrupoA = new javax.swing.JPanel();
-        tituloGrupoA = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
         panelGrupoB = new javax.swing.JPanel();
         panelGrupoC = new javax.swing.JPanel();
         panelGrupoD = new javax.swing.JPanel();
@@ -87,27 +74,15 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoA.setMaximumSize(null);
         panelGrupoA.setMinimumSize(null);
 
-        panelContenedorGrupoA.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 0)));
-        panelContenedorGrupoA.setLayout(new java.awt.BorderLayout());
-
-        tituloGrupoA.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        tituloGrupoA.setForeground(new java.awt.Color(154, 16, 50));
-        tituloGrupoA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tituloGrupoA.setText("GRUPO A");
-        panelContenedorGrupoA.add(tituloGrupoA, java.awt.BorderLayout.NORTH);
-
-        jPanel3.setLayout(new java.awt.GridLayout(6, 1, 0, 2));
-        panelContenedorGrupoA.add(jPanel3, java.awt.BorderLayout.CENTER);
-
         javax.swing.GroupLayout panelGrupoALayout = new javax.swing.GroupLayout(panelGrupoA);
         panelGrupoA.setLayout(panelGrupoALayout);
         panelGrupoALayout.setHorizontalGroup(
             panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelContenedorGrupoA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 728, Short.MAX_VALUE)
         );
         panelGrupoALayout.setVerticalGroup(
             panelGrupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelContenedorGrupoA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
+            .addGap(0, 376, Short.MAX_VALUE)
         );
 
         tabbedPane.addTab("A", panelGrupoA);
@@ -312,7 +287,7 @@ public class Ventana extends javax.swing.JFrame {
         );
         panelBodyLayout.setVerticalGroup(
             panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 409, Short.MAX_VALUE)
+            .addComponent(tabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         tabbedPane.getAccessibleContext().setAccessibleName("tabB");
@@ -430,12 +405,10 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelSubtitulo;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JPanel panelBody;
-    private javax.swing.JPanel panelContenedorGrupoA;
     private javax.swing.JPanel panelCuartos;
     private javax.swing.JPanel panelFinal;
     private javax.swing.JPanel panelGrupoA;
@@ -452,6 +425,5 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JPanel panelSemifinales;
     private javax.swing.JPanel panelTercerPuesto;
     private javax.swing.JTabbedPane tabbedPane;
-    private javax.swing.JLabel tituloGrupoA;
     // End of variables declaration//GEN-END:variables
 }
