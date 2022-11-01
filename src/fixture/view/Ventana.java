@@ -54,6 +54,8 @@ public class Ventana extends javax.swing.JFrame {
         panelBody = new javax.swing.JPanel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoA = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jPanel1 = new javax.swing.JPanel();
         panelFila1 = new javax.swing.JPanel();
         lblFechaPartido1 = new javax.swing.JLabel();
         lblEquipoLocal1 = new javax.swing.JLabel();
@@ -63,7 +65,6 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_1 = new javax.swing.JFormattedTextField();
         golesField2_1 = new javax.swing.JFormattedTextField();
         guion1 = new javax.swing.JLabel();
-        labelLogo = new javax.swing.JLabel();
         panelFila2 = new javax.swing.JPanel();
         lblFechaPartido2 = new javax.swing.JLabel();
         lblEquipoLocal2 = new javax.swing.JLabel();
@@ -139,8 +140,9 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
         setBounds(new java.awt.Rectangle(0, 0, 1000, 800));
-        setMinimumSize(new java.awt.Dimension(1280, 720));
-        setSize(new java.awt.Dimension(1280, 720));
+        setMinimumSize(null);
+        setPreferredSize(new java.awt.Dimension(800, 800));
+        setSize(new java.awt.Dimension(800, 800));
 
         panelMain.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panelMain.setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -150,6 +152,8 @@ public class Ventana extends javax.swing.JFrame {
         tabbedPane.setMaximumSize(panelBody.getMinimumSize());
 
         panelGrupoA.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblFechaPartido1.setText("FechaPartido");
 
@@ -186,7 +190,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(golesField1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guion1, javax.swing.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .addComponent(guion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(golesField2_1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -215,11 +219,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelGrupoA.add(panelFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 560, 90));
-
-        labelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/grupoA.png"))); // NOI18N
-        labelLogo.setText("LOGO");
-        panelGrupoA.add(labelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 113, 250, 210));
+        jPanel1.add(panelFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 560, 90));
 
         lblFechaPartido2.setText("FechaPartido");
 
@@ -256,7 +256,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(golesField1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guion2, javax.swing.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .addComponent(guion2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(golesField2_2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -285,7 +285,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelGrupoA.add(panelFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 560, 90));
+        jPanel1.add(panelFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 560, 90));
 
         lblFechaPartido3.setText("FechaPartido");
 
@@ -322,7 +322,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(golesField1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guion3, javax.swing.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .addComponent(guion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(golesField2_3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -351,7 +351,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelGrupoA.add(panelFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 560, 90));
+        jPanel1.add(panelFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 560, 90));
 
         lblFechaPartido4.setText("FechaPartido");
 
@@ -388,7 +388,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(golesField1_4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guion4, javax.swing.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .addComponent(guion4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(golesField2_4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -417,7 +417,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelGrupoA.add(panelFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 560, 90));
+        jPanel1.add(panelFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 560, 90));
 
         lblFechaPartido5.setText("FechaPartido");
 
@@ -454,7 +454,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(golesField1_5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guion5, javax.swing.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .addComponent(guion5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(golesField2_5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -483,7 +483,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelGrupoA.add(panelFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 560, 90));
+        jPanel1.add(panelFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 560, 90));
 
         lblFechaPartido6.setText("FechaPartido");
 
@@ -520,7 +520,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(golesField1_6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guion6, javax.swing.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .addComponent(guion6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(golesField2_6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -549,7 +549,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelGrupoA.add(panelFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 560, 90));
+        jPanel1.add(panelFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 560, 90));
+
+        jScrollPane1.setViewportView(jPanel1);
+
+        panelGrupoA.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("A", panelGrupoA);
 
@@ -594,7 +598,7 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoC.setLayout(panelGrupoCLayout);
         panelGrupoCLayout.setHorizontalGroup(
             panelGrupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelGrupoCLayout.setVerticalGroup(
             panelGrupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -607,7 +611,7 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoD.setLayout(panelGrupoDLayout);
         panelGrupoDLayout.setHorizontalGroup(
             panelGrupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelGrupoDLayout.setVerticalGroup(
             panelGrupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -620,7 +624,7 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoE.setLayout(panelGrupoELayout);
         panelGrupoELayout.setHorizontalGroup(
             panelGrupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelGrupoELayout.setVerticalGroup(
             panelGrupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -633,7 +637,7 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoF.setLayout(panelGrupoFLayout);
         panelGrupoFLayout.setHorizontalGroup(
             panelGrupoFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelGrupoFLayout.setVerticalGroup(
             panelGrupoFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -646,7 +650,7 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoG.setLayout(panelGrupoGLayout);
         panelGrupoGLayout.setHorizontalGroup(
             panelGrupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelGrupoGLayout.setVerticalGroup(
             panelGrupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -659,7 +663,7 @@ public class Ventana extends javax.swing.JFrame {
         panelGrupoH.setLayout(panelGrupoHLayout);
         panelGrupoHLayout.setHorizontalGroup(
             panelGrupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelGrupoHLayout.setVerticalGroup(
             panelGrupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -672,7 +676,7 @@ public class Ventana extends javax.swing.JFrame {
         panelOctavos.setLayout(panelOctavosLayout);
         panelOctavosLayout.setHorizontalGroup(
             panelOctavosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelOctavosLayout.setVerticalGroup(
             panelOctavosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -685,7 +689,7 @@ public class Ventana extends javax.swing.JFrame {
         panelCuartos.setLayout(panelCuartosLayout);
         panelCuartosLayout.setHorizontalGroup(
             panelCuartosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelCuartosLayout.setVerticalGroup(
             panelCuartosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,7 +702,7 @@ public class Ventana extends javax.swing.JFrame {
         panelSemifinales.setLayout(panelSemifinalesLayout);
         panelSemifinalesLayout.setHorizontalGroup(
             panelSemifinalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelSemifinalesLayout.setVerticalGroup(
             panelSemifinalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -711,7 +715,7 @@ public class Ventana extends javax.swing.JFrame {
         panelTercerPuesto.setLayout(panelTercerPuestoLayout);
         panelTercerPuestoLayout.setHorizontalGroup(
             panelTercerPuestoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelTercerPuestoLayout.setVerticalGroup(
             panelTercerPuestoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -724,7 +728,7 @@ public class Ventana extends javax.swing.JFrame {
         panelFinal.setLayout(panelFinalLayout);
         panelFinalLayout.setHorizontalGroup(
             panelFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+            .addGap(0, 775, Short.MAX_VALUE)
         );
         panelFinalLayout.setVerticalGroup(
             panelFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -738,14 +742,12 @@ public class Ventana extends javax.swing.JFrame {
         panelBodyLayout.setHorizontalGroup(
             panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBodyLayout.createSequentialGroup()
-                .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 39, Short.MAX_VALUE))
+                .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 505, Short.MAX_VALUE))
         );
         panelBodyLayout.setVerticalGroup(
             panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBodyLayout.createSequentialGroup()
-                .addComponent(tabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         tabbedPane.getAccessibleContext().setAccessibleName("tabB");
@@ -771,12 +773,12 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(labelSubtitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(labelTitulo))
-                .addContainerGap(668, Short.MAX_VALUE))
+                .addContainerGap(212, Short.MAX_VALUE))
             .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelHeaderLayout.createSequentialGroup()
                     .addGap(16, 16, 16)
                     .addComponent(labelLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(1067, Short.MAX_VALUE)))
+                    .addContainerGap(611, Short.MAX_VALUE)))
         );
         panelHeaderLayout.setVerticalGroup(
             panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -808,7 +810,8 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(panelMainLayout.createSequentialGroup()
                 .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(panelBody, javax.swing.GroupLayout.DEFAULT_SIZE, 599, Short.MAX_VALUE))
+                .addComponent(panelBody, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -816,15 +819,14 @@ public class Ventana extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 1251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelMain, javax.swing.GroupLayout.DEFAULT_SIZE, 818, Short.MAX_VALUE)
+                .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 745, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -889,6 +891,8 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel guion4;
     private javax.swing.JLabel guion5;
     private javax.swing.JLabel guion6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
@@ -896,7 +900,6 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelLogo1;
     private javax.swing.JLabel labelLogo2;
     private javax.swing.JLabel labelSubtitulo;
