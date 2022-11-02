@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Fixture interactivo - Qatar 2022"/>
@@ -249,8 +249,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorA1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_A1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_A1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA1">
                                   <Properties>
@@ -362,8 +372,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorA2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_A2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_A2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA2">
                                   <Properties>
@@ -475,8 +495,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorA3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_A3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_A3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA3">
                                   <Properties>
@@ -588,8 +618,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorA4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_A4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_A4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA4">
                                   <Properties>
@@ -701,8 +741,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorA5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_A5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_A5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA5">
                                   <Properties>
@@ -814,8 +864,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorA6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_A6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_A6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA6">
                                   <Properties>
@@ -961,8 +1021,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorB1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_B1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_B1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionA7">
                                   <Properties>
@@ -1074,8 +1144,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorB2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_B2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_B2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionB2">
                                   <Properties>
@@ -1187,8 +1267,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorB3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_B3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_B3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionB3">
                                   <Properties>
@@ -1300,8 +1390,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorB4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_B4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_B4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionB4">
                                   <Properties>
@@ -1413,8 +1513,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorB5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_B5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_B5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionB5">
                                   <Properties>
@@ -1526,8 +1636,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorB6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_B6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_B6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionB6">
                                   <Properties>
@@ -1673,8 +1793,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorC1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_C1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_C1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionC1">
                                   <Properties>
@@ -1786,8 +1916,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorC2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_C2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_C2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionC2">
                                   <Properties>
@@ -1899,8 +2039,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorC3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_C3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_C3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionC3">
                                   <Properties>
@@ -2012,8 +2162,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorC4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_C4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_C4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionC4">
                                   <Properties>
@@ -2125,8 +2285,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorC5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_C5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_C5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionC5">
                                   <Properties>
@@ -2238,8 +2408,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorC6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_C6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_C6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionC6">
                                   <Properties>
@@ -2385,8 +2565,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorD1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_D1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_D1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionD1">
                                   <Properties>
@@ -2498,8 +2688,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorD2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_D2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_D2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionD2">
                                   <Properties>
@@ -2611,8 +2811,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorD3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_D3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_D3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionD3">
                                   <Properties>
@@ -2724,8 +2934,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorD4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_D4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_D4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionD4">
                                   <Properties>
@@ -2837,8 +3057,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorD5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_D5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_D5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionD5">
                                   <Properties>
@@ -2950,8 +3180,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorD6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_D6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_D6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionD6">
                                   <Properties>
@@ -3097,8 +3337,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorE1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_E1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_E1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionE1">
                                   <Properties>
@@ -3210,8 +3460,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorE2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_E2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_E2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionE2">
                                   <Properties>
@@ -3323,8 +3583,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorE3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_E3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_E3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionE3">
                                   <Properties>
@@ -3436,8 +3706,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorE4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_E4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_E4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionE4">
                                   <Properties>
@@ -3549,8 +3829,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorE5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_E5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_E5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionE5">
                                   <Properties>
@@ -3662,8 +3952,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorE6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_E6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_E6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionE6">
                                   <Properties>
@@ -3809,8 +4109,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorF1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_F1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_F1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionF1">
                                   <Properties>
@@ -3922,8 +4232,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorF2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_F2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_F2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionF2">
                                   <Properties>
@@ -4035,8 +4355,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorF3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_F3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_F3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionF3">
                                   <Properties>
@@ -4148,8 +4478,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorF4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_F4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_F4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionF4">
                                   <Properties>
@@ -4261,8 +4601,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorF5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_F5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_F5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionF5">
                                   <Properties>
@@ -4374,8 +4724,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorF6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_F6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_F6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionF6">
                                   <Properties>
@@ -4521,8 +4881,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorG1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_G1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_G1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionG1">
                                   <Properties>
@@ -4634,8 +5004,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorG2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_G2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_G2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionG2">
                                   <Properties>
@@ -4747,8 +5127,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorG3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_G3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_G3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionG3">
                                   <Properties>
@@ -4860,8 +5250,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorG4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_G4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_G4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionG4">
                                   <Properties>
@@ -4973,8 +5373,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorG5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_G5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_G5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionG5">
                                   <Properties>
@@ -5086,8 +5496,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorG6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_G6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_G6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionG6">
                                   <Properties>
@@ -5233,8 +5653,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorH1">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_H1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_H1">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionH1">
                                   <Properties>
@@ -5346,8 +5776,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorH2">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_H2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_H2">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionH2">
                                   <Properties>
@@ -5459,8 +5899,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorH3">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_H3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_H3">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionAH3">
                                   <Properties>
@@ -5572,8 +6022,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorH4">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_H4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_H4">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionH4">
                                   <Properties>
@@ -5685,8 +6145,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorH5">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_H5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_H5">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionH5">
                                   <Properties>
@@ -5798,8 +6268,18 @@
                                 <Component class="javax.swing.JSeparator" name="jSeparatorH6">
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField1_H6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JFormattedTextField" name="golesField2_H6">
+                                  <Properties>
+                                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                                      <Format format="#0" subtype="-1" type="0"/>
+                                    </Property>
+                                  </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="guionH6">
                                   <Properties>

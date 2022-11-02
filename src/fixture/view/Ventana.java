@@ -564,6 +564,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioA1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioA1.setText("NombreEstadio");
 
+        golesField1_A1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_A1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA1.setText("-");
 
@@ -629,6 +633,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioA2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioA2.setText("NombreEstadio");
+
+        golesField1_A2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_A2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA2.setText("-");
@@ -696,6 +704,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioA3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioA3.setText("NombreEstadio");
 
+        golesField1_A3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_A3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionA3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA3.setText("-");
 
@@ -761,6 +773,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioA4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioA4.setText("NombreEstadio");
+
+        golesField1_A4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_A4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA4.setText("-");
@@ -828,6 +844,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioA5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioA5.setText("NombreEstadio");
 
+        golesField1_A5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_A5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionA5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA5.setText("-");
 
@@ -893,6 +913,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioA6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioA6.setText("NombreEstadio");
+
+        golesField1_A6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_A6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA6.setText("-");
@@ -970,6 +994,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioB1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioB1.setText("NombreEstadio");
 
+        golesField1_B1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_B1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionA7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA7.setText("-");
 
@@ -1035,6 +1063,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioB2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioB2.setText("NombreEstadio");
+
+        golesField1_B2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_B2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionB2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionB2.setText("-");
@@ -1102,6 +1134,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioB3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioB3.setText("NombreEstadio");
 
+        golesField1_B3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_B3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionB3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionB3.setText("-");
 
@@ -1167,6 +1203,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioB4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioB4.setText("NombreEstadio");
+
+        golesField1_B4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_B4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionB4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionB4.setText("-");
@@ -1234,6 +1274,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioB5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioB5.setText("NombreEstadio");
 
+        golesField1_B5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_B5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionB5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionB5.setText("-");
 
@@ -1299,6 +1343,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioB6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioB6.setText("NombreEstadio");
+
+        golesField1_B6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_B6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionB6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionB6.setText("-");
@@ -1376,6 +1424,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioC1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioC1.setText("NombreEstadio");
 
+        golesField1_C1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_C1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionC1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionC1.setText("-");
 
@@ -1441,6 +1493,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioC2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioC2.setText("NombreEstadio");
+
+        golesField1_C2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_C2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionC2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionC2.setText("-");
@@ -1508,6 +1564,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioC3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioC3.setText("NombreEstadio");
 
+        golesField1_C3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_C3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionC3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionC3.setText("-");
 
@@ -1573,6 +1633,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioC4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioC4.setText("NombreEstadio");
+
+        golesField1_C4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_C4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionC4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionC4.setText("-");
@@ -1640,6 +1704,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioC5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioC5.setText("NombreEstadio");
 
+        golesField1_C5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_C5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionC5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionC5.setText("-");
 
@@ -1705,6 +1773,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioC6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioC6.setText("NombreEstadio");
+
+        golesField1_C6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_C6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionC6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionC6.setText("-");
@@ -1782,6 +1854,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioD1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioD1.setText("NombreEstadio");
 
+        golesField1_D1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_D1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionD1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionD1.setText("-");
 
@@ -1847,6 +1923,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioD2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioD2.setText("NombreEstadio");
+
+        golesField1_D2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_D2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionD2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionD2.setText("-");
@@ -1914,6 +1994,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioD3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioD3.setText("NombreEstadio");
 
+        golesField1_D3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_D3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionD3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionD3.setText("-");
 
@@ -1979,6 +2063,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioD4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioD4.setText("NombreEstadio");
+
+        golesField1_D4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_D4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionD4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionD4.setText("-");
@@ -2046,6 +2134,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioD5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioD5.setText("NombreEstadio");
 
+        golesField1_D5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_D5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionD5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionD5.setText("-");
 
@@ -2111,6 +2203,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioD6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioD6.setText("NombreEstadio");
+
+        golesField1_D6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_D6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionD6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionD6.setText("-");
@@ -2188,6 +2284,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioE1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioE1.setText("NombreEstadio");
 
+        golesField1_E1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_E1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionE1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionE1.setText("-");
 
@@ -2253,6 +2353,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioE2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioE2.setText("NombreEstadio");
+
+        golesField1_E2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_E2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionE2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionE2.setText("-");
@@ -2320,6 +2424,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioE3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioE3.setText("NombreEstadio");
 
+        golesField1_E3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_E3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionE3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionE3.setText("-");
 
@@ -2385,6 +2493,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioE4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioE4.setText("NombreEstadio");
+
+        golesField1_E4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_E4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionE4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionE4.setText("-");
@@ -2452,6 +2564,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioE5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioE5.setText("NombreEstadio");
 
+        golesField1_E5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_E5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionE5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionE5.setText("-");
 
@@ -2517,6 +2633,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioE6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioE6.setText("NombreEstadio");
+
+        golesField1_E6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_E6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionE6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionE6.setText("-");
@@ -2594,6 +2714,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioF1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioF1.setText("NombreEstadio");
 
+        golesField1_F1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_F1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionF1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionF1.setText("-");
 
@@ -2659,6 +2783,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioF2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioF2.setText("NombreEstadio");
+
+        golesField1_F2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_F2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionF2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionF2.setText("-");
@@ -2726,6 +2854,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioF3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioF3.setText("NombreEstadio");
 
+        golesField1_F3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_F3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionF3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionF3.setText("-");
 
@@ -2791,6 +2923,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioF4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioF4.setText("NombreEstadio");
+
+        golesField1_F4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_F4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionF4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionF4.setText("-");
@@ -2858,6 +2994,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioF5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioF5.setText("NombreEstadio");
 
+        golesField1_F5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_F5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionF5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionF5.setText("-");
 
@@ -2923,6 +3063,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioF6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioF6.setText("NombreEstadio");
+
+        golesField1_F6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_F6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionF6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionF6.setText("-");
@@ -3000,6 +3144,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioG1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioG1.setText("NombreEstadio");
 
+        golesField1_G1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_G1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionG1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionG1.setText("-");
 
@@ -3065,6 +3213,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioG2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioG2.setText("NombreEstadio");
+
+        golesField1_G2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_G2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionG2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionG2.setText("-");
@@ -3132,6 +3284,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioG3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioG3.setText("NombreEstadio");
 
+        golesField1_G3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_G3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionG3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionG3.setText("-");
 
@@ -3197,6 +3353,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioG4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioG4.setText("NombreEstadio");
+
+        golesField1_G4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_G4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionG4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionG4.setText("-");
@@ -3264,6 +3424,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioG5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioG5.setText("NombreEstadio");
 
+        golesField1_G5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_G5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionG5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionG5.setText("-");
 
@@ -3329,6 +3493,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioG6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioG6.setText("NombreEstadio");
+
+        golesField1_G6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_G6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionG6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionG6.setText("-");
@@ -3406,6 +3574,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioH1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioH1.setText("NombreEstadio");
 
+        golesField1_H1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_H1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionH1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionH1.setText("-");
 
@@ -3471,6 +3643,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioH2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioH2.setText("NombreEstadio");
+
+        golesField1_H2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_H2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionH2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionH2.setText("-");
@@ -3538,6 +3714,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioH3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioH3.setText("NombreEstadio");
 
+        golesField1_H3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_H3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionAH3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionAH3.setText("-");
 
@@ -3603,6 +3783,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioH4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioH4.setText("NombreEstadio");
+
+        golesField1_H4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_H4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionH4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionH4.setText("-");
@@ -3670,6 +3854,10 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioH5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioH5.setText("NombreEstadio");
 
+        golesField1_H5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_H5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         guionH5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionH5.setText("-");
 
@@ -3735,6 +3923,10 @@ public class Ventana extends javax.swing.JFrame {
 
         lblNombreEstadioH6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblNombreEstadioH6.setText("NombreEstadio");
+
+        golesField1_H6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_H6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionH6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionH6.setText("-");
