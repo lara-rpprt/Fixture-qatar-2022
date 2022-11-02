@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class GruposMigrations {
 
-    Grupo[] grupos = {
+    static Grupo[] grupos = {
         new Grupo(0, 'a'),
         new Grupo(1, 'b'),
         new Grupo(2, 'c'),
@@ -17,7 +17,7 @@ public class GruposMigrations {
         new Grupo(6, 'g'),
         new Grupo(7, 'h'),};
 
-    public void up() {
+    public static void up() {
         ObjectIO objectIO = new ObjectIO();
 
         ArrayList<Equipo> equipos = (ArrayList<Equipo>) objectIO.ReadObjectFromFile("equipos");
