@@ -16,6 +16,9 @@ import fixture.view.VentanaFaseGrupos;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import javax.swing.JLabel;
 
@@ -86,6 +89,13 @@ public class GrupoA extends javax.swing.JFrame {
         
         Grupo grupoA = gruposRepository.get('a');
         ArrayList<Partido> partidos = partidosRepository.findBy(Fase.DE_GRUPOS, grupoA);
+        
+        Collections.sort(partidos, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido p1, Partido p2) {
+                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1 ; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            }
+        });
         
         
         int i = 0;
@@ -417,6 +427,7 @@ public class GrupoA extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 191, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

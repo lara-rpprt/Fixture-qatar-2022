@@ -2,6 +2,7 @@ package fixture.view;
 
 import fixture.view.gruposview.GrupoA;
 import fixture.view.gruposview.GrupoB;
+import fixture.view.gruposview.VentanaAlter2;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 
@@ -108,11 +109,12 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 203, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         close();
-        VentanaAlter ventana = new VentanaAlter();
+        VentanaAlter2 ventana = new VentanaAlter2();
         ventana.setVisible(true);
     }//GEN-LAST:event_jButton9ActionPerformed
 
