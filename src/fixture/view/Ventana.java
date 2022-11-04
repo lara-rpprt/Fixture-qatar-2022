@@ -106,6 +106,18 @@ public class Ventana extends javax.swing.JFrame {
         lblEquipoVisitante3 = new javax.swing.JLabel();
         lblEquipoVisitante4 = new javax.swing.JLabel();
         lblEquipoVisitante5 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
         panelHeader = new javax.swing.JPanel();
         labelTitulo = new javax.swing.JLabel();
         labelSubtitulo = new javax.swing.JLabel();
@@ -400,6 +412,47 @@ public class Ventana extends javax.swing.JFrame {
         lblEquipoVisitante5.setText("Equipo Visitante");
         panelGrupoA.add(lblEquipoVisitante5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, -1, -1));
 
+        jTextField1.setText("jTextField1");
+        panelGrupoA.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, -1, -1));
+
+        jTextField2.setText("jTextField2");
+        panelGrupoA.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, -1));
+
+        jTextField3.setText("jTextField1");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        panelGrupoA.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, -1, -1));
+
+        jTextField4.setText("jTextField1");
+        panelGrupoA.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
+
+        jTextField5.setText("jTextField1");
+        panelGrupoA.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, -1, -1));
+
+        jTextField6.setText("jTextField1");
+        panelGrupoA.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, -1, -1));
+
+        jTextField7.setText("jTextField1");
+        panelGrupoA.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, -1));
+
+        jTextField8.setText("jTextField1");
+        panelGrupoA.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+
+        jTextField9.setText("jTextField1");
+        panelGrupoA.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, -1));
+
+        jTextField10.setText("jTextField1");
+        panelGrupoA.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, -1, -1));
+
+        jTextField11.setText("jTextField1");
+        panelGrupoA.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, -1));
+
+        jTextField12.setText("jTextField1");
+        panelGrupoA.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, -1));
+
         tabbedPane.addTab("A", panelGrupoA);
 
         javax.swing.GroupLayout panelBodyLayout = new javax.swing.GroupLayout(panelBody);
@@ -501,6 +554,10 @@ public class Ventana extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -547,6 +604,18 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelLogo1;
     private javax.swing.JLabel labelLogo2;

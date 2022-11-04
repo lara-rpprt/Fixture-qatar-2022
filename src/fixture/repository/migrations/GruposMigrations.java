@@ -7,17 +7,6 @@ import java.util.ArrayList;
 
 public class GruposMigrations {
 
-    static  Grupo[] grupos = {
-        new Grupo(0, 'a'),
-        new Grupo(1, 'b'),
-        new Grupo(2, 'c'),
-        new Grupo(3, 'd'),
-        new Grupo(4, 'e'),
-        new Grupo(5, 'f'),
-        new Grupo(6, 'g'),
-        new Grupo(7, 'h'),};
-    
-
     public static void up() {
         ObjectIO objectIO = new ObjectIO();
 
@@ -72,6 +61,16 @@ public class GruposMigrations {
         equiposGrupoH.add(equipos.stream().filter(equipo -> equipo.getId().equals("GHANA")).findAny().orElse(null));
         equiposGrupoH.add(equipos.stream().filter(equipo -> equipo.getId().equals("PORTUGAL")).findAny().orElse(null));
 
+        Grupo[] grupos = {
+            new Grupo(0, 'a'),
+            new Grupo(1, 'b'),
+            new Grupo(2, 'c'),
+            new Grupo(3, 'd'),
+            new Grupo(4, 'e'),
+            new Grupo(5, 'f'),
+            new Grupo(6, 'g'),
+            new Grupo(7, 'h')};
+          
         grupos[0].setEquipos(equiposGrupoA);
         grupos[1].setEquipos(equiposGrupoB);
         grupos[2].setEquipos(equiposGrupoC);
