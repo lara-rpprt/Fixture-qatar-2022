@@ -2,6 +2,7 @@ package fixture.view;
 
 import fixture.view.gruposview.GrupoA;
 import fixture.view.gruposview.GrupoB;
+import fixture.view.gruposview.GrupoConstructor;
 import fixture.view.gruposview.VentanaAlter2;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
@@ -52,11 +53,9 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(383, 510));
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/qatar_2022_logo.png"))); // NOI18N
         jLabel1.setText("logo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 6, 151, -1));
 
         jButton1.setText("Grupo A");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +63,6 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 251, -1, -1));
 
         jButton2.setText("Grupo B");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +70,6 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 295, -1, -1));
 
         jButton3.setText("Grupo C");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -80,22 +77,16 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 339, -1, -1));
 
         jButton4.setText("Grupo D");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 377, -1, -1));
 
         jButton5.setText("Grupo E");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(253, 251, -1, -1));
 
         jButton6.setText("Grupo F");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 295, -1, -1));
 
         jButton7.setText("Grupo G");
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 339, -1, -1));
 
         jButton8.setText("Grupo H");
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 377, -1, -1));
 
         jButton9.setText("Menu Principal");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -103,10 +94,74 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 444, -1, -1));
 
         jLabel2.setText("Fase de Grupos");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 203, -1, -1));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(122, 122, 122)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addComponent(jButton1)
+                        .addGap(120, 120, 120)
+                        .addComponent(jButton5))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addComponent(jButton4)
+                        .addGap(119, 119, 119)
+                        .addComponent(jButton8))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton2)
+                                .addGap(121, 121, 121)
+                                .addComponent(jButton6))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton3)
+                                .addGap(119, 119, 119)
+                                .addComponent(jButton7))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jButton9)))
+                .addGap(73, 73, 73))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
+                    .addComponent(jButton5))
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton6)
+                    .addComponent(jButton2))
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3)
+                    .addComponent(jButton7))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton4)
+                    .addComponent(jButton8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(jButton9)
+                .addGap(19, 19, 19))
+        );
 
         pack();
         setLocationRelativeTo(null);
@@ -120,20 +175,22 @@ public class VentanaFaseGrupos extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         close();
-        GrupoA ventanaGrupoA = new GrupoA();
-        ventanaGrupoA.setVisible(true);
+        GrupoConstructor grupoA = new GrupoConstructor('a');
+        grupoA.setVisible(true);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         close();
-        GrupoB ventanaGrupoB = new GrupoB();
-        ventanaGrupoB.setVisible(true);
+        GrupoConstructor grupoB = new GrupoConstructor('b');
+        grupoB.setVisible(true);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
+        close();
+        GrupoConstructor grupoC = new GrupoConstructor('c');
+        grupoC.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

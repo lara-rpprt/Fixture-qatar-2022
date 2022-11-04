@@ -4,7 +4,6 @@
  */
 package fixture.view.gruposview;
 
-
 import fixture.model.Fase;
 import fixture.model.Grupo;
 import fixture.model.Partido;
@@ -25,31 +24,41 @@ import javax.swing.JLabel;
  *
  * @author Nico
  */
-public class GrupoA extends javax.swing.JFrame {
+public class GrupoConstructor extends javax.swing.JFrame {
 
     /**
-     * Creates new form GrupoA
+     * Creates new form GrupoConstructor
      */
-    private PartidoRepository partidosRepository;
-    private GrupoRepository gruposRepository;
-    
-    public GrupoA() {
+    char letraGrupo;
+    PartidoRepository partidoRepository;
+    GrupoRepository grupoRepository;
+    //
+    public GrupoConstructor(char letra) {
+        this.letraGrupo = letra;
         initComponents();
         cargarEquipos();
-        cargarEquipoA();
+        inicializarGrupo(letraGrupo);
+    }
+
+    private GrupoConstructor() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     private void close(){
     WindowEvent closeWindow = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
     Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(closeWindow);
     }
-    
-    public void cargarEquipos(){
-       PartidosMigrations.up();
-       GruposMigrations.up();
-       partidosRepository = new PartidoRepository();
-       gruposRepository = new GrupoRepository();
-    }
-    public void cargarEquipoA(){
+    private void cargarEquipos(){
+        PartidosMigrations.up();
+        GruposMigrations.up();
+        partidoRepository = new PartidoRepository();
+        grupoRepository = new GrupoRepository();
+    };
+    private void inicializarGrupo(char letraGrupo){
+        Grupo grupo = grupoRepository.get(letraGrupo);
+        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupo);
+        String titulo = "Grupo " + letraGrupo;
+        jLabelTitulo.setText(titulo.toUpperCase());
+        //
         List<JLabel> equiposVisit; 
         equiposVisit = new ArrayList();
         List<JLabel> equiposLocal;
@@ -58,6 +67,7 @@ public class GrupoA extends javax.swing.JFrame {
         estadios = new ArrayList();
         List<JLabel> fechas;
         fechas= new ArrayList();
+        //
         equiposVisit.add(equipoVisit1);
         equiposVisit.add(equipoVisit2);
         equiposVisit.add(equipoVisit3);
@@ -85,18 +95,15 @@ public class GrupoA extends javax.swing.JFrame {
         fechas.add(fechaPartido4);
         fechas.add(fechaPartido5);
         fechas.add(fechaPartido6);
-        
-        Grupo grupoA = gruposRepository.get('a');
-        ArrayList<Partido> partidos = partidosRepository.findBy(Fase.DE_GRUPOS, grupoA);
-        
-        Collections.sort(partidos, new Comparator<Partido>() {
+        //
+        Collections.sort(partidos,new Comparator<Partido>() {
             @Override
-            public int compare(Partido p1, Partido p2) {
-                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1 ; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            public int compare(Partido o1, Partido o2) {
+                return o1.getFechaYHora().isBefore(o2.getFechaYHora()) ? -1 :1 ; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
             }
         });
         
-        
+        //
         int i = 0;
         JLabel txt = new JLabel();
         for (Partido partido : partidos) {
@@ -108,6 +115,7 @@ public class GrupoA extends javax.swing.JFrame {
         }
         
         
+    
     };
 
     /**
@@ -119,7 +127,6 @@ public class GrupoA extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        logoTop = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         equipoLocal1 = new javax.swing.JLabel();
         equipoLocal2 = new javax.swing.JLabel();
@@ -151,17 +158,11 @@ public class GrupoA extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelTitulo = new javax.swing.JLabel();
+        logoTop = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(430, 670));
         setResizable(false);
-        setSize(new java.awt.Dimension(430, 670));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        logoTop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/qatar_2022_logo.png"))); // NOI18N
-        logoTop.setText("jLabel1");
-        getContentPane().add(logoTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 6, 151, -1));
 
         jPanel1.setBackground(new java.awt.Color(225, 250, 250));
 
@@ -411,22 +412,57 @@ public class GrupoA extends javax.swing.JFrame {
                 .addGap(18, 18, 18))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 390));
-
         jButton1.setText("Atras");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 6, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel1.setText("Grupo A");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 191, -1, -1));
+        jLabelTitulo.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabelTitulo.setText("Grupo A");
+
+        logoTop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/qatar_2022_logo.png"))); // NOI18N
+        logoTop.setText("jLabel1");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jButton1)
+                            .addGap(41, 41, 41)
+                            .addComponent(logoTop, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(146, 146, 146)
+                            .addComponent(jLabelTitulo))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(4, 4, 4)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 632, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 14, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton1)
+                        .addComponent(logoTop))
+                    .addGap(6, 6, 6)
+                    .addComponent(jLabelTitulo)
+                    .addGap(10, 10, 10)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 14, Short.MAX_VALUE)))
+        );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -452,20 +488,20 @@ public class GrupoA extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GrupoA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrupoConstructor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GrupoA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrupoConstructor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GrupoA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrupoConstructor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GrupoA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrupoConstructor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GrupoA().setVisible(true);
+                new GrupoConstructor().setVisible(true);
             }
         });
     }
@@ -496,7 +532,7 @@ public class GrupoA extends javax.swing.JFrame {
     private javax.swing.JLabel fechaPartido5;
     private javax.swing.JLabel fechaPartido6;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
