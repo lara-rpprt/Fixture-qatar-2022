@@ -19,6 +19,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.swing.ImageIcon;
+import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
 
 /**
@@ -29,9 +30,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private ImageIcon logoImage;
 
-    /**
-     * Creates new form Ventana
-     */
+    private ArrayList<Integer> idsPartidosGrupoA = new ArrayList<Integer>();
+
+    private JFormattedTextField [] golesLocalGrupoA = new  JFormattedTextField[6];
+    
+    private JFormattedTextField [] golesVisitantesGrupoA = new  JFormattedTextField[6];
+       
     public Ventana() {
         initComponents();
 
@@ -123,6 +127,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_A6 = new javax.swing.JFormattedTextField();
         golesField2_A6 = new javax.swing.JFormattedTextField();
         guionA6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         panelGrupoB = new javax.swing.JPanel();
         jScrollPaneB = new javax.swing.JScrollPane();
         panelInteriorB = new javax.swing.JPanel();
@@ -972,6 +977,14 @@ public class Ventana extends javax.swing.JFrame {
         jScrollPaneA.setViewportView(panelInteriorA);
 
         panelGrupoA.add(jScrollPaneA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
+
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        panelGrupoA.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
 
         tabbedPane.addTab("A", panelGrupoA);
 
@@ -4097,6 +4110,27 @@ public class Ventana extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        GrupoRepository grupoA = new GrupoRepository();
+        Grupo A =  grupoA.get('a');
+        
+
+        
+        
+       int i = 0; 
+       for(Integer id : idsPartidosGrupoA){
+           for(Partido p : partidoRepository.findBy(Fase.DE_GRUPOS, A)){
+               if(p.getId() == id ){
+                   p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoA[i].getText()));
+                   p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoA[i].getText()));
+               }
+           }
+           i++;
+       }        
+       partidoRepository.guardarPartidosEnArchivo();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4280,6 +4314,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel guionH4;
     private javax.swing.JLabel guionH5;
     private javax.swing.JLabel guionH6;
+    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPaneA;
     private javax.swing.JScrollPane jScrollPaneB;
     private javax.swing.JScrollPane jScrollPaneC;
@@ -4641,6 +4676,20 @@ public class Ventana extends javax.swing.JFrame {
             lblEquipoVisitanteA5,
             lblEquipoVisitanteA6,};
 
+        golesLocalGrupoA[0] = golesField1_A1;
+        golesLocalGrupoA[1] = golesField1_A2;
+        golesLocalGrupoA[2] = golesField1_A3;
+        golesLocalGrupoA[3] = golesField1_A4;
+        golesLocalGrupoA[4] = golesField1_A5;
+        golesLocalGrupoA[5] = golesField1_A6;
+
+        golesVisitantesGrupoA[0] = golesField2_A1;
+        golesVisitantesGrupoA[1] = golesField2_A2;
+        golesVisitantesGrupoA[2] = golesField2_A3;
+        golesVisitantesGrupoA[3] = golesField2_A4;
+        golesVisitantesGrupoA[4] = golesField2_A5;
+        golesVisitantesGrupoA[5] = golesField2_A6;
+
         Grupo grupoA = grupoRepository.get('a');
 
         ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoA);
@@ -4659,7 +4708,8 @@ public class Ventana extends javax.swing.JFrame {
         int i = 0;
         for (Partido p : partidosOrdenados) {
 
-//            fechasA[i].setText(p.getFechaYHora().toString());
+            idsPartidosGrupoA.add(p.getId());
+            
             // Fecha con formato
             fechasA[i].setText(p.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu - hh:mm")));
 
@@ -4688,6 +4738,9 @@ public class Ventana extends javax.swing.JFrame {
             equiposVisitantes[i].setIcon(imagenEquipoVisitanteAchicada);
             equiposVisitantes[i].setHorizontalTextPosition(JLabel.LEFT);
 
+            golesLocalGrupoA[i].setText(String.valueOf(p.getGolesEquipo1()));
+            golesVisitantesGrupoA[i].setText(String.valueOf(p.getGolesEquipo2()));
+            
             i++;
         }
     }
@@ -5306,7 +5359,7 @@ public class Ventana extends javax.swing.JFrame {
     private void cargarRepositorios() {
 
         GruposMigrations.up();
-        PartidosMigrations.up();
+        //PartidosMigrations.up();
 
         grupoRepository = new GrupoRepository();
         partidoRepository = new PartidoRepository();
