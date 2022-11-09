@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
 
 /**
@@ -32,6 +33,10 @@ public class GrupoConstructor extends javax.swing.JFrame {
     char letraGrupo;
     PartidoRepository partidoRepository;
     GrupoRepository grupoRepository;
+    ArrayList<Integer> idDePartido = new ArrayList<Integer>();
+    ArrayList<JFormattedTextField> golesEquipoLocal = new ArrayList();
+    ArrayList<JFormattedTextField> golesEquipoVisit = new ArrayList();
+    
     //
     public GrupoConstructor(char letra) {
         this.letraGrupo = letra;
@@ -48,8 +53,9 @@ public class GrupoConstructor extends javax.swing.JFrame {
     Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(closeWindow);
     }
     private void cargarEquipos(){
-        PartidosMigrations.up();
-        GruposMigrations.up();
+        //PartidosMigrations.up();
+        
+        //GruposMigrations.up();
         partidoRepository = new PartidoRepository();
         grupoRepository = new GrupoRepository();
     };
@@ -96,6 +102,21 @@ public class GrupoConstructor extends javax.swing.JFrame {
         fechas.add(fechaPartido5);
         fechas.add(fechaPartido6);
         //
+        golesEquipoLocal.add(golesEquipoLocal1);
+        golesEquipoLocal.add(golesEquipoLocal2);
+        golesEquipoLocal.add(golesEquipoLocal3);
+        golesEquipoLocal.add(golesEquipoLocal4);
+        golesEquipoLocal.add(golesEquipoLocal5);
+        golesEquipoLocal.add(golesEquipoLocal6);
+        //
+        golesEquipoVisit.add(golesEquipoVisit1);
+        golesEquipoVisit.add(golesEquipoVisit2);
+        golesEquipoVisit.add(golesEquipoVisit3);
+        golesEquipoVisit.add(golesEquipoVisit4);
+        golesEquipoVisit.add(golesEquipoVisit5);
+        golesEquipoVisit.add(golesEquipoVisit6);
+        //
+        //
         Collections.sort(partidos,new Comparator<Partido>() {
             @Override
             public int compare(Partido o1, Partido o2) {
@@ -107,10 +128,19 @@ public class GrupoConstructor extends javax.swing.JFrame {
         int i = 0;
         JLabel txt = new JLabel();
         for (Partido partido : partidos) {
+            idDePartido.add(partido.getId());
+            
             equiposVisit.get(i).setText(partido.getEquipo2().getNombre());
             equiposLocal.get(i).setText(partido.getEquipo1().getNombre());
+            
             estadios.get(i).setText(partido.getEstadio().getNombre());
-            fechas.get(i++).setText(partido.getFechaYHora().toString());
+            
+            fechas.get(i).setText(partido.getFechaYHora().toString());
+            
+            golesEquipoLocal.get(i).setText(String.valueOf(partido.getGolesEquipo1()));
+            golesEquipoVisit.get(i).setText(String.valueOf(partido.getGolesEquipo2()));
+            
+            i++;
             
         }
         
@@ -138,8 +168,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
         equipoVisit1 = new javax.swing.JLabel();
         estadioPartido1 = new javax.swing.JLabel();
         jSeparatorA1 = new javax.swing.JSeparator();
-        golesField1_A1 = new javax.swing.JFormattedTextField();
-        golesField2_A1 = new javax.swing.JFormattedTextField();
+        golesEquipoLocal1 = new javax.swing.JFormattedTextField();
+        golesEquipoVisit1 = new javax.swing.JFormattedTextField();
         guionA1 = new javax.swing.JLabel();
         panelAFila2 = new javax.swing.JPanel();
         fechaPartido2 = new javax.swing.JLabel();
@@ -147,8 +177,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
         equipoVisit2 = new javax.swing.JLabel();
         estadioPartido2 = new javax.swing.JLabel();
         jSeparatorA2 = new javax.swing.JSeparator();
-        golesField1_A2 = new javax.swing.JFormattedTextField();
-        golesField2_A2 = new javax.swing.JFormattedTextField();
+        golesEquipoLocal2 = new javax.swing.JFormattedTextField();
+        golesEquipoVisit2 = new javax.swing.JFormattedTextField();
         guionA2 = new javax.swing.JLabel();
         panelAFila3 = new javax.swing.JPanel();
         fechaPartido3 = new javax.swing.JLabel();
@@ -156,8 +186,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
         equipoVisit3 = new javax.swing.JLabel();
         estadioPartido3 = new javax.swing.JLabel();
         jSeparatorA3 = new javax.swing.JSeparator();
-        golesField1_A3 = new javax.swing.JFormattedTextField();
-        golesField2_A3 = new javax.swing.JFormattedTextField();
+        golesEquipoLocal3 = new javax.swing.JFormattedTextField();
+        golesEquipoVisit3 = new javax.swing.JFormattedTextField();
         guionA3 = new javax.swing.JLabel();
         panelAFila4 = new javax.swing.JPanel();
         fechaPartido4 = new javax.swing.JLabel();
@@ -165,8 +195,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
         equipoVisit4 = new javax.swing.JLabel();
         estadioPartido4 = new javax.swing.JLabel();
         jSeparatorA4 = new javax.swing.JSeparator();
-        golesField1_A4 = new javax.swing.JFormattedTextField();
-        golesField2_A4 = new javax.swing.JFormattedTextField();
+        golesEquipoLocal4 = new javax.swing.JFormattedTextField();
+        golesEquipoVisit4 = new javax.swing.JFormattedTextField();
         guionA4 = new javax.swing.JLabel();
         panelAFila5 = new javax.swing.JPanel();
         fechaPartido5 = new javax.swing.JLabel();
@@ -174,8 +204,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
         equipoVisit5 = new javax.swing.JLabel();
         estadioPartido5 = new javax.swing.JLabel();
         jSeparatorA5 = new javax.swing.JSeparator();
-        golesField1_A5 = new javax.swing.JFormattedTextField();
-        golesField2_A5 = new javax.swing.JFormattedTextField();
+        golesEquipoLocal5 = new javax.swing.JFormattedTextField();
+        golesEquipoVisit5 = new javax.swing.JFormattedTextField();
         guionA5 = new javax.swing.JLabel();
         panelAFila6 = new javax.swing.JPanel();
         fechaPartido6 = new javax.swing.JLabel();
@@ -183,9 +213,10 @@ public class GrupoConstructor extends javax.swing.JFrame {
         equipoVisit6 = new javax.swing.JLabel();
         estadioPartido6 = new javax.swing.JLabel();
         jSeparatorA6 = new javax.swing.JSeparator();
-        golesField1_A6 = new javax.swing.JFormattedTextField();
-        golesField2_A6 = new javax.swing.JFormattedTextField();
+        golesEquipoLocal6 = new javax.swing.JFormattedTextField();
+        golesEquipoVisit6 = new javax.swing.JFormattedTextField();
         guionA6 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -222,9 +253,14 @@ public class GrupoConstructor extends javax.swing.JFrame {
         estadioPartido1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioPartido1.setText("NombreEstadio");
 
-        golesField1_A1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                golesEquipoLocal1ActionPerformed(evt);
+            }
+        });
 
-        golesField2_A1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoVisit1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA1.setText("-");
@@ -244,11 +280,11 @@ public class GrupoConstructor extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAFila1Layout.createSequentialGroup()
                         .addComponent(equipoLocal1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_A1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoLocal1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guionA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_A1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoVisit1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(equipoVisit1)))
                 .addContainerGap())
@@ -267,8 +303,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
                         .addGroup(panelAFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipoVisit1)
                             .addComponent(equipoLocal1)
-                            .addComponent(golesField1_A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoLocal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoVisit1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionA1))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -276,6 +312,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
         );
 
         jPanel2.add(panelAFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 530, -1));
+
+        panelAFila2.setPreferredSize(new java.awt.Dimension(432, 83));
 
         fechaPartido2.setText("FechaPartido");
 
@@ -290,9 +328,9 @@ public class GrupoConstructor extends javax.swing.JFrame {
         estadioPartido2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioPartido2.setText("NombreEstadio");
 
-        golesField1_A2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
-        golesField2_A2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoVisit2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA2.setText("-");
@@ -312,11 +350,11 @@ public class GrupoConstructor extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAFila2Layout.createSequentialGroup()
                         .addComponent(equipoLocal2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_A2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guionA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_A2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoVisit2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(equipoVisit2)))
                 .addContainerGap())
@@ -335,8 +373,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
                         .addGroup(panelAFila2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipoVisit2)
                             .addComponent(equipoLocal2)
-                            .addComponent(golesField1_A2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_A2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoVisit2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionA2))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -357,9 +395,9 @@ public class GrupoConstructor extends javax.swing.JFrame {
         estadioPartido3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioPartido3.setText("NombreEstadio");
 
-        golesField1_A3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
-        golesField2_A3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoVisit3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA3.setText("-");
@@ -379,11 +417,11 @@ public class GrupoConstructor extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAFila3Layout.createSequentialGroup()
                         .addComponent(equipoLocal3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_A3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoLocal3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guionA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_A3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoVisit3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(equipoVisit3)))
                 .addContainerGap())
@@ -402,8 +440,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
                         .addGroup(panelAFila3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipoVisit3)
                             .addComponent(equipoLocal3)
-                            .addComponent(golesField1_A3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_A3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoLocal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoVisit3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionA3))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -425,9 +463,9 @@ public class GrupoConstructor extends javax.swing.JFrame {
         estadioPartido4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioPartido4.setText("NombreEstadio");
 
-        golesField1_A4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
-        golesField2_A4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoVisit4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA4.setText("-");
@@ -447,11 +485,11 @@ public class GrupoConstructor extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAFila4Layout.createSequentialGroup()
                         .addComponent(equipoLocal4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_A4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoLocal4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guionA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_A4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoVisit4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(equipoVisit4)))
                 .addContainerGap())
@@ -470,8 +508,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
                         .addGroup(panelAFila4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipoVisit4)
                             .addComponent(equipoLocal4)
-                            .addComponent(golesField1_A4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_A4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoLocal4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoVisit4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionA4))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorA4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -493,9 +531,9 @@ public class GrupoConstructor extends javax.swing.JFrame {
         estadioPartido5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioPartido5.setText("NombreEstadio");
 
-        golesField1_A5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
-        golesField2_A5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoVisit5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA5.setText("-");
@@ -515,11 +553,11 @@ public class GrupoConstructor extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAFila5Layout.createSequentialGroup()
                         .addComponent(equipoLocal5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_A5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoLocal5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guionA5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_A5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoVisit5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(equipoVisit5)))
                 .addContainerGap())
@@ -538,8 +576,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
                         .addGroup(panelAFila5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipoVisit5)
                             .addComponent(equipoLocal5)
-                            .addComponent(golesField1_A5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_A5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoLocal5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoVisit5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionA5))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorA5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -561,9 +599,9 @@ public class GrupoConstructor extends javax.swing.JFrame {
         estadioPartido6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         estadioPartido6.setText("NombreEstadio");
 
-        golesField1_A6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoLocal6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
-        golesField2_A6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        golesEquipoVisit6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         guionA6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA6.setText("-");
@@ -583,11 +621,11 @@ public class GrupoConstructor extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAFila6Layout.createSequentialGroup()
                         .addComponent(equipoLocal6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_A6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoLocal6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(guionA6, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_A6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesEquipoVisit6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(equipoVisit6)))
                 .addContainerGap())
@@ -606,8 +644,8 @@ public class GrupoConstructor extends javax.swing.JFrame {
                         .addGroup(panelAFila6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipoVisit6)
                             .addComponent(equipoLocal6)
-                            .addComponent(golesField1_A6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_A6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoLocal6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesEquipoVisit6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionA6))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorA6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -620,6 +658,14 @@ public class GrupoConstructor extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 560, 300));
 
+        jButton2.setText("Guardar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 530, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -628,6 +674,26 @@ public class GrupoConstructor extends javax.swing.JFrame {
         VentanaFaseGrupos ventanaFaseGrupos = new VentanaFaseGrupos();
         ventanaFaseGrupos.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void golesEquipoLocal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_golesEquipoLocal1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_golesEquipoLocal1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+            Grupo grupo = grupoRepository.get(letraGrupo);
+            int i = 0;
+            for(Integer id : idDePartido ){
+             for(Partido p : partidoRepository.findBy(Fase.DE_GRUPOS, grupo)){
+                 if(p.getId() == id){
+                     p.setGolesEquipo1(Integer.parseInt(golesEquipoLocal.get(i).getText()));
+                     p.setGolesEquipo2(Integer.parseInt(golesEquipoVisit.get(i).getText()));
+                 }
+             }
+             i++;
+         }
+            partidoRepository.guardarGolesPartido();
+            
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -689,18 +755,18 @@ public class GrupoConstructor extends javax.swing.JFrame {
     private javax.swing.JLabel fechaPartido4;
     private javax.swing.JLabel fechaPartido5;
     private javax.swing.JLabel fechaPartido6;
-    private javax.swing.JFormattedTextField golesField1_A1;
-    private javax.swing.JFormattedTextField golesField1_A2;
-    private javax.swing.JFormattedTextField golesField1_A3;
-    private javax.swing.JFormattedTextField golesField1_A4;
-    private javax.swing.JFormattedTextField golesField1_A5;
-    private javax.swing.JFormattedTextField golesField1_A6;
-    private javax.swing.JFormattedTextField golesField2_A1;
-    private javax.swing.JFormattedTextField golesField2_A2;
-    private javax.swing.JFormattedTextField golesField2_A3;
-    private javax.swing.JFormattedTextField golesField2_A4;
-    private javax.swing.JFormattedTextField golesField2_A5;
-    private javax.swing.JFormattedTextField golesField2_A6;
+    private javax.swing.JFormattedTextField golesEquipoLocal1;
+    private javax.swing.JFormattedTextField golesEquipoLocal2;
+    private javax.swing.JFormattedTextField golesEquipoLocal3;
+    private javax.swing.JFormattedTextField golesEquipoLocal4;
+    private javax.swing.JFormattedTextField golesEquipoLocal5;
+    private javax.swing.JFormattedTextField golesEquipoLocal6;
+    private javax.swing.JFormattedTextField golesEquipoVisit1;
+    private javax.swing.JFormattedTextField golesEquipoVisit2;
+    private javax.swing.JFormattedTextField golesEquipoVisit3;
+    private javax.swing.JFormattedTextField golesEquipoVisit4;
+    private javax.swing.JFormattedTextField golesEquipoVisit5;
+    private javax.swing.JFormattedTextField golesEquipoVisit6;
     private javax.swing.JLabel guionA1;
     private javax.swing.JLabel guionA2;
     private javax.swing.JLabel guionA3;
@@ -708,6 +774,7 @@ public class GrupoConstructor extends javax.swing.JFrame {
     private javax.swing.JLabel guionA5;
     private javax.swing.JLabel guionA6;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

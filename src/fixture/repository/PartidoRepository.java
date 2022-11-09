@@ -19,6 +19,10 @@ public class PartidoRepository {
     public PartidoRepository() {
         partidos = (ArrayList<Partido>) objectIO.ReadObjectFromFile("partidos");
     }
+    //
+    public void guardarGolesPartido(){
+        objectIO.WriteObjectToFile("partidos", partidos);
+    }
 
     // Traer todos los partidos
     public ArrayList<Partido> findAll() {

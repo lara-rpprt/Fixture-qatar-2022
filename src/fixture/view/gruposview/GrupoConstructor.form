@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,21,0,0,2,117"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,60,0,0,2,117"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -106,11 +106,11 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="equipoLocal1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="golesField1_A1" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoLocal1" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="guionA1" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="golesField2_A1" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoVisit1" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="equipoVisit1" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -134,8 +134,8 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="equipoVisit1" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="equipoLocal1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField1_A1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField2_A1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoLocal1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoVisit1" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="guionA1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -179,14 +179,17 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparatorA1">
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField1_A1">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoLocal1">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="golesEquipoLocal1ActionPerformed"/>
+                  </Events>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField2_A1">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoVisit1">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
@@ -202,6 +205,11 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelAFila2">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[432, 83]"/>
+                </Property>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="6" y="95" width="530" height="-1"/>
@@ -223,11 +231,11 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="equipoLocal2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="golesField1_A2" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoLocal2" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="guionA2" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="golesField2_A2" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoVisit2" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="equipoVisit2" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -251,8 +259,8 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="equipoVisit2" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="equipoLocal2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField1_A2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField2_A2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoLocal2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoVisit2" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="guionA2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -295,14 +303,14 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparatorA2">
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField1_A2">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoLocal2">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField2_A2">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoVisit2">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
@@ -339,11 +347,11 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="equipoLocal3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="golesField1_A3" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoLocal3" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="guionA3" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="golesField2_A3" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoVisit3" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="equipoVisit3" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -367,8 +375,8 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="equipoVisit3" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="equipoLocal3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField1_A3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField2_A3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoLocal3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoVisit3" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="guionA3" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -412,14 +420,14 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparatorA3">
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField1_A3">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoLocal3">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField2_A3">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoVisit3">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
@@ -456,11 +464,11 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="equipoLocal4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="golesField1_A4" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoLocal4" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="guionA4" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="golesField2_A4" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoVisit4" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="equipoVisit4" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -484,8 +492,8 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="equipoVisit4" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="equipoLocal4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField1_A4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField2_A4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoLocal4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoVisit4" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="guionA4" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -529,14 +537,14 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparatorA4">
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField1_A4">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoLocal4">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField2_A4">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoVisit4">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
@@ -573,11 +581,11 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="equipoLocal5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="golesField1_A5" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoLocal5" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="guionA5" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="golesField2_A5" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoVisit5" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="equipoVisit5" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -601,8 +609,8 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="equipoVisit5" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="equipoLocal5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField1_A5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField2_A5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoLocal5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoVisit5" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="guionA5" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -646,14 +654,14 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparatorA5">
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField1_A5">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoLocal5">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField2_A5">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoVisit5">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
@@ -690,11 +698,11 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="equipoLocal6" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="golesField1_A6" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoLocal6" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="guionA6" pref="102" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="golesField2_A6" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="golesEquipoVisit6" min="-2" pref="94" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="equipoVisit6" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -718,8 +726,8 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="equipoVisit6" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="equipoLocal6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField1_A6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="golesField2_A6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoLocal6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="golesEquipoVisit6" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="guionA6" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -763,14 +771,14 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparatorA6">
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField1_A6">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoLocal6">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JFormattedTextField" name="golesField2_A6">
+                <Component class="javax.swing.JFormattedTextField" name="golesEquipoVisit6">
                   <Properties>
                     <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
                       <Format format="#0" subtype="-1" type="0"/>
@@ -789,5 +797,18 @@
         </Container>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="510" y="530" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
   </SubComponents>
 </Form>
