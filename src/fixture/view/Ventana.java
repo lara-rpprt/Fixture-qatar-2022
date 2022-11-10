@@ -4229,6 +4229,13 @@ public class Ventana extends javax.swing.JFrame {
             }
             i++;
         }
+        
+        // Meter la lógica para calcular los parámetros
+        // de cada Equipo relacionados a 
+        // partidosGanados, partidosEmpatados,
+        // golesAFavor, golesEnContra, 
+        // (la diferencia de goles se calcularía
+        // a partir de los dos params anteriores).
 
         // Ejemplo de manejo de errores
         try {
