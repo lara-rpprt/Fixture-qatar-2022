@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import javax.swing.ImageIcon;
 import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -80,6 +81,9 @@ public class Ventana extends javax.swing.JFrame {
     private JFormattedTextField[] golesLocalGrupoH = new JFormattedTextField[6];
     private JFormattedTextField[] golesVisitantesGrupoH = new JFormattedTextField[6];
 
+    // Defino la variable que va a contener las tablas de posiciones
+    JFrame ventanaTablaDePosiciones;
+    
     public Ventana() {
 
         initComponents();
@@ -4499,6 +4503,12 @@ public class Ventana extends javax.swing.JFrame {
 
             System.out.println("-----------------------------");
         }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoA));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
     }//GEN-LAST:event_btnVerTablaDePoscionesAActionPerformed
 
     /**
