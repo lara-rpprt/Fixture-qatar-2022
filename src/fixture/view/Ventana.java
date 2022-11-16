@@ -75,6 +75,8 @@ public class Ventana extends javax.swing.JFrame {
     private ArrayList<Integer> idsPartidosGrupoH = new ArrayList<Integer>();
     private JFormattedTextField[] golesLocalGrupoH = new JFormattedTextField[6];
     private JFormattedTextField[] golesVisitantesGrupoH = new JFormattedTextField[6];
+    
+    
 
     public Ventana() {
 
