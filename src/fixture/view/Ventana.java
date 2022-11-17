@@ -80,8 +80,6 @@ public class Ventana extends javax.swing.JFrame {
     private ArrayList<Integer> idsPartidosGrupoH = new ArrayList<Integer>();
     private JFormattedTextField[] golesLocalGrupoH = new JFormattedTextField[6];
     private JFormattedTextField[] golesVisitantesGrupoH = new JFormattedTextField[6];
-    
-    
 
     // Defino la variable que va a contener las tablas de posiciones
     JFrame ventanaTablaDePosiciones;
@@ -238,6 +236,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_B6 = new javax.swing.JFormattedTextField();
         guionB6 = new javax.swing.JLabel();
         guardarBtnB = new javax.swing.JButton();
+        btnVerTablaDePoscionesB = new javax.swing.JButton();
         panelGrupoC = new javax.swing.JPanel();
         jScrollPaneC = new javax.swing.JScrollPane();
         panelInteriorC = new javax.swing.JPanel();
@@ -296,6 +295,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_C6 = new javax.swing.JFormattedTextField();
         guionC6 = new javax.swing.JLabel();
         guardarBtnC = new javax.swing.JButton();
+        btnVerTablaDePoscionesC = new javax.swing.JButton();
         panelGrupoD = new javax.swing.JPanel();
         jScrollPaneD = new javax.swing.JScrollPane();
         panelInteriorD = new javax.swing.JPanel();
@@ -354,6 +354,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_D6 = new javax.swing.JFormattedTextField();
         guionD6 = new javax.swing.JLabel();
         guardarBtnD = new javax.swing.JButton();
+        btnVerTablaDePoscionesD = new javax.swing.JButton();
         panelGrupoE = new javax.swing.JPanel();
         jScrollPaneE = new javax.swing.JScrollPane();
         panelInteriorE = new javax.swing.JPanel();
@@ -412,6 +413,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_E6 = new javax.swing.JFormattedTextField();
         guionE6 = new javax.swing.JLabel();
         guardarBtnE = new javax.swing.JButton();
+        btnVerTablaDePoscionesE = new javax.swing.JButton();
         panelGrupoF = new javax.swing.JPanel();
         jScrollPaneF = new javax.swing.JScrollPane();
         panelInteriorF = new javax.swing.JPanel();
@@ -470,6 +472,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_F6 = new javax.swing.JFormattedTextField();
         guionF6 = new javax.swing.JLabel();
         guardarBtnF = new javax.swing.JButton();
+        btnVerTablaDePoscionesF = new javax.swing.JButton();
         panelGrupoG = new javax.swing.JPanel();
         jScrollPaneG = new javax.swing.JScrollPane();
         panelInteriorG = new javax.swing.JPanel();
@@ -528,6 +531,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_G6 = new javax.swing.JFormattedTextField();
         guionG6 = new javax.swing.JLabel();
         guardarBtnG = new javax.swing.JButton();
+        btnVerTablaDePoscionesG = new javax.swing.JButton();
         panelGrupoH = new javax.swing.JPanel();
         jScrollPaneH = new javax.swing.JScrollPane();
         panelInteriorH = new javax.swing.JPanel();
@@ -586,6 +590,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_H6 = new javax.swing.JFormattedTextField();
         guionH6 = new javax.swing.JLabel();
         guardarBtnH = new javax.swing.JButton();
+        btnVerTablaDePoscioneH = new javax.swing.JButton();
         panelOctavos = new javax.swing.JPanel();
         panelCuartos = new javax.swing.JPanel();
         panelSemifinales = new javax.swing.JPanel();
@@ -599,8 +604,6 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
         setBounds(new java.awt.Rectangle(0, 0, 1000, 800));
-        setEnabled(false);
-        setMaximumSize(new java.awt.Dimension(640, 800));
         setMinimumSize(null);
         setSize(new java.awt.Dimension(800, 800));
 
@@ -683,7 +686,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorA.add(panelAFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 720, 90));
+        panelInteriorA.add(panelAFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 730, 90));
 
         lblFechaPartidoA2.setText("FechaPartido");
 
@@ -753,7 +756,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorA.add(panelAFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 720, 90));
+        panelInteriorA.add(panelAFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 730, 90));
 
         lblFechaPartidoA3.setText("FechaPartido");
 
@@ -823,7 +826,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorA.add(panelAFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 720, 90));
+        panelInteriorA.add(panelAFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 730, 90));
 
         lblFechaPartidoA4.setText("FechaPartido");
 
@@ -893,7 +896,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorA.add(panelAFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 720, 90));
+        panelInteriorA.add(panelAFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 730, 90));
 
         lblFechaPartidoA5.setText("FechaPartido");
 
@@ -963,7 +966,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorA.add(panelAFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 720, 90));
+        panelInteriorA.add(panelAFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 730, 90));
 
         lblFechaPartidoA6.setText("FechaPartido");
 
@@ -1033,11 +1036,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorA.add(panelAFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 720, 90));
-
-        jScrollPaneA.setViewportView(panelInteriorA);
-
-        panelGrupoA.add(jScrollPaneA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
+        panelInteriorA.add(panelAFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
         btnVerTablaDePoscionesA.setText("Ver tabla de posiciones");
         btnVerTablaDePoscionesA.addActionListener(new java.awt.event.ActionListener() {
@@ -1045,7 +1044,7 @@ public class Ventana extends javax.swing.JFrame {
                 btnVerTablaDePoscionesAActionPerformed(evt);
             }
         });
-        panelGrupoA.add(btnVerTablaDePoscionesA, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, -1, -1));
+        panelInteriorA.add(btnVerTablaDePoscionesA, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
 
         guardarBtnA.setText("Guardar");
         guardarBtnA.addActionListener(new java.awt.event.ActionListener() {
@@ -1053,7 +1052,11 @@ public class Ventana extends javax.swing.JFrame {
                 guardarBtnAActionPerformed(evt);
             }
         });
-        panelGrupoA.add(guardarBtnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorA.add(guardarBtnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        jScrollPaneA.setViewportView(panelInteriorA);
+
+        panelGrupoA.add(jScrollPaneA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("A", panelGrupoA);
 
@@ -1481,17 +1484,25 @@ public class Ventana extends javax.swing.JFrame {
 
         panelInteriorB.add(panelBFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
-        jScrollPaneB.setViewportView(panelInteriorB);
-
-        panelGrupoB.add(jScrollPaneB, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
-
         guardarBtnB.setText("Guardar");
         guardarBtnB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 guardarBtnBActionPerformed(evt);
             }
         });
-        panelGrupoB.add(guardarBtnB, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, -1, -1));
+        panelInteriorB.add(guardarBtnB, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscionesB.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesBActionPerformed(evt);
+            }
+        });
+        panelInteriorB.add(btnVerTablaDePoscionesB, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneB.setViewportView(panelInteriorB);
+
+        panelGrupoB.add(jScrollPaneB, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("B", panelGrupoB);
 
@@ -1919,17 +1930,25 @@ public class Ventana extends javax.swing.JFrame {
 
         panelInteriorC.add(panelCFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
-        jScrollPaneC.setViewportView(panelInteriorC);
-
-        panelGrupoC.add(jScrollPaneC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
-
         guardarBtnC.setText("Guardar");
         guardarBtnC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 guardarBtnCActionPerformed(evt);
             }
         });
-        panelGrupoC.add(guardarBtnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorC.add(guardarBtnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscionesC.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesCActionPerformed(evt);
+            }
+        });
+        panelInteriorC.add(btnVerTablaDePoscionesC, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneC.setViewportView(panelInteriorC);
+
+        panelGrupoC.add(jScrollPaneC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("C", panelGrupoC);
 
@@ -2357,17 +2376,25 @@ public class Ventana extends javax.swing.JFrame {
 
         panelInteriorD.add(panelDFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
-        jScrollPaneD.setViewportView(panelInteriorD);
-
-        panelGrupoD.add(jScrollPaneD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
-
         guardarBtnD.setText("Guardar");
         guardarBtnD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 guardarBtnDActionPerformed(evt);
             }
         });
-        panelGrupoD.add(guardarBtnD, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorD.add(guardarBtnD, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscionesD.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesDActionPerformed(evt);
+            }
+        });
+        panelInteriorD.add(btnVerTablaDePoscionesD, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneD.setViewportView(panelInteriorD);
+
+        panelGrupoD.add(jScrollPaneD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("D", panelGrupoD);
 
@@ -2795,17 +2822,25 @@ public class Ventana extends javax.swing.JFrame {
 
         panelInteriorE.add(panelEFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
-        jScrollPaneE.setViewportView(panelInteriorE);
-
-        panelGrupoE.add(jScrollPaneE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
-
         guardarBtnE.setText("Guardar");
         guardarBtnE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 guardarBtnEActionPerformed(evt);
             }
         });
-        panelGrupoE.add(guardarBtnE, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorE.add(guardarBtnE, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscionesE.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesEActionPerformed(evt);
+            }
+        });
+        panelInteriorE.add(btnVerTablaDePoscionesE, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneE.setViewportView(panelInteriorE);
+
+        panelGrupoE.add(jScrollPaneE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("E", panelGrupoE);
 
@@ -3233,17 +3268,25 @@ public class Ventana extends javax.swing.JFrame {
 
         panelInteriorF.add(panelFFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
-        jScrollPaneF.setViewportView(panelInteriorF);
-
-        panelGrupoF.add(jScrollPaneF, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
-
         guardarBtnF.setText("Guardar");
         guardarBtnF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 guardarBtnFActionPerformed(evt);
             }
         });
-        panelGrupoF.add(guardarBtnF, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorF.add(guardarBtnF, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscionesF.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesFActionPerformed(evt);
+            }
+        });
+        panelInteriorF.add(btnVerTablaDePoscionesF, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneF.setViewportView(panelInteriorF);
+
+        panelGrupoF.add(jScrollPaneF, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("F", panelGrupoF);
 
@@ -3319,7 +3362,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorG.add(panelGFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 720, 90));
+        panelInteriorG.add(panelGFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 730, 90));
 
         lblFechaPartidoG2.setText("FechaPartido");
 
@@ -3389,7 +3432,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorG.add(panelGFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 720, 90));
+        panelInteriorG.add(panelGFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 730, 90));
 
         lblFechaPartidoG3.setText("FechaPartido");
 
@@ -3459,7 +3502,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorG.add(panelGFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 720, 90));
+        panelInteriorG.add(panelGFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 730, 90));
 
         lblFechaPartidoG4.setText("FechaPartido");
 
@@ -3529,7 +3572,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorG.add(panelGFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 720, 90));
+        panelInteriorG.add(panelGFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 730, 90));
 
         lblFechaPartidoG5.setText("FechaPartido");
 
@@ -3599,7 +3642,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorG.add(panelGFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 720, 90));
+        panelInteriorG.add(panelGFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 730, 90));
 
         lblFechaPartidoG6.setText("FechaPartido");
 
@@ -3669,11 +3712,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorG.add(panelGFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 720, 90));
-
-        jScrollPaneG.setViewportView(panelInteriorG);
-
-        panelGrupoG.add(jScrollPaneG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
+        panelInteriorG.add(panelGFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
         guardarBtnG.setText("Guardar");
         guardarBtnG.addActionListener(new java.awt.event.ActionListener() {
@@ -3681,7 +3720,19 @@ public class Ventana extends javax.swing.JFrame {
                 guardarBtnGActionPerformed(evt);
             }
         });
-        panelGrupoG.add(guardarBtnG, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorG.add(guardarBtnG, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscionesG.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesGActionPerformed(evt);
+            }
+        });
+        panelInteriorG.add(btnVerTablaDePoscionesG, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneG.setViewportView(panelInteriorG);
+
+        panelGrupoG.add(jScrollPaneG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("G", panelGrupoG);
 
@@ -3757,7 +3808,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorH.add(panelHFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 720, 90));
+        panelInteriorH.add(panelHFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 730, 90));
 
         lblFechaPartidoH2.setText("FechaPartido");
 
@@ -3827,7 +3878,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorH.add(panelHFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 720, 90));
+        panelInteriorH.add(panelHFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 730, 90));
 
         lblFechaPartidoH3.setText("FechaPartido");
 
@@ -3897,7 +3948,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorH.add(panelHFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 720, 90));
+        panelInteriorH.add(panelHFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 730, 90));
 
         lblFechaPartidoH4.setText("FechaPartido");
 
@@ -3967,7 +4018,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorH.add(panelHFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 720, 90));
+        panelInteriorH.add(panelHFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 730, 90));
 
         lblFechaPartidoH5.setText("FechaPartido");
 
@@ -4037,7 +4088,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorH.add(panelHFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 720, 90));
+        panelInteriorH.add(panelHFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 730, 90));
 
         lblFechaPartidoH6.setText("FechaPartido");
 
@@ -4107,11 +4158,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorH.add(panelHFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 720, 90));
-
-        jScrollPaneH.setViewportView(panelInteriorH);
-
-        panelGrupoH.add(jScrollPaneH, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
+        panelInteriorH.add(panelHFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 730, 90));
 
         guardarBtnH.setText("Guardar");
         guardarBtnH.addActionListener(new java.awt.event.ActionListener() {
@@ -4119,7 +4166,19 @@ public class Ventana extends javax.swing.JFrame {
                 guardarBtnHActionPerformed(evt);
             }
         });
-        panelGrupoH.add(guardarBtnH, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+        panelInteriorH.add(guardarBtnH, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, -1, -1));
+
+        btnVerTablaDePoscioneH.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscioneH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscioneHActionPerformed(evt);
+            }
+        });
+        panelInteriorH.add(btnVerTablaDePoscioneH, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
+
+        jScrollPaneH.setViewportView(panelInteriorH);
+
+        panelGrupoH.add(jScrollPaneH, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
         tabbedPane.addTab("H", panelGrupoH);
 
@@ -4144,7 +4203,7 @@ public class Ventana extends javax.swing.JFrame {
             panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBodyLayout.createSequentialGroup()
                 .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 505, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
         );
         panelBodyLayout.setVerticalGroup(
             panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4202,9 +4261,9 @@ public class Ventana extends javax.swing.JFrame {
             panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelMainLayout.createSequentialGroup()
                 .addGroup(panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelBody, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMainLayout.setVerticalGroup(
             panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4237,11 +4296,11 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnAActionPerformed
 
-        
+        // Moví grupoRepository a un contexto global
         Grupo grupoA = grupoRepository.get('a');
         HashSet<Equipo> equiposGrupoActualizados = new HashSet();
 
-       
+        // Antes de actualizar los valores para la tabla de cada equipo hay que limpiarlos
         for (Equipo equipoGrupoA : grupoA.getEquipos()) {
             equipoGrupoA.limpiarDatosDePartidos();
             equiposGrupoActualizados.add(equipoGrupoA);
@@ -4254,7 +4313,7 @@ public class Ventana extends javax.swing.JFrame {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoA[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoA[i].getText()));
 
-                    
+                    // Equipos que jugaron el partido
                     Equipo equipo1 =  p.getEquipo1();
                     Equipo equipo2 = p.getEquipo2();
                     
@@ -4268,52 +4327,49 @@ public class Ventana extends javax.swing.JFrame {
                         }
                     }
 
-                    
+                    // Agrego un partido jugado a cada equipo
                     equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
                     equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
 
-                    
+                    // Sumo ganados / perdidos / empatados a cada equipo según corresponda
                     if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
                         // Ganó equipo local
                         // Sumo 1 a sus partidos ganados
                         equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
 
-                        
+                        // Sumo 1 a partidos perdidos al equipo 2
                         equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
                     } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
-                        
-                        
+                        // Ganó equipo visitante
+                        // Sumo 1 a sus partidos ganados
                         equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
 
-                        
+                        // Sumo 1 a partidos perdidos al equipo 1
                         equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
                     } else {
-                        
-                        
+                        // Empataron
+                        // Sumo 1 a los partidos empatados de ambos
                         equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
                         equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
                     }
 
-                    
+                    // Sumo los goles hechos y en contra de ambos equipos
                     equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
                     equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
                     equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
                     equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
 
-                    
+                    // Se calculan los puntos de cada equipo
                     equipo1.calcularPuntos();
                     equipo2.calcularPuntos();
                     
-                    
+                    // Agrego los equipos modificados al listado que voy a usar para guardar en archivo
                     equiposGrupoActualizados.add(equipo1);
                     equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        
-        
-       
 
         // Ejemplo de manejo de errores
         try {
@@ -4334,6 +4390,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnBActionPerformed
         Grupo grupoB = grupoRepository.get('b');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoB : grupoB.getEquipos()) {
+            equipoGrupoB.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoB);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoB) {
@@ -4341,11 +4403,50 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoB[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoB[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoBActualizar : equiposGrupoActualizados){
+                        if(equipoBActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoBActualizar;
+                        }
+                        
+                        if(equipoBActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoBActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
 
         try {
             partidoRepository.guardarPartidosEnArchivo();
@@ -4358,6 +4459,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnCActionPerformed
         Grupo grupoC = grupoRepository.get('c');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoC : grupoC.getEquipos()) {
+            equipoGrupoC.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoC);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoC) {
@@ -4365,12 +4472,51 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoC[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoC[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoCActualizar : equiposGrupoActualizados){
+                        if(equipoCActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoCActualizar;
+                        }
+                        
+                        if(equipoCActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoCActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
-
+        
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4382,6 +4528,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnDActionPerformed
         Grupo grupoD = grupoRepository.get('d');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoD : grupoD.getEquipos()) {
+            equipoGrupoD.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoD);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoD) {
@@ -4389,12 +4541,51 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoD[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoD[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoCActualizar : equiposGrupoActualizados){
+                        if(equipoCActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoCActualizar;
+                        }
+                        
+                        if(equipoCActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoCActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
-
+        
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4406,6 +4597,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnEActionPerformed
         Grupo grupoE = grupoRepository.get('e');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoE : grupoE.getEquipos()) {
+            equipoGrupoE.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoE);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoE) {
@@ -4413,12 +4610,51 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoE[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoE[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoCActualizar : equiposGrupoActualizados){
+                        if(equipoCActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoCActualizar;
+                        }
+                        
+                        if(equipoCActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoCActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
-
+        
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4430,6 +4666,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnFActionPerformed
         Grupo grupoF = grupoRepository.get('f');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoF : grupoF.getEquipos()) {
+            equipoGrupoF.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoF);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoF) {
@@ -4437,12 +4679,51 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoF[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoF[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoCActualizar : equiposGrupoActualizados){
+                        if(equipoCActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoCActualizar;
+                        }
+                        
+                        if(equipoCActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoCActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
-
+        
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4454,6 +4735,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnGActionPerformed
         Grupo grupoG = grupoRepository.get('g');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoG : grupoG.getEquipos()) {
+            equipoGrupoG.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoG);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoG) {
@@ -4461,12 +4748,51 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoG[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoG[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoCActualizar : equiposGrupoActualizados){
+                        if(equipoCActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoCActualizar;
+                        }
+                        
+                        if(equipoCActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoCActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
-
+        
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4478,6 +4804,12 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnHActionPerformed
         Grupo grupoH = grupoRepository.get('h');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        for (Equipo equipoGrupoH : grupoH.getEquipos()) {
+            equipoGrupoH.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoH);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoH) {
@@ -4485,12 +4817,51 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoH[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoH[i].getText()));
+
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoCActualizar : equiposGrupoActualizados){
+                        if(equipoCActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoCActualizar;
+                        }
+                        
+                        if(equipoCActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoCActualizar;
+                        }
+                    }
+
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
         }
-        partidoRepository.guardarPartidosEnArchivo();
-
+        
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4517,6 +4888,132 @@ public class Ventana extends javax.swing.JFrame {
         ventanaTablaDePosiciones.setLocationRelativeTo(null);
         ventanaTablaDePosiciones.setVisible(true);
     }//GEN-LAST:event_btnVerTablaDePoscionesAActionPerformed
+
+    private void btnVerTablaDePoscionesBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesBActionPerformed
+        Grupo grupoB = grupoRepository.get('b');
+
+        for (Equipo equipoGrupoB : grupoB.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoB.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoB));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesBActionPerformed
+
+    private void btnVerTablaDePoscionesCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesCActionPerformed
+        Grupo grupoC = grupoRepository.get('c');
+
+        for (Equipo equipoGrupoC : grupoC.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoC.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoC));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesCActionPerformed
+
+    private void btnVerTablaDePoscionesDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesDActionPerformed
+        Grupo grupoD = grupoRepository.get('d');
+
+        for (Equipo equipoGrupoD : grupoD.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoD.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoD));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesDActionPerformed
+
+    private void btnVerTablaDePoscionesEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesEActionPerformed
+        Grupo grupoE = grupoRepository.get('e');
+
+        for (Equipo equipoGrupoE : grupoE.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoE.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoE));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesEActionPerformed
+
+    private void btnVerTablaDePoscionesFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesFActionPerformed
+        Grupo grupoF = grupoRepository.get('f');
+
+        for (Equipo equipoGrupoF : grupoF.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoF.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoF));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesFActionPerformed
+
+    private void btnVerTablaDePoscionesGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesGActionPerformed
+        Grupo grupoG = grupoRepository.get('g');
+
+        for (Equipo equipoGrupoG : grupoG.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoG.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoG));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesGActionPerformed
+
+    private void btnVerTablaDePoscioneHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscioneHActionPerformed
+        Grupo grupoH = grupoRepository.get('h');
+
+        for (Equipo equipoGrupoH : grupoH.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoH.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoH));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscioneHActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4554,7 +5051,14 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnVerTablaDePoscioneH;
     private javax.swing.JButton btnVerTablaDePoscionesA;
+    private javax.swing.JButton btnVerTablaDePoscionesB;
+    private javax.swing.JButton btnVerTablaDePoscionesC;
+    private javax.swing.JButton btnVerTablaDePoscionesD;
+    private javax.swing.JButton btnVerTablaDePoscionesE;
+    private javax.swing.JButton btnVerTablaDePoscionesF;
+    private javax.swing.JButton btnVerTablaDePoscionesG;
     private javax.swing.JFormattedTextField golesField1_A1;
     private javax.swing.JFormattedTextField golesField1_A2;
     private javax.swing.JFormattedTextField golesField1_A3;
