@@ -4,9 +4,11 @@
  */
 package fixture.view;
 
+import fixture.model.Equipo;
 import fixture.model.Fase;
 import fixture.model.Grupo;
 import fixture.model.Partido;
+import fixture.repository.EquipoRepository;
 import fixture.repository.GrupoRepository;
 import fixture.repository.PartidoRepository;
 import fixture.repository.migrations.GruposMigrations;
@@ -18,10 +20,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.swing.ImageIcon;
 import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
@@ -33,6 +37,7 @@ public class Ventana extends javax.swing.JFrame {
 
     private GrupoRepository grupoRepository;
     private PartidoRepository partidoRepository;
+    private EquipoRepository equipoRepository;
 
     private ImageIcon logoImage;
 
@@ -78,6 +83,9 @@ public class Ventana extends javax.swing.JFrame {
     
     
 
+    // Defino la variable que va a contener las tablas de posiciones
+    JFrame ventanaTablaDePosiciones;
+    
     public Ventana() {
 
         initComponents();
@@ -172,6 +180,7 @@ public class Ventana extends javax.swing.JFrame {
         golesField2_A6 = new javax.swing.JFormattedTextField();
         guionA6 = new javax.swing.JLabel();
         guardarBtnA = new javax.swing.JButton();
+        btnVerTablaDePoscionesA = new javax.swing.JButton();
         panelGrupoB = new javax.swing.JPanel();
         jScrollPaneB = new javax.swing.JScrollPane();
         panelInteriorB = new javax.swing.JPanel();
@@ -1039,6 +1048,14 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
         panelGrupoA.add(guardarBtnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
+
+        btnVerTablaDePoscionesA.setText("Ver tabla de posiciones");
+        btnVerTablaDePoscionesA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerTablaDePoscionesAActionPerformed(evt);
+            }
+        });
+        panelGrupoA.add(btnVerTablaDePoscionesA, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, -1, -1));
 
         tabbedPane.addTab("A", panelGrupoA);
 
@@ -4226,6 +4243,13 @@ public class Ventana extends javax.swing.JFrame {
 
         // Moví grupoRepository a un contexto global
         Grupo grupoA = grupoRepository.get('a');
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+
+        // Antes de actualizar los valores para la tabla de cada equipo hay que limpiarlos
+        for (Equipo equipoGrupoA : grupoA.getEquipos()) {
+            equipoGrupoA.limpiarDatosDePartidos();
+            equiposGrupoActualizados.add(equipoGrupoA);
+        }
 
         int i = 0;
         for (Integer id : idsPartidosGrupoA) {
@@ -4233,6 +4257,60 @@ public class Ventana extends javax.swing.JFrame {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoA[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoA[i].getText()));
+
+                    // Equipos que jugaron el partido
+                    Equipo equipo1 =  p.getEquipo1();
+                    Equipo equipo2 = p.getEquipo2();
+                    
+                    for(Equipo equipoAActualizar : equiposGrupoActualizados){
+                        if(equipoAActualizar.getId().equals(p.getEquipo1().getId())){
+                            equipo1 = equipoAActualizar;
+                        }
+                        
+                        if(equipoAActualizar.getId().equals(p.getEquipo2().getId())){
+                            equipo2 = equipoAActualizar;
+                        }
+                    }
+
+                    // Agrego un partido jugado a cada equipo
+                    equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
+                    equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
+
+                    // Sumo ganados / perdidos / empatados a cada equipo según corresponda
+                    if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
+                        // Ganó equipo local
+                        // Sumo 1 a sus partidos ganados
+                        equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
+
+                        // Sumo 1 a partidos perdidos al equipo 2
+                        equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
+                    } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
+                        // Ganó equipo visitante
+                        // Sumo 1 a sus partidos ganados
+                        equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
+
+                        // Sumo 1 a partidos perdidos al equipo 1
+                        equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
+                    } else {
+                        // Empataron
+                        // Sumo 1 a los partidos empatados de ambos
+                        equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
+                        equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
+                    }
+
+                    // Sumo los goles hechos y en contra de ambos equipos
+                    equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
+                    equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
+                    equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
+                    equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
+
+                    // Se calculan los puntos de cada equipo
+                    equipo1.calcularPuntos();
+                    equipo2.calcularPuntos();
+                    
+                    // Agrego los equipos modificados al listado que voy a usar para guardar en archivo
+                    equiposGrupoActualizados.add(equipo1);
+                    equiposGrupoActualizados.add(equipo2);
                 }
             }
             i++;
@@ -4247,6 +4325,12 @@ public class Ventana extends javax.swing.JFrame {
         try {
             //golesLocalGrupoA[10].getText(); // Fuerzo error para probar
             partidoRepository.guardarPartidosEnArchivo();
+
+            // Guardo los datos y puntaje de equipos actualizados
+            for (Equipo equipoGrupoA : equiposGrupoActualizados) {
+                System.out.println(equipoGrupoA);
+                equipoRepository.actualizarDatosDeEquiopoEnArchivo(equipoGrupoA);
+            }
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception e) {
             System.err.println(e.getMessage());
@@ -4268,7 +4352,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4292,7 +4376,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4316,7 +4400,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4340,7 +4424,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4364,7 +4448,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4388,7 +4472,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4412,7 +4496,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         partidoRepository.guardarPartidosEnArchivo();
-        
+
         try {
             partidoRepository.guardarPartidosEnArchivo();
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -4421,6 +4505,24 @@ public class Ventana extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Ocurrió un error al intentar guardar", this.getTitle(), JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_guardarBtnHActionPerformed
+
+    private void btnVerTablaDePoscionesAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesAActionPerformed
+        Grupo grupoA = grupoRepository.get('a');
+
+        for (Equipo equipoGrupoA : grupoA.getEquipos()) {
+            System.out.println("-----------------------------");
+
+            equipoGrupoA.printDatosGenerales();
+
+            System.out.println("-----------------------------");
+        }
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones((grupoA));
+        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        
+        ventanaTablaDePosiciones.setLocationRelativeTo(null);
+        ventanaTablaDePosiciones.setVisible(true);
+    }//GEN-LAST:event_btnVerTablaDePoscionesAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4458,6 +4560,7 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnVerTablaDePoscionesA;
     private javax.swing.JFormattedTextField golesField1_A1;
     private javax.swing.JFormattedTextField golesField1_A2;
     private javax.swing.JFormattedTextField golesField1_A3;
@@ -5797,5 +5900,6 @@ public class Ventana extends javax.swing.JFrame {
         //PartidosMigrations.up();
         grupoRepository = new GrupoRepository();
         partidoRepository = new PartidoRepository();
+        equipoRepository = new EquipoRepository();
     }
 }
