@@ -118,7 +118,6 @@ public class Ventana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
         panelMain = new javax.swing.JPanel();
         panelBody = new javax.swing.JPanel();
         tabbedPane = new javax.swing.JTabbedPane();
@@ -179,8 +178,8 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_A6 = new javax.swing.JFormattedTextField();
         golesField2_A6 = new javax.swing.JFormattedTextField();
         guionA6 = new javax.swing.JLabel();
-        guardarBtnA = new javax.swing.JButton();
         btnVerTablaDePoscionesA = new javax.swing.JButton();
+        guardarBtnA = new javax.swing.JButton();
         panelGrupoB = new javax.swing.JPanel();
         jScrollPaneB = new javax.swing.JScrollPane();
         panelInteriorB = new javax.swing.JPanel();
@@ -599,12 +598,11 @@ public class Ventana extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
-        setBounds(new java.awt.Rectangle(0, 0, 800, 600));
+        setBounds(new java.awt.Rectangle(0, 0, 1000, 800));
+        setEnabled(false);
+        setMaximumSize(new java.awt.Dimension(640, 800));
         setMinimumSize(null);
         setSize(new java.awt.Dimension(800, 800));
-
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         panelMain.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panelMain.setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -1041,14 +1039,6 @@ public class Ventana extends javax.swing.JFrame {
 
         panelGrupoA.add(jScrollPaneA, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 770, 420));
 
-        guardarBtnA.setText("Guardar");
-        guardarBtnA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                guardarBtnAActionPerformed(evt);
-            }
-        });
-        panelGrupoA.add(guardarBtnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
-
         btnVerTablaDePoscionesA.setText("Ver tabla de posiciones");
         btnVerTablaDePoscionesA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1056,6 +1046,14 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
         panelGrupoA.add(btnVerTablaDePoscionesA, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, -1, -1));
+
+        guardarBtnA.setText("Guardar");
+        guardarBtnA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarBtnAActionPerformed(evt);
+            }
+        });
+        panelGrupoA.add(guardarBtnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, -1, -1));
 
         tabbedPane.addTab("A", panelGrupoA);
 
@@ -4217,22 +4215,20 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jScrollPane1.setViewportView(panelMain);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 792, Short.MAX_VALUE))
+                .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 745, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -4241,11 +4237,11 @@ public class Ventana extends javax.swing.JFrame {
 
     private void guardarBtnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnAActionPerformed
 
-        // Moví grupoRepository a un contexto global
+        
         Grupo grupoA = grupoRepository.get('a');
         HashSet<Equipo> equiposGrupoActualizados = new HashSet();
 
-        // Antes de actualizar los valores para la tabla de cada equipo hay que limpiarlos
+       
         for (Equipo equipoGrupoA : grupoA.getEquipos()) {
             equipoGrupoA.limpiarDatosDePartidos();
             equiposGrupoActualizados.add(equipoGrupoA);
@@ -4258,7 +4254,7 @@ public class Ventana extends javax.swing.JFrame {
                     p.setGolesEquipo1(Integer.parseInt(golesLocalGrupoA[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitantesGrupoA[i].getText()));
 
-                    // Equipos que jugaron el partido
+                    
                     Equipo equipo1 =  p.getEquipo1();
                     Equipo equipo2 = p.getEquipo2();
                     
@@ -4272,43 +4268,43 @@ public class Ventana extends javax.swing.JFrame {
                         }
                     }
 
-                    // Agrego un partido jugado a cada equipo
+                    
                     equipo1.setPartidosJugados(equipo1.getPartidosJugados() + 1);
                     equipo2.setPartidosJugados(equipo2.getPartidosJugados() + 1);
 
-                    // Sumo ganados / perdidos / empatados a cada equipo según corresponda
+                    
                     if (p.getGolesEquipo1() > p.getGolesEquipo2()) {
                         // Ganó equipo local
                         // Sumo 1 a sus partidos ganados
                         equipo1.setPartidosGanados(equipo1.getPartidosGanados() + 1);
 
-                        // Sumo 1 a partidos perdidos al equipo 2
+                        
                         equipo2.setPartidosPerdidos(equipo2.getPartidosPerdidos() + 1);
                     } else if (p.getGolesEquipo1() < p.getGolesEquipo2()) {
-                        // Ganó equipo visitante
-                        // Sumo 1 a sus partidos ganados
+                        
+                        
                         equipo2.setPartidosGanados(equipo2.getPartidosGanados() + 1);
 
-                        // Sumo 1 a partidos perdidos al equipo 1
+                        
                         equipo1.setPartidosPerdidos(equipo1.getPartidosPerdidos() + 1);
                     } else {
-                        // Empataron
-                        // Sumo 1 a los partidos empatados de ambos
+                        
+                        
                         equipo1.setPartidosEmpatados(equipo1.getPartidosEmpatados() + 1);
                         equipo2.setPartidosEmpatados(equipo2.getPartidosEmpatados() + 1);
                     }
 
-                    // Sumo los goles hechos y en contra de ambos equipos
+                    
                     equipo1.setGolesHechos(equipo1.getGolesHechos() + p.getGolesEquipo1());
                     equipo1.setGolesEnContra(equipo1.getGolesEnContra() + p.getGolesEquipo2());
                     equipo2.setGolesHechos(equipo2.getGolesHechos() + p.getGolesEquipo2());
                     equipo2.setGolesEnContra(equipo2.getGolesEnContra() + p.getGolesEquipo1());
 
-                    // Se calculan los puntos de cada equipo
+                    
                     equipo1.calcularPuntos();
                     equipo2.calcularPuntos();
                     
-                    // Agrego los equipos modificados al listado que voy a usar para guardar en archivo
+                    
                     equiposGrupoActualizados.add(equipo1);
                     equiposGrupoActualizados.add(equipo2);
                 }
@@ -4316,9 +4312,7 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
         
-        //Meter la lógica para calcular los parámetros de cada equipo relacionados a 
-        // partidosGanados, partidosEmpatados, golesAFavor, golesEnContra, 
-        //(la diferencia de goles se calcularía a partir de los dos parametros anteriores)
+        
        
 
         // Ejemplo de manejo de errores
@@ -4713,7 +4707,6 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel guionH4;
     private javax.swing.JLabel guionH5;
     private javax.swing.JLabel guionH6;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPaneA;
     private javax.swing.JScrollPane jScrollPaneB;
     private javax.swing.JScrollPane jScrollPaneC;
