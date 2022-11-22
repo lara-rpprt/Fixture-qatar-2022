@@ -118,6 +118,10 @@ public class Ventana extends javax.swing.JFrame {
 
         panelMain = new javax.swing.JPanel();
         panelBody = new javax.swing.JPanel();
+        panelHeader = new javax.swing.JPanel();
+        labelTitulo = new javax.swing.JLabel();
+        labelSubtitulo = new javax.swing.JLabel();
+        labelLogo1 = new javax.swing.JLabel();
         tabbedPane = new javax.swing.JTabbedPane();
         panelGrupoA = new javax.swing.JPanel();
         jScrollPaneA = new javax.swing.JScrollPane();
@@ -596,10 +600,6 @@ public class Ventana extends javax.swing.JFrame {
         panelSemifinales = new javax.swing.JPanel();
         panelTercerPuesto = new javax.swing.JPanel();
         panelFinal = new javax.swing.JPanel();
-        panelHeader = new javax.swing.JPanel();
-        labelTitulo = new javax.swing.JLabel();
-        labelSubtitulo = new javax.swing.JLabel();
-        labelLogo1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fixture interactivo - Qatar 2022");
@@ -611,6 +611,60 @@ public class Ventana extends javax.swing.JFrame {
         panelMain.setPreferredSize(new java.awt.Dimension(1280, 720));
 
         panelBody.setPreferredSize(new java.awt.Dimension(1280, 263));
+
+        javax.swing.GroupLayout panelBodyLayout = new javax.swing.GroupLayout(panelBody);
+        panelBody.setLayout(panelBodyLayout);
+        panelBodyLayout.setHorizontalGroup(
+            panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 775, Short.MAX_VALUE)
+        );
+        panelBodyLayout.setVerticalGroup(
+            panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 480, Short.MAX_VALUE)
+        );
+
+        labelTitulo.setBackground(new java.awt.Color(46, 30, 34));
+        labelTitulo.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        labelTitulo.setForeground(new java.awt.Color(154, 16, 50));
+        labelTitulo.setText("QATAR 2022 - FIXTURE");
+
+        labelSubtitulo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        labelSubtitulo.setForeground(new java.awt.Color(154, 16, 50));
+        labelSubtitulo.setText("del 21 de noviembre al 18 de diciembre de 2022");
+
+        labelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/qatar_2022_logo.png"))); // NOI18N
+        labelLogo1.setText("LOGO");
+
+        javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
+        panelHeader.setLayout(panelHeaderLayout);
+        panelHeaderLayout.setHorizontalGroup(
+            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(175, 175, 175)
+                .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labelSubtitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelTitulo))
+                .addContainerGap(212, Short.MAX_VALUE))
+            .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelHeaderLayout.createSequentialGroup()
+                    .addGap(16, 16, 16)
+                    .addComponent(labelLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(611, Short.MAX_VALUE)))
+        );
+        panelHeaderLayout.setVerticalGroup(
+            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(labelTitulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelSubtitulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelHeaderLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(labelLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
 
         tabbedPane.setMaximumSize(panelBody.getMinimumSize());
 
@@ -4197,64 +4251,6 @@ public class Ventana extends javax.swing.JFrame {
         panelFinal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         tabbedPane.addTab("FINAL", panelFinal);
 
-        javax.swing.GroupLayout panelBodyLayout = new javax.swing.GroupLayout(panelBody);
-        panelBody.setLayout(panelBodyLayout);
-        panelBodyLayout.setHorizontalGroup(
-            panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBodyLayout.createSequentialGroup()
-                .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
-        );
-        panelBodyLayout.setVerticalGroup(
-            panelBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        tabbedPane.getAccessibleContext().setAccessibleName("tabB");
-
-        labelTitulo.setBackground(new java.awt.Color(46, 30, 34));
-        labelTitulo.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        labelTitulo.setForeground(new java.awt.Color(154, 16, 50));
-        labelTitulo.setText("QATAR 2022 - FIXTURE");
-
-        labelSubtitulo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        labelSubtitulo.setForeground(new java.awt.Color(154, 16, 50));
-        labelSubtitulo.setText("del 21 de noviembre al 18 de diciembre de 2022");
-
-        labelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/qatar_2022_logo.png"))); // NOI18N
-        labelLogo1.setText("LOGO");
-
-        javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
-        panelHeader.setLayout(panelHeaderLayout);
-        panelHeaderLayout.setHorizontalGroup(
-            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHeaderLayout.createSequentialGroup()
-                .addGap(175, 175, 175)
-                .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(labelSubtitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(labelTitulo))
-                .addContainerGap(212, Short.MAX_VALUE))
-            .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelHeaderLayout.createSequentialGroup()
-                    .addGap(16, 16, 16)
-                    .addComponent(labelLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(611, Short.MAX_VALUE)))
-        );
-        panelHeaderLayout.setVerticalGroup(
-            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHeaderLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(labelTitulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(labelSubtitulo)
-                .addContainerGap(71, Short.MAX_VALUE))
-            .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelHeaderLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(labelLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(10, Short.MAX_VALUE)))
-        );
-
         javax.swing.GroupLayout panelMainLayout = new javax.swing.GroupLayout(panelMain);
         panelMain.setLayout(panelMainLayout);
         panelMainLayout.setHorizontalGroup(
@@ -4262,32 +4258,39 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(panelMainLayout.createSequentialGroup()
                 .addGroup(panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(panelBody, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelMainLayout.createSequentialGroup()
+                        .addComponent(tabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(panelBody, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelMainLayout.setVerticalGroup(
             panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelMainLayout.createSequentialGroup()
-                .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(panelBody, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelBody, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)
+                    .addGroup(panelMainLayout.createSequentialGroup()
+                        .addComponent(tabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
+
+        tabbedPane.getAccessibleContext().setAccessibleName("tabB");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelMain, javax.swing.GroupLayout.PREFERRED_SIZE, 745, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panelMain, javax.swing.GroupLayout.DEFAULT_SIZE, 675, Short.MAX_VALUE))
         );
 
         pack();
