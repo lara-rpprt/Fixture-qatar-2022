@@ -6,6 +6,7 @@ package fixture.view;
 
 import fixture.model.Equipo;
 import fixture.model.Grupo;
+import java.util.HashSet;
 import static java.util.Objects.nonNull;
 import javax.swing.table.DefaultTableModel;
 
@@ -15,21 +16,21 @@ import javax.swing.table.DefaultTableModel;
  */
 public class TablaDePosiciones extends javax.swing.JFrame {
 
-    private Grupo grupo;
+    private HashSet<Equipo> equipos;
 
     /**
      * Creates new form TablaDePosiciones
      *
-     * @param g
+     * @param e
      */
-    public TablaDePosiciones(Grupo g) {
-        grupo = g;
+    public TablaDePosiciones(HashSet<Equipo> e) {
+        equipos = e;
 
         initComponents();
 
         DefaultTableModel tablaPosicionesModel = (DefaultTableModel) tablaPosiciones.getModel();
 
-        for (Equipo equipo : grupo.getEquipos()) {
+        for (Equipo equipo : equipos) {
             if (nonNull(equipo)) {
                 // Calculo la diferencia de goles
                 int diferenciaDeGoles = equipo.getGolesHechos() - equipo.getGolesEnContra();
