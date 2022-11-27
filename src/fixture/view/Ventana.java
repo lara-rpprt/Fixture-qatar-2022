@@ -8,6 +8,7 @@ import fixture.model.Equipo;
 import fixture.model.Fase;
 import fixture.model.Grupo;
 import fixture.model.Partido;
+import fixture.model.types.IdsPartidosConResultados;
 import fixture.repository.EquipoRepository;
 import fixture.repository.GrupoRepository;
 import fixture.repository.PartidoRepository;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -80,7 +82,36 @@ public class Ventana extends javax.swing.JFrame {
     private ArrayList<Integer> idsPartidosGrupoH = new ArrayList<Integer>();
     private JFormattedTextField[] golesLocalGrupoH = new JFormattedTextField[6];
     private JFormattedTextField[] golesVisitantesGrupoH = new JFormattedTextField[6];
+    
+    // Preparo arreglos para leer los campos de octavos
+    private ArrayList<Integer> idsPartidosOctavos = new ArrayList<Integer>();
+    private JFormattedTextField[] golesLocalOctavos = new JFormattedTextField[8];
+    private JFormattedTextField[] golesVisitantesOctavos = new JFormattedTextField[8];
 
+    // Preparo arreglos para leer los campos de cuartos
+    private ArrayList<Integer> idsPartidosCuartos = new ArrayList<Integer>();
+    private JFormattedTextField[] golesLocalCuartos = new JFormattedTextField[4];
+    private JFormattedTextField[] golesVisitantesCuartos = new JFormattedTextField[4];
+
+    // Preparo arreglos para leer los campos de semifinales
+    private ArrayList<Integer> idsPartidosSemifinales = new ArrayList<Integer>();
+    private JFormattedTextField[] golesLocalSemifinales = new JFormattedTextField[2];
+    private JFormattedTextField[] golesVisitantesSemifinales = new JFormattedTextField[2];
+
+    // Preparo arreglos para leer los campos de tercer puesto
+    private ArrayList<Integer> idsPartidosTercerPuesto = new ArrayList<Integer>();
+    private JFormattedTextField[] golesLocalTercerPuesto = new JFormattedTextField[1];
+    private JFormattedTextField[] golesVisitantesTercerPuesto = new JFormattedTextField[1];
+
+    // Preparo arreglos para leer los campos de final
+    private ArrayList<Integer> idsPartidosFinal = new ArrayList<Integer>();
+    private JFormattedTextField[] golesLocalFinal = new JFormattedTextField[1];
+    private JFormattedTextField[] golesVisitantesFinal = new JFormattedTextField[1];
+
+    private HashMap<Character, IdsPartidosConResultados> lectorDeDatosDePartidos = new HashMap();
+    
+    
+    
     // Defino la variable que va a contener las tablas de posiciones
     JFrame ventanaTablaDePosiciones;
 
@@ -105,6 +136,16 @@ public class Ventana extends javax.swing.JFrame {
         loadPartidosGrupoG();
 
         loadPartidosGrupoH();
+        
+        loadPartidosOctavos();
+
+        loadPartidosCuartos();
+
+        loadPartidosSemifinales();
+
+        loadPartidosTercerPuesto();
+
+        loadPartidosFinal();
     }
 
     /**
@@ -4398,25 +4439,23 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparatorOctavos1)
                     .addGroup(panelOctavosFila1Layout.createSequentialGroup()
-                        .addGroup(panelOctavosFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelOctavosFila1Layout.createSequentialGroup()
-                                .addComponent(lblFechaPartidoOctavos1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblNombreEstadioOctavos1))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOctavosFila1Layout.createSequentialGroup()
-                                .addComponent(label1roA)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblEquipoLocalOctavos1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(golesField1_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(guionOctavos1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(golesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblEquipoVisitanteOctavos1)))
+                        .addComponent(label1roA)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(label2doB)))
+                        .addComponent(lblEquipoLocalOctavos1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(golesField1_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(guionOctavos1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblEquipoVisitanteOctavos1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(label2doB))
+                    .addGroup(panelOctavosFila1Layout.createSequentialGroup()
+                        .addComponent(lblFechaPartidoOctavos1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblNombreEstadioOctavos1)))
                 .addContainerGap())
         );
         panelOctavosFila1Layout.setVerticalGroup(
@@ -4482,23 +4521,21 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(panelOctavosFila2Layout.createSequentialGroup()
                         .addComponent(label1roC)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panelOctavosFila2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelOctavosFila2Layout.createSequentialGroup()
-                                .addComponent(lblFechaPartidoOctavos2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblNombreEstadioOctavos2))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOctavosFila2Layout.createSequentialGroup()
-                                .addComponent(lblEquipoLocalOctavos2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(golesField1_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(guionOctavos2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(golesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblEquipoVisitanteOctavos2)))
+                        .addComponent(lblEquipoLocalOctavos2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(golesField1_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(label2doD)))
+                        .addComponent(guionOctavos2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblEquipoVisitanteOctavos2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(label2doD))
+                    .addGroup(panelOctavosFila2Layout.createSequentialGroup()
+                        .addComponent(lblFechaPartidoOctavos2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblNombreEstadioOctavos2)))
                 .addContainerGap())
         );
         panelOctavosFila2Layout.setVerticalGroup(
@@ -6476,148 +6513,64 @@ public class Ventana extends javax.swing.JFrame {
     
     private void btnVerTablaDePoscionesAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesAActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('a');
-
-        for (Equipo equipoGrupoA : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoA.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        
     }//GEN-LAST:event_btnVerTablaDePoscionesAActionPerformed
-
+    
     private void btnVerTablaDePoscionesBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesBActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('b');
-
-        for (Equipo equipoGrupoB : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoB.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
     }//GEN-LAST:event_btnVerTablaDePoscionesBActionPerformed
 
     private void btnVerTablaDePoscionesCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesCActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('c');
-
-        for (Equipo equipoGrupoC : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoC.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
     }//GEN-LAST:event_btnVerTablaDePoscionesCActionPerformed
 
     private void btnVerTablaDePoscionesDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesDActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('d');
-
-        for (Equipo equipoGrupoD : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoD.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
     }//GEN-LAST:event_btnVerTablaDePoscionesDActionPerformed
 
     private void btnVerTablaDePoscionesEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesEActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('e');
-
-        for (Equipo equipoGrupoE : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoE.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
     }//GEN-LAST:event_btnVerTablaDePoscionesEActionPerformed
 
     private void btnVerTablaDePoscionesFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesFActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('f');
-
-        for (Equipo equipoGrupoF : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoF.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
     }//GEN-LAST:event_btnVerTablaDePoscionesFActionPerformed
 
     private void btnVerTablaDePoscionesGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesGActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('g');
-
-        for (Equipo equipoGrupoG : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
-
-            equipoGrupoG.printDatosGenerales();
-
-            System.out.println("-----------------------------");
-        }
-
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
-        ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        ventanaTablaDePosiciones.setLocationRelativeTo(null);
-        ventanaTablaDePosiciones.setVisible(true);
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
     }//GEN-LAST:event_btnVerTablaDePoscionesGActionPerformed
 
     private void btnVerTablaDePoscioneHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscioneHActionPerformed
         HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('h');
+        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+    }//GEN-LAST:event_btnVerTablaDePoscioneHActionPerformed
 
-        for (Equipo equipoGrupoH : equipoGrupoActualizados) {
-            System.out.println("-----------------------------");
+    private HashSet<Equipo> convertirEquiposDeGrupoAEquipoRepository(Character letra) {
+        Grupo grupo = grupoRepository.get(letra);
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
 
-            equipoGrupoH.printDatosGenerales();
-
-            System.out.println("-----------------------------");
+        for (Equipo equipoGrupo : grupo.getEquipos()) {
+            Equipo equipoEncontrado = equipoRepository.find(equipoGrupo.getId());
+            equiposGrupoActualizados.add(equipoEncontrado);
         }
-
+        return equiposGrupoActualizados;
+    }
+    
+    private void crearYCompletarTablaDePosiciones ( HashSet<Equipo> equipoGrupoActualizados) {
         ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
         ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         ventanaTablaDePosiciones.setLocationRelativeTo(null);
         ventanaTablaDePosiciones.setVisible(true);
-    }//GEN-LAST:event_btnVerTablaDePoscioneHActionPerformed
-
+    }
+    
     private void guardarBtnCuartosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnCuartosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_guardarBtnCuartosActionPerformed
@@ -6637,19 +6590,7 @@ public class Ventana extends javax.swing.JFrame {
     private void guardarBtnOctavosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnOctavosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_guardarBtnOctavosActionPerformed
-
-    private HashSet<Equipo> convertirEquiposDeGrupoAEquipoRepository(Character letra) {
-        Grupo grupo = grupoRepository.get(letra);
-        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
-
-        for (Equipo equipoGrupo : grupo.getEquipos()) {
-            Equipo equipoEncontrado = equipoRepository.find(equipoGrupo.getId());
-            equiposGrupoActualizados.add(equipoEncontrado);
-        }
-        return equiposGrupoActualizados;
-    }
-    
-    
+   
     /**
      * @param args the command line arguments
      */
@@ -8096,8 +8037,8 @@ public class Ventana extends javax.swing.JFrame {
 
             i++;
         }
-    }
-
+    }   
+    
     private void loadPartidosGrupoH() {
 
         javax.swing.JLabel[] fechasH = {
@@ -8204,7 +8145,503 @@ public class Ventana extends javax.swing.JFrame {
             i++;
         }
     }
+    
+    private void loadPartidosOctavos() {
 
+        javax.swing.JLabel[] fechasOctavos = {
+            lblFechaPartidoOctavos1,
+            lblFechaPartidoOctavos2,
+            lblFechaPartidoOctavos3,
+            lblFechaPartidoOctavos4,
+            lblFechaPartidoOctavos5,
+            lblFechaPartidoOctavos6,
+            lblFechaPartidoOctavos7,
+            lblFechaPartidoOctavos8,};
+
+        javax.swing.JLabel[] equipoLocalesOctavos = {
+            lblEquipoLocalOctavos1,
+            lblEquipoLocalOctavos2,
+            lblEquipoLocalOctavos3,
+            lblEquipoLocalOctavos4,
+            lblEquipoLocalOctavos5,
+            lblEquipoLocalOctavos6,
+            lblEquipoLocalOctavos7,
+            lblEquipoLocalOctavos8,};
+
+        javax.swing.JLabel[] estadiosOctavos = {
+            lblNombreEstadioOctavos1,
+            lblNombreEstadioOctavos2,
+            lblNombreEstadioOctavos3,
+            lblNombreEstadioOctavos4,
+            lblNombreEstadioOctavos5,
+            lblNombreEstadioOctavos6,
+            lblNombreEstadioOctavos7,
+            lblNombreEstadioOctavos8,};
+
+        javax.swing.JLabel[] equiposVisitantesOctavos = {
+            lblEquipoVisitanteOctavos1,
+            lblEquipoVisitanteOctavos2,
+            lblEquipoVisitanteOctavos3,
+            lblEquipoVisitanteOctavos4,
+            lblEquipoVisitanteOctavos5,
+            lblEquipoVisitanteOctavos6,
+            lblEquipoVisitanteOctavos7,
+            lblEquipoVisitanteOctavos8,};
+
+        golesLocalOctavos[0] = golesField1_Octavos1;
+        golesLocalOctavos[1] = golesField1_Octavos2;
+        golesLocalOctavos[2] = golesField1_Octavos3;
+        golesLocalOctavos[3] = golesField1_Octavos4;
+        golesLocalOctavos[4] = golesField1_Octavos5;
+        golesLocalOctavos[5] = golesField1_Octavos6;
+        golesLocalOctavos[6] = golesField1_Octavos7;
+        golesLocalOctavos[7] = golesField1_Octavos8;
+
+        golesVisitantesOctavos[0] = golesField2_Octavos1;
+        golesVisitantesOctavos[1] = golesField2_Octavos2;
+        golesVisitantesOctavos[2] = golesField2_Octavos3;
+        golesVisitantesOctavos[3] = golesField2_Octavos4;
+        golesVisitantesOctavos[4] = golesField2_Octavos5;
+        golesVisitantesOctavos[5] = golesField2_Octavos6;
+        golesVisitantesOctavos[6] = golesField2_Octavos7;
+        golesVisitantesOctavos[7] = golesField2_Octavos8;
+
+        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.OCTAVOS);
+
+        Collections.sort(partidos, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido p1, Partido p2) {
+                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
+            }
+        });
+
+        List<Partido> partidosOrdenados = partidos.stream()
+                .sorted(Comparator.comparing(Partido::getFechaYHora))
+                .collect(Collectors.toList());
+
+        System.out.println(partidos);
+        int i = 0;
+        for (Partido p : partidosOrdenados) {
+
+            // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
+            idsPartidosOctavos.add(p.getId());
+
+            // Fecha con formato
+            fechasOctavos[i].setText(p.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu - hh:mm")));
+
+            // Nombre equipo local
+            String nombreEquipoLocal = p.getEquipo1() != null ? p.getEquipo1().getNombre() : "?";
+            equipoLocalesOctavos[i].setText(nombreEquipoLocal);
+
+            // Bandera equipo local
+            String pathBanderaEquipoLocal = p.getEquipo1() != null ? "src/static/img/banderas/" + p.getEquipo1().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoLocal = new ImageIcon(pathBanderaEquipoLocal);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoLocalAchicada = new ImageIcon(imagenEquipoLocal.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equipoLocalesOctavos[i].setIcon(imagenEquipoLocalAchicada);
+
+            estadiosOctavos[i].setText("Estadio " + p.getEstadio().getNombre());
+
+            // Nombre equipo visitante
+            String nombreEquipoVisitante = p.getEquipo2() != null ? p.getEquipo2().getNombre() : "?";
+            equiposVisitantesOctavos[i].setText(nombreEquipoVisitante);
+
+            // Bandera equipo visitante
+            String pathBanderaEquipoVisitante = p.getEquipo2() != null ? "src/static/img/banderas/" + p.getEquipo2().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoVisitante = new ImageIcon(pathBanderaEquipoVisitante);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoVisitanteAchicada = new ImageIcon(imagenEquipoVisitante.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equiposVisitantesOctavos[i].setIcon(imagenEquipoVisitanteAchicada);
+            equiposVisitantesOctavos[i].setHorizontalTextPosition(JLabel.LEFT);
+
+            // Si los equipos no están definidos deshabilito los campos
+            if (p.getEquipo1() == null || p.getEquipo2() == null) {
+                golesLocalOctavos[i].setEnabled(false);
+                golesVisitantesOctavos[i].setEnabled(false);
+            } else {
+                // Escribo los goles en los fields
+                golesLocalOctavos[i].setText(String.valueOf(p.getGolesEquipo1()));
+                golesVisitantesOctavos[i].setText(String.valueOf(p.getGolesEquipo2()));
+            }
+
+            i++;
+        }
+    }
+    
+    private void loadPartidosCuartos() {
+
+        javax.swing.JLabel[] fechasCuartos = {
+            lblFechaPartidoCuartos1,
+            lblFechaPartidoCuartos2,
+            lblFechaPartidoCuartos3,
+            lblFechaPartidoCuartos4,};
+
+        javax.swing.JLabel[] equipoLocalesCuartos = {
+            lblEquipoLocalCuartos1,
+            lblEquipoLocalCuartos2,
+            lblEquipoLocalCuartos3,
+            lblEquipoLocalCuartos4,};
+
+        javax.swing.JLabel[] estadiosCuartos = {
+            lblNombreEstadioCuartos1,
+            lblNombreEstadioCuartos2,
+            lblNombreEstadioCuartos3,
+            lblNombreEstadioCuartos4,};
+
+        javax.swing.JLabel[] equiposVisitantesCuartos = {
+            lblEquipoVisitanteCuartos1,
+            lblEquipoVisitanteCuartos2,
+            lblEquipoVisitanteCuartos3,
+            lblEquipoVisitanteCuartos4,};
+
+        golesLocalCuartos[0] = golesField1_cuartos1;
+        golesLocalCuartos[1] = golesField1_cuartos2;
+        golesLocalCuartos[2] = golesField1_cuartos3;
+        golesLocalCuartos[3] = golesField1_cuartos4;
+
+        golesVisitantesCuartos[0] = golesField2_cuartos1;
+        golesVisitantesCuartos[1] = golesField2_cuartos2;
+        golesVisitantesCuartos[2] = golesField2_cuartos3;
+        golesVisitantesCuartos[3] = golesField2_cuartos4;
+
+        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.CUARTOS);
+
+        Collections.sort(partidos, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido p1, Partido p2) {
+                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
+            }
+        });
+
+        List<Partido> partidosOrdenados = partidos.stream()
+                .sorted(Comparator.comparing(Partido::getFechaYHora))
+                .collect(Collectors.toList());
+
+        System.out.println(partidos);
+        int i = 0;
+        for (Partido p : partidosOrdenados) {
+
+            // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
+            idsPartidosCuartos.add(p.getId());
+
+            // Fecha con formato
+            fechasCuartos[i].setText(p.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu - hh:mm")));
+
+            // Nombre equipo local
+            String nombreEquipoLocal = p.getEquipo1() != null ? p.getEquipo1().getNombre() : "?";
+            equipoLocalesCuartos[i].setText(nombreEquipoLocal);
+
+            // Bandera equipo local
+            String pathBanderaEquipoLocal = p.getEquipo1() != null ? "src/static/img/banderas/" + p.getEquipo1().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoLocal = new ImageIcon(pathBanderaEquipoLocal);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoLocalAchicada = new ImageIcon(imagenEquipoLocal.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equipoLocalesCuartos[i].setIcon(imagenEquipoLocalAchicada);
+
+            estadiosCuartos[i].setText("Estadio " + p.getEstadio().getNombre());
+
+            // Nombre equipo visitante
+            String nombreEquipoVisitante = p.getEquipo2() != null ? p.getEquipo2().getNombre() : "?";
+            equiposVisitantesCuartos[i].setText(nombreEquipoVisitante);
+
+            // Bandera equipo visitante
+            String pathBanderaEquipoVisitante = p.getEquipo2() != null ? "src/static/img/banderas/" + p.getEquipo2().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoVisitante = new ImageIcon(pathBanderaEquipoVisitante);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoVisitanteAchicada = new ImageIcon(imagenEquipoVisitante.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equiposVisitantesCuartos[i].setIcon(imagenEquipoVisitanteAchicada);
+            equiposVisitantesCuartos[i].setHorizontalTextPosition(JLabel.LEFT);
+
+            // Si los equipos no están definidos deshabilito los campos
+            if (p.getEquipo1() == null || p.getEquipo2() == null) {
+                golesLocalCuartos[i].setEnabled(false);
+                golesVisitantesCuartos[i].setEnabled(false);
+            } else {
+                // Escribo los goles en los fields
+                golesLocalCuartos[i].setText(String.valueOf(p.getGolesEquipo1()));
+                golesVisitantesCuartos[i].setText(String.valueOf(p.getGolesEquipo2()));
+            }
+
+            i++;
+        }
+    }
+    
+    private void loadPartidosTercerPuesto() {
+
+        javax.swing.JLabel[] fechasTercerPuesto = {
+            lblFechaPartidoTercerPuesto1,};
+
+        javax.swing.JLabel[] equipoLocalesTercerPuesto = {
+            lblEquipoLocalTercerPuesto1,};
+
+        javax.swing.JLabel[] estadiosTercerPuesto = {
+            lblNombreEstadioTercerPuesto1,};
+
+        javax.swing.JLabel[] equiposVisitantesTercerPuesto = {
+            lblEquipoVisitanteTercerPuesto1,};
+
+        golesLocalTercerPuesto[0] = golesField1_tercerPuesto1;
+
+        golesVisitantesTercerPuesto[0] = golesField2_tercerPuesto1;
+
+        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.TERCER_PUESTO);
+
+        Collections.sort(partidos, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido p1, Partido p2) {
+                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
+            }
+        });
+
+        List<Partido> partidosOrdenados = partidos.stream()
+                .sorted(Comparator.comparing(Partido::getFechaYHora))
+                .collect(Collectors.toList());
+
+        System.out.println(partidos);
+        int i = 0;
+        for (Partido p : partidosOrdenados) {
+
+            // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
+            idsPartidosTercerPuesto.add(p.getId());
+
+            // Fecha con formato
+            fechasTercerPuesto[i].setText(p.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu - hh:mm")));
+
+            // Nombre equipo local
+            String nombreEquipoLocal = p.getEquipo1() != null ? p.getEquipo1().getNombre() : "?";
+            equipoLocalesTercerPuesto[i].setText(nombreEquipoLocal);
+
+            // Bandera equipo local
+            String pathBanderaEquipoLocal = p.getEquipo1() != null ? "src/static/img/banderas/" + p.getEquipo1().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoLocal = new ImageIcon(pathBanderaEquipoLocal);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoLocalAchicada = new ImageIcon(imagenEquipoLocal.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equipoLocalesTercerPuesto[i].setIcon(imagenEquipoLocalAchicada);
+
+            estadiosTercerPuesto[i].setText("Estadio " + p.getEstadio().getNombre());
+
+            // Nombre equipo visitante
+            String nombreEquipoVisitante = p.getEquipo2() != null ? p.getEquipo2().getNombre() : "?";
+            equiposVisitantesTercerPuesto[i].setText(nombreEquipoVisitante);
+
+            // Bandera equipo visitante
+            String pathBanderaEquipoVisitante = p.getEquipo2() != null ? "src/static/img/banderas/" + p.getEquipo2().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoVisitante = new ImageIcon(pathBanderaEquipoVisitante);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoVisitanteAchicada = new ImageIcon(imagenEquipoVisitante.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equiposVisitantesTercerPuesto[i].setIcon(imagenEquipoVisitanteAchicada);
+            equiposVisitantesTercerPuesto[i].setHorizontalTextPosition(JLabel.LEFT);
+
+            // Si los equipos no están definidos deshabilito los campos
+            if (p.getEquipo1() == null || p.getEquipo2() == null) {
+                golesLocalTercerPuesto[i].setEnabled(false);
+                golesVisitantesTercerPuesto[i].setEnabled(false);
+            } else {
+                // Escribo los goles en los fields
+                golesLocalTercerPuesto[i].setText(String.valueOf(p.getGolesEquipo1()));
+                golesVisitantesTercerPuesto[i].setText(String.valueOf(p.getGolesEquipo2()));
+            }
+
+            i++;
+        }
+    }
+    
+    private void loadPartidosSemifinales() {
+
+        javax.swing.JLabel[] fechasSemifinales = {
+            lblFechaPartidoSemifinales1,
+            lblFechaPartidoSemifinales2,};
+
+        javax.swing.JLabel[] equipoLocalesSemifinales = {
+            lblEquipoLocalSemifinales1,
+            lblEquipoLocalSemifinales2,};
+
+        javax.swing.JLabel[] estadiosSemifinales = {
+            lblNombreEstadioSemifinales1,
+            lblNombreEstadioSemifinales2,};
+
+        javax.swing.JLabel[] equiposVisitantesSemifinales = {
+            lblEquipoVisitanteSemifinales1,
+            lblEquipoVisitanteSemifinales2,};
+
+        golesLocalSemifinales[0] = golesField1_semifinales1;
+        golesLocalSemifinales[1] = golesField1_semifinales2;
+
+        golesVisitantesSemifinales[0] = golesField2_semifinales1;
+        golesVisitantesSemifinales[1] = golesField2_semifinales2;
+
+        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.SEMIFINALES);
+
+        Collections.sort(partidos, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido p1, Partido p2) {
+                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
+            }
+        });
+
+        List<Partido> partidosOrdenados = partidos.stream()
+                .sorted(Comparator.comparing(Partido::getFechaYHora))
+                .collect(Collectors.toList());
+
+        System.out.println(partidos);
+        int i = 0;
+        for (Partido p : partidosOrdenados) {
+
+            // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
+            idsPartidosSemifinales.add(p.getId());
+
+            // Fecha con formato
+            fechasSemifinales[i].setText(p.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu - hh:mm")));
+
+            // Nombre equipo local
+            String nombreEquipoLocal = p.getEquipo1() != null ? p.getEquipo1().getNombre() : "?";
+            equipoLocalesSemifinales[i].setText(nombreEquipoLocal);
+
+            // Bandera equipo local
+            String pathBanderaEquipoLocal = p.getEquipo1() != null ? "src/static/img/banderas/" + p.getEquipo1().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoLocal = new ImageIcon(pathBanderaEquipoLocal);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoLocalAchicada = new ImageIcon(imagenEquipoLocal.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equipoLocalesSemifinales[i].setIcon(imagenEquipoLocalAchicada);
+
+            estadiosSemifinales[i].setText("Estadio " + p.getEstadio().getNombre());
+
+            // Nombre equipo visitante
+            String nombreEquipoVisitante = p.getEquipo2() != null ? p.getEquipo2().getNombre() : "?";
+            equiposVisitantesSemifinales[i].setText(nombreEquipoVisitante);
+
+            // Bandera equipo visitante
+            String pathBanderaEquipoVisitante = p.getEquipo2() != null ? "src/static/img/banderas/" + p.getEquipo2().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoVisitante = new ImageIcon(pathBanderaEquipoVisitante);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoVisitanteAchicada = new ImageIcon(imagenEquipoVisitante.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equiposVisitantesSemifinales[i].setIcon(imagenEquipoVisitanteAchicada);
+            equiposVisitantesSemifinales[i].setHorizontalTextPosition(JLabel.LEFT);
+
+            // Si los equipos no están definidos deshabilito los campos
+            if (p.getEquipo1() == null || p.getEquipo2() == null) {
+                golesLocalSemifinales[i].setEnabled(false);
+                golesVisitantesSemifinales[i].setEnabled(false);
+            } else {
+                // Escribo los goles en los fields
+                golesLocalSemifinales[i].setText(String.valueOf(p.getGolesEquipo1()));
+                golesVisitantesSemifinales[i].setText(String.valueOf(p.getGolesEquipo2()));
+            }
+
+            i++;
+        }
+    }
+    
+    private void loadPartidosFinal() {
+
+        javax.swing.JLabel[] fechasFinal = {
+            lblFechaPartidoFinal1,};
+
+        javax.swing.JLabel[] equipoLocalesFinal = {
+            lblEquipoLocalFinal1,};
+
+        javax.swing.JLabel[] estadiosFinal = {
+            lblNombreEstadioFinal1,};
+
+        javax.swing.JLabel[] equiposVisitantesFinal = {
+            lblEquipoVisitanteFinal1,};
+
+        golesLocalFinal[0] = golesField1_final1;
+
+        golesVisitantesFinal[0] = golesField2_final1;
+
+        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.FINAL);
+
+        Collections.sort(partidos, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido p1, Partido p2) {
+                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
+            }
+        });
+
+        List<Partido> partidosOrdenados = partidos.stream()
+                .sorted(Comparator.comparing(Partido::getFechaYHora))
+                .collect(Collectors.toList());
+
+        System.out.println(partidos);
+        int i = 0;
+        for (Partido p : partidosOrdenados) {
+
+            // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
+            idsPartidosFinal.add(p.getId());
+
+            // Fecha con formato
+            fechasFinal[i].setText(p.getFechaYHora().format(DateTimeFormatter.ofPattern("d MMM uuuu - hh:mm")));
+
+            // Nombre equipo local
+            String nombreEquipoLocal = p.getEquipo1() != null ? p.getEquipo1().getNombre() : "?";
+            equipoLocalesFinal[i].setText(nombreEquipoLocal);
+
+            // Bandera equipo local
+            String pathBanderaEquipoLocal = p.getEquipo1() != null ? "src/static/img/banderas/" + p.getEquipo1().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoLocal = new ImageIcon(pathBanderaEquipoLocal);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoLocalAchicada = new ImageIcon(imagenEquipoLocal.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equipoLocalesFinal[i].setIcon(imagenEquipoLocalAchicada);
+
+            estadiosFinal[i].setText("Estadio " + p.getEstadio().getNombre());
+
+            // Nombre equipo visitante
+            String nombreEquipoVisitante = p.getEquipo2() != null ? p.getEquipo2().getNombre() : "?";
+            equiposVisitantesFinal[i].setText(nombreEquipoVisitante);
+
+            // Bandera equipo visitante
+            String pathBanderaEquipoVisitante = p.getEquipo2() != null ? "src/static/img/banderas/" + p.getEquipo2().getId() + ".png" : "src/static/img/banderas/placeholder.png";
+            ImageIcon imagenEquipoVisitante = new ImageIcon(pathBanderaEquipoVisitante);
+
+            // Achico la imagen
+            ImageIcon imagenEquipoVisitanteAchicada = new ImageIcon(imagenEquipoVisitante.getImage().getScaledInstance(50, 33, Image.SCALE_SMOOTH));
+
+            // Vinculo la imagen con el label
+            equiposVisitantesFinal[i].setIcon(imagenEquipoVisitanteAchicada);
+            equiposVisitantesFinal[i].setHorizontalTextPosition(JLabel.LEFT);
+
+            // Si los equipos no están definidos deshabilito los campos
+            if (p.getEquipo1() == null || p.getEquipo2() == null) {
+                golesLocalFinal[i].setEnabled(false);
+                golesVisitantesFinal[i].setEnabled(false);
+            } else {
+                // Escribo los goles en los fields
+                golesLocalFinal[i].setText(String.valueOf(p.getGolesEquipo1()));
+                golesVisitantesFinal[i].setText(String.valueOf(p.getGolesEquipo2()));
+            }
+
+            i++;
+        }
+    }
+    
     private void cargarRepositorios() {
 
         //GruposMigrations.up();
