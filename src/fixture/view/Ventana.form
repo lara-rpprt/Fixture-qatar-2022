@@ -203,6 +203,9 @@
                               <Format format="#0" subtype="-1" type="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="golesField1_A1ActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JFormattedTextField" name="golesField2_A1">
                           <Properties>
@@ -210,6 +213,9 @@
                               <Format format="#0" subtype="-1" type="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="golesField2_A1ActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="guionA1">
                           <Properties>
