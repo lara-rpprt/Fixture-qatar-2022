@@ -16,6 +16,7 @@ import fixture.repository.PartidoRepository;
 import fixture.repository.migrations.GruposMigrations;
 import fixture.repository.migrations.PartidosMigrations;
 import fixture.service.FixtureService;
+import fixture.service.FixtureServiceImpl;
 import java.awt.HeadlessException;
 import java.awt.Image;
 import java.time.format.DateTimeFormatter;
@@ -39,10 +40,9 @@ import javax.swing.JOptionPane;
  */
 
 public class Ventana extends javax.swing.JFrame {
-
-    private GrupoRepository grupoRepository;
-    private PartidoRepository partidoRepository;
-    private EquipoRepository equipoRepository;
+    
+    private FixtureService fixtureService ;
+    
 
     private ImageIcon logoImage;
 
@@ -118,13 +118,11 @@ public class Ventana extends javax.swing.JFrame {
     // Defino la variable que va a contener las tablas de posiciones
     JFrame ventanaTablaDePosiciones;
     
-    FixtureService fixtureService = new FixtureService();
     
-    public Ventana() {
-
+    
+    public Ventana(FixtureService fixtureService) {
+        this.fixtureService = fixtureService;
         initComponents();
-
-        cargarRepositorios();
 
         loadPartidosGrupoA();
 
@@ -5871,108 +5869,82 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void guardarBtnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnAActionPerformed
-        Grupo grupoA = grupoRepository.get('a');
-
-        leerGolesDeGrupoYGuardarCambios(grupoA);
+        //Grupo grupoA = fixtureService.obtenerGrupo('a');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('a'));
         
     }//GEN-LAST:event_guardarBtnAActionPerformed
     
     private void guardarBtnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnBActionPerformed
-        Grupo grupoB = grupoRepository.get('b');
-
-        leerGolesDeGrupoYGuardarCambios(grupoB);
+        //Grupo grupoB = fixtureService.obtenerGrupo('b');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('b'));
     }//GEN-LAST:event_guardarBtnBActionPerformed
     
     private void guardarBtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnCActionPerformed
-        Grupo grupoC = grupoRepository.get('b');
-
-        leerGolesDeGrupoYGuardarCambios(grupoC);
+        //Grupo grupoC = fixtureService.obtenerGrupo('c');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('c'));
     }//GEN-LAST:event_guardarBtnCActionPerformed
     
     private void guardarBtnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnDActionPerformed
-        Grupo grupoD = grupoRepository.get('d');
-
-        leerGolesDeGrupoYGuardarCambios(grupoD);
+        //Grupo grupoD = fixtureService.obtenerGrupo('d');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('d'));
     }//GEN-LAST:event_guardarBtnDActionPerformed
     
     private void guardarBtnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnEActionPerformed
-        Grupo grupoE = grupoRepository.get('e');
-
-        leerGolesDeGrupoYGuardarCambios(grupoE);
+        //Grupo grupoE = fixtureService.obtenerGrupo('e');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('e'));
     }//GEN-LAST:event_guardarBtnEActionPerformed
         
     private void guardarBtnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnFActionPerformed
-        Grupo grupoF = grupoRepository.get('f');
-
-        leerGolesDeGrupoYGuardarCambios(grupoF);
+        //Grupo grupoF = fixtureService.obtenerGrupo('f');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('f'));
     }//GEN-LAST:event_guardarBtnFActionPerformed
         
     private void guardarBtnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnGActionPerformed
-        Grupo grupoG = grupoRepository.get('g');
-
-        leerGolesDeGrupoYGuardarCambios(grupoG);
+        //Grupo grupoG = fixtureService.obtenerGrupo('g');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('g'));
     }//GEN-LAST:event_guardarBtnGActionPerformed
         
     private void guardarBtnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnHActionPerformed
-        Grupo grupoH = grupoRepository.get('h');
-
-        leerGolesDeGrupoYGuardarCambios(grupoH);
+        //Grupo grupoH = fixtureService.obtenerGrupo('h');
+        leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('h'));
     }//GEN-LAST:event_guardarBtnHActionPerformed
     
     private void btnVerTablaDePoscionesAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesAActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('a');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
-        
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('a'));
     }//GEN-LAST:event_btnVerTablaDePoscionesAActionPerformed
     
     private void btnVerTablaDePoscionesBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesBActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('b');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('b'));
     }//GEN-LAST:event_btnVerTablaDePoscionesBActionPerformed
 
     private void btnVerTablaDePoscionesCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesCActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('c');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('c'));
     }//GEN-LAST:event_btnVerTablaDePoscionesCActionPerformed
 
     private void btnVerTablaDePoscionesDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesDActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('d');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('d'));
     }//GEN-LAST:event_btnVerTablaDePoscionesDActionPerformed
 
     private void btnVerTablaDePoscionesEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesEActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('e');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('e'));
     }//GEN-LAST:event_btnVerTablaDePoscionesEActionPerformed
 
     private void btnVerTablaDePoscionesFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesFActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('f');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('f'));
     }//GEN-LAST:event_btnVerTablaDePoscionesFActionPerformed
 
     private void btnVerTablaDePoscionesGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscionesGActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('g');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('g'));
     }//GEN-LAST:event_btnVerTablaDePoscionesGActionPerformed
 
     private void btnVerTablaDePoscioneHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerTablaDePoscioneHActionPerformed
-        HashSet<Equipo> equipoGrupoActualizados = convertirEquiposDeGrupoAEquipoRepository('h');
-        crearYCompletarTablaDePosiciones(equipoGrupoActualizados);
+        crearYCompletarTablaDePosiciones(fixtureService.obtenerGrupo('h'));
     }//GEN-LAST:event_btnVerTablaDePoscioneHActionPerformed
 
-    private HashSet<Equipo> convertirEquiposDeGrupoAEquipoRepository(Character letra) {
-        Grupo grupo = grupoRepository.get(letra);
-        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
-
-        for (Equipo equipoGrupo : grupo.getEquipos()) {
-            Equipo equipoEncontrado = equipoRepository.find(equipoGrupo.getId());
-            equiposGrupoActualizados.add(equipoEncontrado);
-        }
-        return equiposGrupoActualizados;
-    }
-    
-    private void crearYCompletarTablaDePosiciones ( HashSet<Equipo> equipoGrupoActualizados) {
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipoGrupoActualizados);
+    private void crearYCompletarTablaDePosiciones(Grupo grupo) {
+        HashSet<Equipo> equipos = recuperarDatosDeEquipoDeEquipoRepository(grupo);
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones(equipos);
         ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         ventanaTablaDePosiciones.setLocationRelativeTo(null);
@@ -5984,7 +5956,7 @@ public class Ventana extends javax.swing.JFrame {
 
         // Para guardar correctamente el dato tengo que trabajar sobre EquipoRepository
         for (Equipo equipoGrupo : grupo.getEquipos()) {
-            Equipo equipoEncontrado = equipoRepository.find(equipoGrupo.getId());
+            Equipo equipoEncontrado = fixtureService.obtenerEquipoPorID(equipoGrupo.getId());
 
             // Antes de actualizar los valores para la tabla de cada equipo hay que limpiarlos
             equipoEncontrado.limpiarDatosDePartidos();
@@ -6043,7 +6015,7 @@ public class Ventana extends javax.swing.JFrame {
 
         int i = 0;
         for (Integer id : listadoDeIds) {
-            for (Partido p : partidoRepository.findBy(Fase.DE_GRUPOS, grupo)) {
+            for (Partido p : fixtureService.obtenerPartidosDeFaseGrupo(grupo)) {
                 if (p.getId() == id) {
                     p.setGolesEquipo1(Integer.parseInt(golesLocal[i].getText()));
                     p.setGolesEquipo2(Integer.parseInt(golesVisitante[i].getText()));
@@ -6071,15 +6043,29 @@ public class Ventana extends javax.swing.JFrame {
 
         guardarCambios(grupo, equiposGrupoActualizados);
     }
+    
+    private HashSet<Equipo> recuperarDatosDeEquipoDeEquipoRepository(Grupo grupo) {
+        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
+        // Para guardar correctamente el dato tengo que trabajar sobre EquipoRepository
+        for (Equipo equipoGrupo : grupo.getEquipos()) {
+            Equipo equipoEncontrado = fixtureService.obtenerEquipoPorID(equipoGrupo.getId());
+                    
+            
+            // esta lista (HashSet) va a ser la encargada que gestionar los datos de Equipos en el repositorio correspondiente
+            equiposGrupoActualizados.add(equipoEncontrado);
+        }
+
+        return equiposGrupoActualizados;
+    }
 
     private void guardarCambios(Grupo grupo, HashSet<Equipo> equiposGrupoActualizados) throws HeadlessException {
         try {
-            fixtureService.validarGoles(partidoRepository.findBy(Fase.DE_GRUPOS, grupo));
-            partidoRepository.guardarPartidosEnArchivo();
+            fixtureService.validarGoles(fixtureService.obtenerPartidosDeFaseGrupo(grupo));
+            fixtureService.guardarPartidosEnArchivo();
 
             // Guardo los datos y puntaje de equipos actualizados
             for (Equipo equipoGrupo : equiposGrupoActualizados) {
-                equipoRepository.actualizarDatosDeEquiopoEnArchivo(equipoGrupo);
+                fixtureService.actualizarDatosDeEquiopoEnArchivo(equipoGrupo);
             }
 
             JOptionPane.showMessageDialog(this, "Guardado con éxito", this.getTitle(), JOptionPane.INFORMATION_MESSAGE);
@@ -6160,41 +6146,6 @@ public class Ventana extends javax.swing.JFrame {
     private void golesField1_A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_golesField1_A1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_golesField1_A1ActionPerformed
-   
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Ventana().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVerTablaDePoscioneH;
@@ -6911,9 +6862,8 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoA[4] = golesField2_A5;
         golesVisitantesGrupoA[5] = golesField2_A6;
 
-        Grupo grupoA = grupoRepository.get('a');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoA);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('a'); 
+            //partidoRepository.findBy(Fase.DE_GRUPOS, grupoA);
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7017,9 +6967,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoB[4] = golesField2_B5;
         golesVisitantesGrupoB[5] = golesField2_B6;
 
-        Grupo grupoB = grupoRepository.get('b');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoB);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('b');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7123,9 +7071,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoC[4] = golesField2_C5;
         golesVisitantesGrupoC[5] = golesField2_C6;
 
-        Grupo grupoC = grupoRepository.get('c');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoC);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('c');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7230,9 +7176,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoD[4] = golesField2_D5;
         golesVisitantesGrupoD[5] = golesField2_D6;
 
-        Grupo grupoD = grupoRepository.get('d');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoD);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('d');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7337,9 +7281,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoE[4] = golesField2_E5;
         golesVisitantesGrupoE[5] = golesField2_E6;
 
-        Grupo grupoE = grupoRepository.get('e');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoE);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('e');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7444,9 +7386,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoF[4] = golesField2_F5;
         golesVisitantesGrupoF[5] = golesField2_F6;
 
-        Grupo grupoF = grupoRepository.get('f');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoF);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('f');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7551,9 +7491,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoG[4] = golesField2_G5;
         golesVisitantesGrupoG[5] = golesField2_G6;
 
-        Grupo grupoG = grupoRepository.get('g');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoG);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('g');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7658,9 +7596,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesGrupoH[4] = golesField2_H5;
         golesVisitantesGrupoH[5] = golesField2_H6;
 
-        Grupo grupoH = grupoRepository.get('h');
-
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.DE_GRUPOS, grupoH);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseGrupo('h');
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7776,8 +7712,8 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesOctavos[6] = golesField2_Octavos7;
         golesVisitantesOctavos[7] = golesField2_Octavos8;
 
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.OCTAVOS);
-
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseOctavos(); 
+        
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
             public int compare(Partido p1, Partido p2) {
@@ -7880,7 +7816,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesCuartos[2] = golesField2_cuartos3;
         golesVisitantesCuartos[3] = golesField2_cuartos4;
 
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.CUARTOS);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseCuartos();
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -7966,7 +7902,7 @@ public class Ventana extends javax.swing.JFrame {
 
         golesVisitantesTercerPuesto[0] = golesField2_tercerPuesto1;
 
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.TERCER_PUESTO);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeTercerPuesto();;
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -8058,7 +7994,7 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesSemifinales[0] = golesField2_semifinales1;
         golesVisitantesSemifinales[1] = golesField2_semifinales2;
 
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.SEMIFINALES);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseSemifinales();
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -8144,7 +8080,7 @@ public class Ventana extends javax.swing.JFrame {
 
         golesVisitantesFinal[0] = golesField2_final1;
 
-        ArrayList<Partido> partidos = partidoRepository.findBy(Fase.FINAL);
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidoFinal();
 
         Collections.sort(partidos, new Comparator<Partido>() {
             @Override
@@ -8212,12 +8148,4 @@ public class Ventana extends javax.swing.JFrame {
         }
     }
     
-    private void cargarRepositorios() {
-
-        //GruposMigrations.up();
-        //PartidosMigrations.up();
-        grupoRepository = new GrupoRepository();
-        partidoRepository = new PartidoRepository();
-        equipoRepository = new EquipoRepository();
-    }
 }
