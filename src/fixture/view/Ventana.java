@@ -14,6 +14,7 @@ import javax.swing.ImageIcon;
 public class Ventana extends javax.swing.JFrame {
 
     private ImageIcon logoImage;
+    // Una modificación
     
     /**
      * Creates new form Ventana
