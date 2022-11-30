@@ -6,6 +6,7 @@ package fixture.view;
 
 import fixture.model.Equipo;
 import fixture.model.Grupo;
+import java.util.ArrayList;
 import java.util.HashSet;
 import static java.util.Objects.nonNull;
 import javax.swing.table.DefaultTableModel;
@@ -16,14 +17,14 @@ import javax.swing.table.DefaultTableModel;
  */
 public class TablaDePosiciones extends javax.swing.JFrame {
 
-    private HashSet<Equipo> equipos;
+    private ArrayList<Equipo> equipos;
 
     /**
      * Creates new form TablaDePosiciones
      *
      * @param e
      */
-    public TablaDePosiciones(HashSet<Equipo> e) {
+    public TablaDePosiciones(ArrayList<Equipo> e) {
         equipos = e;
 
         initComponents();

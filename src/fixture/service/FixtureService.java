@@ -45,4 +45,8 @@ public interface FixtureService {
     void actualizarDatosDeEquiopoEnArchivo(Equipo equipoGrupo);
     
     void validarGoles (ArrayList<Partido> partidos);
+    
+    HashSet<Equipo> recuperarDatosDeEquipoDeEquipoRepository(Grupo grupo);
+    
+    ArrayList<Equipo> ordenarEquiposYCompletarOctavos(HashSet<Equipo> e, boolean guardandoCambios);
 }   

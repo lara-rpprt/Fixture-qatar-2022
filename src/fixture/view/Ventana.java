@@ -5942,9 +5942,11 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVerTablaDePoscioneHActionPerformed
 
     private void crearYCompletarTablaDePosiciones(Grupo grupo) {
-        HashSet<Equipo> equipos = recuperarDatosDeEquipoDeEquipoRepository(grupo);
+        HashSet<Equipo> equipos = fixtureService.recuperarDatosDeEquipoDeEquipoRepository(grupo);
         
-        ventanaTablaDePosiciones = new TablaDePosiciones(equipos);
+        ArrayList<Equipo> equiposOrdenados = fixtureService.ordenarEquiposYCompletarOctavos(equipos, false);
+        
+        ventanaTablaDePosiciones = new TablaDePosiciones(equiposOrdenados);
         ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         ventanaTablaDePosiciones.setLocationRelativeTo(null);
@@ -5952,17 +5954,11 @@ public class Ventana extends javax.swing.JFrame {
     }
     
     private void leerGolesDeGrupoYGuardarCambios(Grupo grupo) {
-        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
-
-        // Para guardar correctamente el dato tengo que trabajar sobre EquipoRepository
-        for (Equipo equipoGrupo : grupo.getEquipos()) {
-            Equipo equipoEncontrado = fixtureService.obtenerEquipoPorID(equipoGrupo.getId());
-
-            // Antes de actualizar los valores para la tabla de cada equipo hay que limpiarlos
-            equipoEncontrado.limpiarDatosDePartidos();
-
-            // esta lista (HashSet) va a ser la encargada que gestionar los datos de Equipos en el repositorio correspondiente
-            equiposGrupoActualizados.add(equipoEncontrado);
+        
+        HashSet<Equipo> equiposGrupoActualizados = fixtureService.recuperarDatosDeEquipoDeEquipoRepository(grupo);
+        
+        for(Equipo equipoActualizado : equiposGrupoActualizados){
+            equipoActualizado.limpiarDatosDePartidos();
         }
 
         // Busco el array conteniendo los ids de partidos y los campos de formulario del grupo que corresponda
@@ -6044,20 +6040,6 @@ public class Ventana extends javax.swing.JFrame {
         guardarCambios(grupo, equiposGrupoActualizados);
     }
     
-    private HashSet<Equipo> recuperarDatosDeEquipoDeEquipoRepository(Grupo grupo) {
-        HashSet<Equipo> equiposGrupoActualizados = new HashSet();
-        // Para guardar correctamente el dato tengo que trabajar sobre EquipoRepository
-        for (Equipo equipoGrupo : grupo.getEquipos()) {
-            Equipo equipoEncontrado = fixtureService.obtenerEquipoPorID(equipoGrupo.getId());
-                    
-            
-            // esta lista (HashSet) va a ser la encargada que gestionar los datos de Equipos en el repositorio correspondiente
-            equiposGrupoActualizados.add(equipoEncontrado);
-        }
-
-        return equiposGrupoActualizados;
-    }
-
     private void guardarCambios(Grupo grupo, HashSet<Equipo> equiposGrupoActualizados) throws HeadlessException {
         try {
             fixtureService.validarGoles(fixtureService.obtenerPartidosDeFaseGrupo(grupo));
