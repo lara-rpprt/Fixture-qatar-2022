@@ -637,6 +637,7 @@ public class Ventana extends javax.swing.JFrame {
         jScrollPaneA1 = new javax.swing.JScrollPane();
         panelInteriorA1 = new javax.swing.JPanel();
         panelInteriorOctavos = new javax.swing.JPanel();
+        guardarBtnOctavos = new javax.swing.JButton();
         panelOctavosFila1 = new javax.swing.JPanel();
         lblFechaPartidoOctavos1 = new javax.swing.JLabel();
         lblEquipoLocalOctavos1 = new javax.swing.JLabel();
@@ -648,6 +649,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos1 = new javax.swing.JLabel();
         label1roA = new javax.swing.JLabel();
         label2doB = new javax.swing.JLabel();
+        penalesField1_Octavos1 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos1 = new javax.swing.JFormattedTextField();
         panelOctavosFila2 = new javax.swing.JPanel();
         lblFechaPartidoOctavos2 = new javax.swing.JLabel();
         lblEquipoLocalOctavos2 = new javax.swing.JLabel();
@@ -659,6 +662,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos2 = new javax.swing.JLabel();
         label1roC = new javax.swing.JLabel();
         label2doD = new javax.swing.JLabel();
+        penalesField1_Octavos2 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos2 = new javax.swing.JFormattedTextField();
         panelOctavosFila3 = new javax.swing.JPanel();
         lblFechaPartidoOctavos3 = new javax.swing.JLabel();
         lblEquipoLocalOctavos3 = new javax.swing.JLabel();
@@ -670,6 +675,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos3 = new javax.swing.JLabel();
         label1roB = new javax.swing.JLabel();
         label2doA = new javax.swing.JLabel();
+        penalesField1_Octavos3 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos3 = new javax.swing.JFormattedTextField();
         panelOctavosFila4 = new javax.swing.JPanel();
         lblFechaPartidoOctavos4 = new javax.swing.JLabel();
         lblEquipoLocalOctavos4 = new javax.swing.JLabel();
@@ -681,6 +688,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos4 = new javax.swing.JLabel();
         label1roD = new javax.swing.JLabel();
         label2doC = new javax.swing.JLabel();
+        penalesField1_Octavos4 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos4 = new javax.swing.JFormattedTextField();
         panelOctavosFila5 = new javax.swing.JPanel();
         lblFechaPartidoOctavos5 = new javax.swing.JLabel();
         lblEquipoLocalOctavos5 = new javax.swing.JLabel();
@@ -692,6 +701,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos5 = new javax.swing.JLabel();
         label1roE = new javax.swing.JLabel();
         label2doF = new javax.swing.JLabel();
+        penalesField1_Octavos5 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos5 = new javax.swing.JFormattedTextField();
         panelOctavosFila6 = new javax.swing.JPanel();
         lblFechaPartidoOctavos6 = new javax.swing.JLabel();
         lblEquipoLocalOctavos6 = new javax.swing.JLabel();
@@ -703,6 +714,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos6 = new javax.swing.JLabel();
         label1roG = new javax.swing.JLabel();
         label2doH = new javax.swing.JLabel();
+        penalesField1_Octavos6 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos6 = new javax.swing.JFormattedTextField();
         panelOctavosFila7 = new javax.swing.JPanel();
         lblFechaPartidoOctavos7 = new javax.swing.JLabel();
         lblEquipoLocalOctavos7 = new javax.swing.JLabel();
@@ -714,6 +727,8 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos7 = new javax.swing.JLabel();
         label1roF = new javax.swing.JLabel();
         label2doE = new javax.swing.JLabel();
+        penalesField1_Octavos7 = new javax.swing.JFormattedTextField();
+        penalesField12_Octavos7 = new javax.swing.JFormattedTextField();
         panelOctavosFila8 = new javax.swing.JPanel();
         lblFechaPartidoOctavos8 = new javax.swing.JLabel();
         lblEquipoLocalOctavos8 = new javax.swing.JLabel();
@@ -725,9 +740,11 @@ public class Ventana extends javax.swing.JFrame {
         guionOctavos8 = new javax.swing.JLabel();
         label1roH = new javax.swing.JLabel();
         label2doG = new javax.swing.JLabel();
-        guardarBtnOctavos = new javax.swing.JButton();
+        penalesField1_Octavos8 = new javax.swing.JFormattedTextField();
+        penalesField2_Octavos8 = new javax.swing.JFormattedTextField();
         panelCuartos = new javax.swing.JPanel();
         panelInteriorCuartos = new javax.swing.JPanel();
+        guardarBtnCuartos = new javax.swing.JButton();
         panelCuartosFila1 = new javax.swing.JPanel();
         lblFechaPartidoCuartos1 = new javax.swing.JLabel();
         lblEquipoLocalCuartos1 = new javax.swing.JLabel();
@@ -737,6 +754,8 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_cuartos1 = new javax.swing.JFormattedTextField();
         golesField2_cuartos1 = new javax.swing.JFormattedTextField();
         guionCuartos1 = new javax.swing.JLabel();
+        penalesField1_cuartos1 = new javax.swing.JFormattedTextField();
+        penalesField2_cuartos1 = new javax.swing.JFormattedTextField();
         panelCuartosFila2 = new javax.swing.JPanel();
         lblFechaPartidoCuartos2 = new javax.swing.JLabel();
         lblEquipoLocalCuartos2 = new javax.swing.JLabel();
@@ -746,6 +765,8 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_cuartos2 = new javax.swing.JFormattedTextField();
         golesField2_cuartos2 = new javax.swing.JFormattedTextField();
         guionCuartos2 = new javax.swing.JLabel();
+        penalesField1_cuartos2 = new javax.swing.JFormattedTextField();
+        penalesField2_cuartos2 = new javax.swing.JFormattedTextField();
         panelCuartosFila3 = new javax.swing.JPanel();
         lblFechaPartidoCuartos3 = new javax.swing.JLabel();
         lblEquipoLocalCuartos3 = new javax.swing.JLabel();
@@ -755,6 +776,8 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_cuartos3 = new javax.swing.JFormattedTextField();
         golesField2_cuartos3 = new javax.swing.JFormattedTextField();
         guionCuartos3 = new javax.swing.JLabel();
+        penalesField1_cuartos3 = new javax.swing.JFormattedTextField();
+        penalesField2_cuartos3 = new javax.swing.JFormattedTextField();
         panelCuartosFila4 = new javax.swing.JPanel();
         lblFechaPartidoCuartos4 = new javax.swing.JLabel();
         lblEquipoLocalCuartos4 = new javax.swing.JLabel();
@@ -764,25 +787,13 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_cuartos4 = new javax.swing.JFormattedTextField();
         golesField2_cuartos4 = new javax.swing.JFormattedTextField();
         guionCuartos4 = new javax.swing.JLabel();
-        guardarBtnCuartos = new javax.swing.JButton();
-        panelTercerPuesto = new javax.swing.JPanel();
-        panelInteriorTercerPuesto = new javax.swing.JPanel();
-        panelTercerPuestoFila1 = new javax.swing.JPanel();
-        lblFechaPartidoTercerPuesto1 = new javax.swing.JLabel();
-        lblEquipoLocalTercerPuesto1 = new javax.swing.JLabel();
-        lblEquipoVisitanteTercerPuesto1 = new javax.swing.JLabel();
-        lblNombreEstadioTercerPuesto1 = new javax.swing.JLabel();
-        jSeparatorTercerPuesto1 = new javax.swing.JSeparator();
-        golesField1_tercerPuesto1 = new javax.swing.JFormattedTextField();
-        golesField2_tercerPuesto1 = new javax.swing.JFormattedTextField();
-        guionTercerPuesto1 = new javax.swing.JLabel();
-        guardarBtnTercerPuesto = new javax.swing.JButton();
-        panelOctavosFila10 = new javax.swing.JPanel();
-        jSeparatorOctavos10 = new javax.swing.JSeparator();
+        penalesField1_cuartos4 = new javax.swing.JFormattedTextField();
+        penalesField2_cuartos4 = new javax.swing.JFormattedTextField();
         panelSemifinales = new javax.swing.JPanel();
         panelInteriorA3 = new javax.swing.JPanel();
         panelInteriorCuartos1 = new javax.swing.JPanel();
         panelInteriorSemifinales = new javax.swing.JPanel();
+        guardarBtnSemifinales = new javax.swing.JButton();
         panelSemifinalesFila1 = new javax.swing.JPanel();
         lblFechaPartidoSemifinales1 = new javax.swing.JLabel();
         lblEquipoLocalSemifinales1 = new javax.swing.JLabel();
@@ -792,6 +803,8 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_semifinales1 = new javax.swing.JFormattedTextField();
         golesField2_semifinales1 = new javax.swing.JFormattedTextField();
         guionSemifinales1 = new javax.swing.JLabel();
+        penalesField1_semifinales1 = new javax.swing.JFormattedTextField();
+        penalesField2_semifinales1 = new javax.swing.JFormattedTextField();
         panelSemifinalesFila2 = new javax.swing.JPanel();
         lblFechaPartidoSemifinales2 = new javax.swing.JLabel();
         lblEquipoLocalSemifinales2 = new javax.swing.JLabel();
@@ -801,11 +814,31 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_semifinales2 = new javax.swing.JFormattedTextField();
         golesField2_semifinales2 = new javax.swing.JFormattedTextField();
         guionSemifinales2 = new javax.swing.JLabel();
-        guardarBtnSemifinales = new javax.swing.JButton();
-        panelOctavosFila11 = new javax.swing.JPanel();
-        jSeparatorOctavos11 = new javax.swing.JSeparator();
+        penalesField1_semifinales2 = new javax.swing.JFormattedTextField();
+        penalesField2_semifinales2 = new javax.swing.JFormattedTextField();
+        panelOctavosFila13 = new javax.swing.JPanel();
+        jSeparatorOctavos13 = new javax.swing.JSeparator();
+        panelTercerPuesto = new javax.swing.JPanel();
+        panelInteriorTercerPuesto = new javax.swing.JPanel();
+        guardarBtnTercerPuesto = new javax.swing.JButton();
+        panelOctavosFila10 = new javax.swing.JPanel();
+        jSeparatorOctavos10 = new javax.swing.JSeparator();
+        javax.swing.JPanel panelTercerPuestoFila1 = new javax.swing.JPanel();
+        lblFechaPartidoTercerPuesto1 = new javax.swing.JLabel();
+        lblEquipoLocalTercerPuesto1 = new javax.swing.JLabel();
+        lblEquipoVisitanteTercerPuesto1 = new javax.swing.JLabel();
+        lblNombreEstadioTercerPuesto1 = new javax.swing.JLabel();
+        jSeparatorTercerPuesto1 = new javax.swing.JSeparator();
+        golesField1_tercerPuesto1 = new javax.swing.JFormattedTextField();
+        golesField2_tercerPuesto1 = new javax.swing.JFormattedTextField();
+        guionTercerPuesto1 = new javax.swing.JLabel();
+        penalesField1_tercerPuesto1 = new javax.swing.JFormattedTextField();
+        penalesField2_tercerPuesto1 = new javax.swing.JFormattedTextField();
         panelFinal = new javax.swing.JPanel();
         panelInteriorFinal = new javax.swing.JPanel();
+        guardarBtnFinal = new javax.swing.JButton();
+        panelOctavosFila12 = new javax.swing.JPanel();
+        jSeparatorOctavos12 = new javax.swing.JSeparator();
         javax.swing.JPanel panelFinalFila1 = new javax.swing.JPanel();
         lblFechaPartidoFinal1 = new javax.swing.JLabel();
         lblEquipoLocalFinal1 = new javax.swing.JLabel();
@@ -815,9 +848,8 @@ public class Ventana extends javax.swing.JFrame {
         golesField1_final1 = new javax.swing.JFormattedTextField();
         golesField2_final1 = new javax.swing.JFormattedTextField();
         guionFinal1 = new javax.swing.JLabel();
-        guardarBtnFinal = new javax.swing.JButton();
-        panelOctavosFila12 = new javax.swing.JPanel();
-        jSeparatorOctavos12 = new javax.swing.JSeparator();
+        penalesField1_final1 = new javax.swing.JFormattedTextField();
+        penalesField2_final1 = new javax.swing.JFormattedTextField();
         panelHeader = new javax.swing.JPanel();
         labelTitulo = new javax.swing.JLabel();
         labelSubtitulo = new javax.swing.JLabel();
@@ -4411,11 +4443,20 @@ public class Ventana extends javax.swing.JFrame {
 
         tabbedPane.addTab("H", panelGrupoH);
 
+        panelOctavos.setPreferredSize(new java.awt.Dimension(770, 440));
         panelOctavos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelInteriorA1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelInteriorOctavos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        guardarBtnOctavos.setText("Guardar");
+        guardarBtnOctavos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarBtnOctavosActionPerformed(evt);
+            }
+        });
+        panelInteriorOctavos.add(guardarBtnOctavos, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 730, -1, -1));
 
         lblFechaPartidoOctavos1.setText("FechaPartido");
 
@@ -4443,6 +4484,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doB.setText("2do B");
 
+        penalesField1_Octavos1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila1Layout = new javax.swing.GroupLayout(panelOctavosFila1);
         panelOctavosFila1.setLayout(panelOctavosFila1Layout);
         panelOctavosFila1Layout.setHorizontalGroup(
@@ -4456,11 +4501,15 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos1, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4477,11 +4526,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos1))
+                        .addGroup(panelOctavosFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos1)
+                            .addComponent(lblNombreEstadioOctavos1)))
                     .addGroup(panelOctavosFila1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos1)
                             .addComponent(lblEquipoLocalOctavos1)
@@ -4489,13 +4538,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos1)
                             .addComponent(label1roA)
-                            .addComponent(label2doB))))
+                            .addComponent(label2doB)
+                            .addComponent(penalesField1_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos1, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 90));
 
         lblFechaPartidoOctavos2.setText("FechaPartido");
 
@@ -4523,6 +4574,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doD.setText("2do D");
 
+        penalesField1_Octavos2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila2Layout = new javax.swing.GroupLayout(panelOctavosFila2);
         panelOctavosFila2.setLayout(panelOctavosFila2Layout);
         panelOctavosFila2Layout.setHorizontalGroup(
@@ -4531,21 +4586,25 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panelOctavosFila2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jSeparatorOctavos2)
-                    .addGroup(panelOctavosFila2Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelOctavosFila2Layout.createSequentialGroup()
                         .addComponent(label1roC)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos2, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(label2doD))
-                    .addGroup(panelOctavosFila2Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelOctavosFila2Layout.createSequentialGroup()
                         .addComponent(lblFechaPartidoOctavos2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblNombreEstadioOctavos2)))
@@ -4557,11 +4616,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos2))
+                        .addGroup(panelOctavosFila2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos2)
+                            .addComponent(lblNombreEstadioOctavos2)))
                     .addGroup(panelOctavosFila2Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos2)
                             .addComponent(lblEquipoLocalOctavos2)
@@ -4569,13 +4628,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos2)
                             .addComponent(label1roC)
-                            .addComponent(label2doD))))
+                            .addComponent(label2doD)
+                            .addComponent(penalesField1_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos2, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 720, 90));
 
         lblFechaPartidoOctavos3.setText("FechaPartido");
 
@@ -4603,6 +4664,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doA.setText("2do A");
 
+        penalesField1_Octavos3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila3Layout = new javax.swing.GroupLayout(panelOctavosFila3);
         panelOctavosFila3.setLayout(panelOctavosFila3Layout);
         panelOctavosFila3Layout.setHorizontalGroup(
@@ -4613,18 +4678,22 @@ public class Ventana extends javax.swing.JFrame {
                     .addComponent(jSeparatorOctavos3)
                     .addGroup(panelOctavosFila3Layout.createSequentialGroup()
                         .addComponent(lblFechaPartidoOctavos3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 567, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblNombreEstadioOctavos3))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOctavosFila3Layout.createSequentialGroup()
                         .addComponent(label1roB)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos3, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4637,11 +4706,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos3))
+                        .addGroup(panelOctavosFila3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos3)
+                            .addComponent(lblNombreEstadioOctavos3)))
                     .addGroup(panelOctavosFila3Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos3)
                             .addComponent(lblEquipoLocalOctavos3)
@@ -4649,13 +4718,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos3)
                             .addComponent(label1roB)
-                            .addComponent(label2doA))))
+                            .addComponent(label2doA)
+                            .addComponent(penalesField1_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 720, 90));
 
         lblFechaPartidoOctavos4.setText("FechaPartido");
 
@@ -4683,6 +4754,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doC.setText("2do C");
 
+        penalesField1_Octavos4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila4Layout = new javax.swing.GroupLayout(panelOctavosFila4);
         panelOctavosFila4.setLayout(panelOctavosFila4Layout);
         panelOctavosFila4Layout.setHorizontalGroup(
@@ -4700,11 +4775,15 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos4, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos4, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4717,11 +4796,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila4Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos4))
+                        .addGroup(panelOctavosFila4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos4)
+                            .addComponent(lblNombreEstadioOctavos4)))
                     .addGroup(panelOctavosFila4Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos4)
                             .addComponent(lblEquipoLocalOctavos4)
@@ -4729,13 +4808,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos4)
                             .addComponent(label1roD)
-                            .addComponent(label2doC))))
+                            .addComponent(label2doC)
+                            .addComponent(penalesField1_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 720, 90));
 
         lblFechaPartidoOctavos5.setText("FechaPartido");
 
@@ -4763,6 +4844,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doF.setText("2do F");
 
+        penalesField1_Octavos5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila5Layout = new javax.swing.GroupLayout(panelOctavosFila5);
         panelOctavosFila5.setLayout(panelOctavosFila5Layout);
         panelOctavosFila5Layout.setHorizontalGroup(
@@ -4780,11 +4865,15 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos5, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4797,11 +4886,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila5Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos5))
+                        .addGroup(panelOctavosFila5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos5)
+                            .addComponent(lblNombreEstadioOctavos5)))
                     .addGroup(panelOctavosFila5Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos5)
                             .addComponent(lblEquipoLocalOctavos5)
@@ -4809,13 +4898,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos5)
                             .addComponent(label1roE)
-                            .addComponent(label2doF))))
+                            .addComponent(label2doF)
+                            .addComponent(penalesField1_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 720, 90));
 
         lblFechaPartidoOctavos6.setText("FechaPartido");
 
@@ -4843,6 +4934,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doH.setText("2do H");
 
+        penalesField1_Octavos6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila6Layout = new javax.swing.GroupLayout(panelOctavosFila6);
         panelOctavosFila6.setLayout(panelOctavosFila6Layout);
         panelOctavosFila6Layout.setHorizontalGroup(
@@ -4860,11 +4955,15 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos6, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4877,11 +4976,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila6Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos6))
+                        .addGroup(panelOctavosFila6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos6)
+                            .addComponent(lblNombreEstadioOctavos6)))
                     .addGroup(panelOctavosFila6Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos6)
                             .addComponent(lblEquipoLocalOctavos6)
@@ -4889,13 +4988,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos6)
                             .addComponent(label1roG)
-                            .addComponent(label2doH))))
+                            .addComponent(label2doH)
+                            .addComponent(penalesField1_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 720, 90));
 
         lblFechaPartidoOctavos7.setText("FechaPartido");
 
@@ -4923,6 +5024,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doE.setText("2do E");
 
+        penalesField1_Octavos7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField12_Octavos7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila7Layout = new javax.swing.GroupLayout(panelOctavosFila7);
         panelOctavosFila7.setLayout(panelOctavosFila7Layout);
         panelOctavosFila7Layout.setHorizontalGroup(
@@ -4940,11 +5045,15 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos7, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField12_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4957,11 +5066,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila7Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos7))
+                        .addGroup(panelOctavosFila7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos7)
+                            .addComponent(lblNombreEstadioOctavos7)))
                     .addGroup(panelOctavosFila7Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos7)
                             .addComponent(lblEquipoLocalOctavos7)
@@ -4969,13 +5078,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos7)
                             .addComponent(label1roF)
-                            .addComponent(label2doE))))
+                            .addComponent(label2doE)
+                            .addComponent(penalesField1_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField12_Octavos7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 730, 90));
+        panelInteriorOctavos.add(panelOctavosFila7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 720, 90));
 
         lblFechaPartidoOctavos8.setText("FechaPartido");
 
@@ -5003,6 +5114,10 @@ public class Ventana extends javax.swing.JFrame {
 
         label2doG.setText("2do G");
 
+        penalesField1_Octavos8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_Octavos8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelOctavosFila8Layout = new javax.swing.GroupLayout(panelOctavosFila8);
         panelOctavosFila8.setLayout(panelOctavosFila8Layout);
         panelOctavosFila8Layout.setHorizontalGroup(
@@ -5020,11 +5135,15 @@ public class Ventana extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblEquipoLocalOctavos8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionOctavos8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionOctavos8, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteOctavos8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -5037,11 +5156,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panelOctavosFila8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelOctavosFila8Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(lblFechaPartidoOctavos8))
+                        .addGroup(panelOctavosFila8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblFechaPartidoOctavos8)
+                            .addComponent(lblNombreEstadioOctavos8)))
                     .addGroup(panelOctavosFila8Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioOctavos8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(panelOctavosFila8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEquipoVisitanteOctavos8)
                             .addComponent(lblEquipoLocalOctavos8)
@@ -5049,21 +5168,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(golesField2_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guionOctavos8)
                             .addComponent(label1roH)
-                            .addComponent(label2doG))))
+                            .addComponent(label2doG)
+                            .addComponent(penalesField1_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_Octavos8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorOctavos8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorOctavos.add(panelOctavosFila8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, 730, 90));
-
-        guardarBtnOctavos.setText("Guardar");
-        guardarBtnOctavos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                guardarBtnOctavosActionPerformed(evt);
-            }
-        });
-        panelInteriorOctavos.add(guardarBtnOctavos, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 730, -1, -1));
+        panelInteriorOctavos.add(panelOctavosFila8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, 720, 90));
 
         panelInteriorA1.add(panelInteriorOctavos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -5076,6 +5189,14 @@ public class Ventana extends javax.swing.JFrame {
         panelCuartos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelInteriorCuartos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        guardarBtnCuartos.setText("Guardar");
+        guardarBtnCuartos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarBtnCuartosActionPerformed(evt);
+            }
+        });
+        panelInteriorCuartos.add(guardarBtnCuartos, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
 
         lblFechaPartidoCuartos1.setText("FechaPartido");
 
@@ -5099,6 +5220,10 @@ public class Ventana extends javax.swing.JFrame {
         guionCuartos1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionCuartos1.setText("-");
 
+        penalesField1_cuartos1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_cuartos1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelCuartosFila1Layout = new javax.swing.GroupLayout(panelCuartosFila1);
         panelCuartosFila1.setLayout(panelCuartosFila1Layout);
         panelCuartosFila1Layout.setHorizontalGroup(
@@ -5114,11 +5239,15 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelCuartosFila1Layout.createSequentialGroup()
                         .addComponent(lblEquipoLocalCuartos1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionCuartos1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionCuartos1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteCuartos1)))
                 .addContainerGap())
@@ -5139,13 +5268,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(lblEquipoLocalCuartos1)
                             .addComponent(golesField1_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(golesField2_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionCuartos1))))
+                            .addComponent(guionCuartos1)
+                            .addComponent(penalesField1_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_cuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorCuartos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorCuartos.add(panelCuartosFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 730, 90));
+        panelInteriorCuartos.add(panelCuartosFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 720, 90));
 
         lblFechaPartidoCuartos2.setText("FechaPartido");
 
@@ -5169,6 +5300,10 @@ public class Ventana extends javax.swing.JFrame {
         guionCuartos2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionCuartos2.setText("-");
 
+        penalesField1_cuartos2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_cuartos2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelCuartosFila2Layout = new javax.swing.GroupLayout(panelCuartosFila2);
         panelCuartosFila2.setLayout(panelCuartosFila2Layout);
         panelCuartosFila2Layout.setHorizontalGroup(
@@ -5184,11 +5319,15 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelCuartosFila2Layout.createSequentialGroup()
                         .addComponent(lblEquipoLocalCuartos2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionCuartos2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionCuartos2, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteCuartos2)))
                 .addContainerGap())
@@ -5209,13 +5348,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(lblEquipoLocalCuartos2)
                             .addComponent(golesField1_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(golesField2_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionCuartos2))))
+                            .addComponent(guionCuartos2)
+                            .addComponent(penalesField1_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_cuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorCuartos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorCuartos.add(panelCuartosFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 730, 90));
+        panelInteriorCuartos.add(panelCuartosFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 720, 90));
 
         lblFechaPartidoCuartos3.setText("FechaPartido");
 
@@ -5239,6 +5380,10 @@ public class Ventana extends javax.swing.JFrame {
         guionCuartos3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionCuartos3.setText("-");
 
+        penalesField1_cuartos3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_cuartos3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelCuartosFila3Layout = new javax.swing.GroupLayout(panelCuartosFila3);
         panelCuartosFila3.setLayout(panelCuartosFila3Layout);
         panelCuartosFila3Layout.setHorizontalGroup(
@@ -5249,16 +5394,20 @@ public class Ventana extends javax.swing.JFrame {
                     .addComponent(jSeparatorCuartos3)
                     .addGroup(panelCuartosFila3Layout.createSequentialGroup()
                         .addComponent(lblFechaPartidoCuartos3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 567, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblNombreEstadioCuartos3))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelCuartosFila3Layout.createSequentialGroup()
                         .addComponent(lblEquipoLocalCuartos3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionCuartos3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionCuartos3, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteCuartos3)))
                 .addContainerGap())
@@ -5279,13 +5428,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(lblEquipoLocalCuartos3)
                             .addComponent(golesField1_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(golesField2_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionCuartos3))))
+                            .addComponent(guionCuartos3)
+                            .addComponent(penalesField1_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_cuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorCuartos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorCuartos.add(panelCuartosFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 730, 90));
+        panelInteriorCuartos.add(panelCuartosFila3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 720, 90));
 
         lblFechaPartidoCuartos4.setText("FechaPartido");
 
@@ -5309,6 +5460,10 @@ public class Ventana extends javax.swing.JFrame {
         guionCuartos4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionCuartos4.setText("-");
 
+        penalesField1_cuartos4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_cuartos4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelCuartosFila4Layout = new javax.swing.GroupLayout(panelCuartosFila4);
         panelCuartosFila4.setLayout(panelCuartosFila4Layout);
         panelCuartosFila4Layout.setHorizontalGroup(
@@ -5324,11 +5479,15 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelCuartosFila4Layout.createSequentialGroup()
                         .addComponent(lblEquipoLocalCuartos4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionCuartos4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionCuartos4, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteCuartos4)))
                 .addContainerGap())
@@ -5349,130 +5508,19 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(lblEquipoLocalCuartos4)
                             .addComponent(golesField1_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(golesField2_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionCuartos4))))
+                            .addComponent(guionCuartos4)
+                            .addComponent(penalesField1_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_cuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorCuartos4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorCuartos.add(panelCuartosFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 730, 90));
+        panelInteriorCuartos.add(panelCuartosFila4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 720, 90));
 
-        guardarBtnCuartos.setText("Guardar");
-        guardarBtnCuartos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                guardarBtnCuartosActionPerformed(evt);
-            }
-        });
-        panelInteriorCuartos.add(guardarBtnCuartos, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
-
-        panelCuartos.add(panelInteriorCuartos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 430));
+        panelCuartos.add(panelInteriorCuartos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 440));
 
         tabbedPane.addTab("CUARTOS", panelCuartos);
-
-        panelTercerPuesto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        panelInteriorTercerPuesto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblFechaPartidoTercerPuesto1.setText("FechaPartido");
-
-        lblEquipoLocalTercerPuesto1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblEquipoLocalTercerPuesto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
-        lblEquipoLocalTercerPuesto1.setText("Equipo Local");
-
-        lblEquipoVisitanteTercerPuesto1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblEquipoVisitanteTercerPuesto1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblEquipoVisitanteTercerPuesto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
-        lblEquipoVisitanteTercerPuesto1.setText("Equipo Visitante");
-        lblEquipoVisitanteTercerPuesto1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-
-        lblNombreEstadioTercerPuesto1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblNombreEstadioTercerPuesto1.setText("NombreEstadio");
-
-        golesField1_tercerPuesto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
-
-        golesField2_tercerPuesto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
-
-        guionTercerPuesto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        guionTercerPuesto1.setText("-");
-
-        javax.swing.GroupLayout panelTercerPuestoFila1Layout = new javax.swing.GroupLayout(panelTercerPuestoFila1);
-        panelTercerPuestoFila1.setLayout(panelTercerPuestoFila1Layout);
-        panelTercerPuestoFila1Layout.setHorizontalGroup(
-            panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparatorTercerPuesto1)
-                    .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
-                        .addComponent(lblFechaPartidoTercerPuesto1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 557, Short.MAX_VALUE)
-                        .addComponent(lblNombreEstadioTercerPuesto1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTercerPuestoFila1Layout.createSequentialGroup()
-                        .addComponent(lblEquipoLocalTercerPuesto1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionTercerPuesto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblEquipoVisitanteTercerPuesto1)))
-                .addContainerGap())
-        );
-        panelTercerPuestoFila1Layout.setVerticalGroup(
-            panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
-                .addGroup(panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblFechaPartidoTercerPuesto1))
-                    .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioTercerPuesto1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblEquipoVisitanteTercerPuesto1)
-                            .addComponent(lblEquipoLocalTercerPuesto1)
-                            .addComponent(golesField1_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionTercerPuesto1))))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparatorTercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        panelInteriorTercerPuesto.add(panelTercerPuestoFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 720, 90));
-
-        guardarBtnTercerPuesto.setText("Guardar");
-        guardarBtnTercerPuesto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                guardarBtnTercerPuestoActionPerformed(evt);
-            }
-        });
-        panelInteriorTercerPuesto.add(guardarBtnTercerPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
-
-        javax.swing.GroupLayout panelOctavosFila10Layout = new javax.swing.GroupLayout(panelOctavosFila10);
-        panelOctavosFila10.setLayout(panelOctavosFila10Layout);
-        panelOctavosFila10Layout.setHorizontalGroup(
-            panelOctavosFila10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOctavosFila10Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jSeparatorOctavos10, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        panelOctavosFila10Layout.setVerticalGroup(
-            panelOctavosFila10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOctavosFila10Layout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jSeparatorOctavos10, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        panelInteriorTercerPuesto.add(panelOctavosFila10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 720, 90));
-
-        panelTercerPuesto.add(panelInteriorTercerPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 440));
-
-        tabbedPane.addTab("3er PUESTO", panelTercerPuesto);
 
         panelSemifinales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -5483,8 +5531,16 @@ public class Ventana extends javax.swing.JFrame {
 
         panelSemifinales.add(panelInteriorA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        panelInteriorSemifinales.setPreferredSize(new java.awt.Dimension(752, 402));
+        panelInteriorSemifinales.setPreferredSize(new java.awt.Dimension(732, 430));
         panelInteriorSemifinales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        guardarBtnSemifinales.setText("Guardar");
+        guardarBtnSemifinales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarBtnSemifinalesActionPerformed(evt);
+            }
+        });
+        panelInteriorSemifinales.add(guardarBtnSemifinales, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
 
         lblFechaPartidoSemifinales1.setText("FechaPartido");
 
@@ -5508,6 +5564,10 @@ public class Ventana extends javax.swing.JFrame {
         guionSemifinales1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionSemifinales1.setText("-");
 
+        penalesField1_semifinales1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_semifinales1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelSemifinalesFila1Layout = new javax.swing.GroupLayout(panelSemifinalesFila1);
         panelSemifinalesFila1.setLayout(panelSemifinalesFila1Layout);
         panelSemifinalesFila1Layout.setHorizontalGroup(
@@ -5523,11 +5583,15 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSemifinalesFila1Layout.createSequentialGroup()
                         .addComponent(lblEquipoLocalSemifinales1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionSemifinales1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionSemifinales1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteSemifinales1)))
                 .addContainerGap())
@@ -5548,7 +5612,9 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(lblEquipoLocalSemifinales1)
                             .addComponent(golesField1_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(golesField2_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionSemifinales1))))
+                            .addComponent(guionSemifinales1)
+                            .addComponent(penalesField1_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_semifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorSemifinales1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -5578,6 +5644,10 @@ public class Ventana extends javax.swing.JFrame {
         guionSemifinales2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionSemifinales2.setText("-");
 
+        penalesField1_semifinales2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_semifinales2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
         javax.swing.GroupLayout panelSemifinalesFila2Layout = new javax.swing.GroupLayout(panelSemifinalesFila2);
         panelSemifinalesFila2.setLayout(panelSemifinalesFila2Layout);
         panelSemifinalesFila2Layout.setHorizontalGroup(
@@ -5593,11 +5663,15 @@ public class Ventana extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSemifinalesFila2Layout.createSequentialGroup()
                         .addComponent(lblEquipoLocalSemifinales2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(golesField1_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionSemifinales2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(penalesField1_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(guionSemifinales2, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblEquipoVisitanteSemifinales2)))
                 .addContainerGap())
@@ -5618,7 +5692,9 @@ public class Ventana extends javax.swing.JFrame {
                             .addComponent(lblEquipoLocalSemifinales2)
                             .addComponent(golesField1_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(golesField2_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionSemifinales2))))
+                            .addComponent(guionSemifinales2)
+                            .addComponent(penalesField1_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_semifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparatorSemifinales2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -5626,110 +5702,147 @@ public class Ventana extends javax.swing.JFrame {
 
         panelInteriorSemifinales.add(panelSemifinalesFila2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 720, 90));
 
-        guardarBtnSemifinales.setText("Guardar");
-        guardarBtnSemifinales.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                guardarBtnSemifinalesActionPerformed(evt);
-            }
-        });
-        panelInteriorSemifinales.add(guardarBtnSemifinales, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
-
-        javax.swing.GroupLayout panelOctavosFila11Layout = new javax.swing.GroupLayout(panelOctavosFila11);
-        panelOctavosFila11.setLayout(panelOctavosFila11Layout);
-        panelOctavosFila11Layout.setHorizontalGroup(
-            panelOctavosFila11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOctavosFila11Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelOctavosFila13Layout = new javax.swing.GroupLayout(panelOctavosFila13);
+        panelOctavosFila13.setLayout(panelOctavosFila13Layout);
+        panelOctavosFila13Layout.setHorizontalGroup(
+            panelOctavosFila13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOctavosFila13Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSeparatorOctavos11, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
+                .addComponent(jSeparatorOctavos13, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        panelOctavosFila11Layout.setVerticalGroup(
-            panelOctavosFila11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOctavosFila11Layout.createSequentialGroup()
+        panelOctavosFila13Layout.setVerticalGroup(
+            panelOctavosFila13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOctavosFila13Layout.createSequentialGroup()
                 .addGap(87, 87, 87)
-                .addComponent(jSeparatorOctavos11, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jSeparatorOctavos13, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorSemifinales.add(panelOctavosFila11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 720, 90));
+        panelInteriorSemifinales.add(panelOctavosFila13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 720, 90));
 
         panelSemifinales.add(panelInteriorSemifinales, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 440));
 
         tabbedPane.addTab("SEMIFINALES", panelSemifinales);
 
-        panelFinal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelTercerPuesto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelInteriorFinal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelInteriorTercerPuesto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblFechaPartidoFinal1.setText("FechaPartido");
+        guardarBtnTercerPuesto.setText("Guardar");
+        guardarBtnTercerPuesto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarBtnTercerPuestoActionPerformed(evt);
+            }
+        });
+        panelInteriorTercerPuesto.add(guardarBtnTercerPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
 
-        lblEquipoLocalFinal1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblEquipoLocalFinal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
-        lblEquipoLocalFinal1.setText("Equipo Local");
-
-        lblEquipoVisitanteFinal1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lblEquipoVisitanteFinal1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblEquipoVisitanteFinal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
-        lblEquipoVisitanteFinal1.setText("Equipo Visitante");
-        lblEquipoVisitanteFinal1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-
-        lblNombreEstadioFinal1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblNombreEstadioFinal1.setText("NombreEstadio");
-
-        golesField1_final1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
-
-        golesField2_final1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
-
-        guionFinal1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        guionFinal1.setText("-");
-
-        javax.swing.GroupLayout panelFinalFila1Layout = new javax.swing.GroupLayout(panelFinalFila1);
-        panelFinalFila1.setLayout(panelFinalFila1Layout);
-        panelFinalFila1Layout.setHorizontalGroup(
-            panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFinalFila1Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelOctavosFila10Layout = new javax.swing.GroupLayout(panelOctavosFila10);
+        panelOctavosFila10.setLayout(panelOctavosFila10Layout);
+        panelOctavosFila10Layout.setHorizontalGroup(
+            panelOctavosFila10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOctavosFila10Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparatorFinal1)
-                    .addGroup(panelFinalFila1Layout.createSequentialGroup()
-                        .addComponent(lblFechaPartidoFinal1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblNombreEstadioFinal1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFinalFila1Layout.createSequentialGroup()
-                        .addComponent(lblEquipoLocalFinal1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(golesField1_final1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(guionFinal1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(golesField2_final1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblEquipoVisitanteFinal1)))
+                .addComponent(jSeparatorOctavos10, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        panelFinalFila1Layout.setVerticalGroup(
-            panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelFinalFila1Layout.createSequentialGroup()
-                .addGroup(panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelFinalFila1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblFechaPartidoFinal1))
-                    .addGroup(panelFinalFila1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(lblNombreEstadioFinal1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblEquipoVisitanteFinal1)
-                            .addComponent(lblEquipoLocalFinal1)
-                            .addComponent(golesField1_final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(golesField2_final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guionFinal1))))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparatorFinal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        panelOctavosFila10Layout.setVerticalGroup(
+            panelOctavosFila10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOctavosFila10Layout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addComponent(jSeparatorOctavos10, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panelInteriorFinal.add(panelFinalFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 720, 90));
+        panelInteriorTercerPuesto.add(panelOctavosFila10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 720, 90));
+
+        lblFechaPartidoTercerPuesto1.setText("FechaPartido");
+
+        lblEquipoLocalTercerPuesto1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoLocalTercerPuesto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
+        lblEquipoLocalTercerPuesto1.setText("Equipo Local");
+
+        lblEquipoVisitanteTercerPuesto1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitanteTercerPuesto1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblEquipoVisitanteTercerPuesto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
+        lblEquipoVisitanteTercerPuesto1.setText("Equipo Visitante");
+        lblEquipoVisitanteTercerPuesto1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+
+        lblNombreEstadioTercerPuesto1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblNombreEstadioTercerPuesto1.setText("NombreEstadio");
+
+        golesField1_tercerPuesto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_tercerPuesto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        guionTercerPuesto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        guionTercerPuesto1.setText("-");
+
+        penalesField1_tercerPuesto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_tercerPuesto1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        javax.swing.GroupLayout panelTercerPuestoFila1Layout = new javax.swing.GroupLayout(panelTercerPuestoFila1);
+        panelTercerPuestoFila1.setLayout(panelTercerPuestoFila1Layout);
+        panelTercerPuestoFila1Layout.setHorizontalGroup(
+            panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparatorTercerPuesto1)
+                    .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
+                        .addComponent(lblFechaPartidoTercerPuesto1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblNombreEstadioTercerPuesto1))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTercerPuestoFila1Layout.createSequentialGroup()
+                        .addComponent(lblEquipoLocalTercerPuesto1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(golesField1_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField1_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(guionTercerPuesto1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblEquipoVisitanteTercerPuesto1)))
+                .addContainerGap())
+        );
+        panelTercerPuestoFila1Layout.setVerticalGroup(
+            panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
+                .addGroup(panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblFechaPartidoTercerPuesto1))
+                    .addGroup(panelTercerPuestoFila1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(lblNombreEstadioTercerPuesto1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelTercerPuestoFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblEquipoVisitanteTercerPuesto1)
+                            .addComponent(lblEquipoLocalTercerPuesto1)
+                            .addComponent(golesField1_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesField2_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guionTercerPuesto1)
+                            .addComponent(penalesField1_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_tercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addComponent(jSeparatorTercerPuesto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        panelInteriorTercerPuesto.add(panelTercerPuestoFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 720, 90));
+
+        panelTercerPuesto.add(panelInteriorTercerPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 440));
+
+        tabbedPane.addTab("3er PUESTO", panelTercerPuesto);
+
+        panelFinal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panelInteriorFinal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         guardarBtnFinal.setText("Guardar");
         guardarBtnFinal.addActionListener(new java.awt.event.ActionListener() {
@@ -5757,6 +5870,86 @@ public class Ventana extends javax.swing.JFrame {
         );
 
         panelInteriorFinal.add(panelOctavosFila12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 720, 90));
+
+        lblFechaPartidoFinal1.setText("FechaPartido");
+
+        lblEquipoLocalFinal1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoLocalFinal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
+        lblEquipoLocalFinal1.setText("Equipo Local");
+
+        lblEquipoVisitanteFinal1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblEquipoVisitanteFinal1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblEquipoVisitanteFinal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img/banderas/placeholder.png"))); // NOI18N
+        lblEquipoVisitanteFinal1.setText("Equipo Visitante");
+        lblEquipoVisitanteFinal1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+
+        lblNombreEstadioFinal1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblNombreEstadioFinal1.setText("NombreEstadio");
+
+        golesField1_final1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        golesField2_final1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        guionFinal1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        guionFinal1.setText("-");
+
+        penalesField1_final1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        penalesField2_final1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        javax.swing.GroupLayout panelFinalFila1Layout = new javax.swing.GroupLayout(panelFinalFila1);
+        panelFinalFila1.setLayout(panelFinalFila1Layout);
+        panelFinalFila1Layout.setHorizontalGroup(
+            panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFinalFila1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparatorFinal1)
+                    .addGroup(panelFinalFila1Layout.createSequentialGroup()
+                        .addComponent(lblFechaPartidoFinal1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblNombreEstadioFinal1))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFinalFila1Layout.createSequentialGroup()
+                        .addComponent(lblEquipoLocalFinal1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(golesField1_final1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField1_final1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(guionFinal1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(penalesField2_final1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(golesField2_final1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblEquipoVisitanteFinal1)))
+                .addContainerGap())
+        );
+        panelFinalFila1Layout.setVerticalGroup(
+            panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFinalFila1Layout.createSequentialGroup()
+                .addGroup(panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelFinalFila1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblFechaPartidoFinal1))
+                    .addGroup(panelFinalFila1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(lblNombreEstadioFinal1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(panelFinalFila1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblEquipoVisitanteFinal1)
+                            .addComponent(lblEquipoLocalFinal1)
+                            .addComponent(golesField1_final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(golesField2_final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(guionFinal1)
+                            .addComponent(penalesField1_final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(penalesField2_final1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addComponent(jSeparatorFinal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        panelInteriorFinal.add(panelFinalFila1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 720, 90));
 
         panelFinal.add(panelInteriorFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 450));
 
@@ -6407,8 +6600,8 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparatorH6;
     private javax.swing.JSeparator jSeparatorOctavos1;
     private javax.swing.JSeparator jSeparatorOctavos10;
-    private javax.swing.JSeparator jSeparatorOctavos11;
     private javax.swing.JSeparator jSeparatorOctavos12;
+    private javax.swing.JSeparator jSeparatorOctavos13;
     private javax.swing.JSeparator jSeparatorOctavos2;
     private javax.swing.JSeparator jSeparatorOctavos3;
     private javax.swing.JSeparator jSeparatorOctavos4;
@@ -6778,8 +6971,8 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JPanel panelOctavos;
     private javax.swing.JPanel panelOctavosFila1;
     private javax.swing.JPanel panelOctavosFila10;
-    private javax.swing.JPanel panelOctavosFila11;
     private javax.swing.JPanel panelOctavosFila12;
+    private javax.swing.JPanel panelOctavosFila13;
     private javax.swing.JPanel panelOctavosFila2;
     private javax.swing.JPanel panelOctavosFila3;
     private javax.swing.JPanel panelOctavosFila4;
@@ -6791,7 +6984,38 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JPanel panelSemifinalesFila1;
     private javax.swing.JPanel panelSemifinalesFila2;
     private javax.swing.JPanel panelTercerPuesto;
-    private javax.swing.JPanel panelTercerPuestoFila1;
+    private javax.swing.JFormattedTextField penalesField12_Octavos7;
+    private javax.swing.JFormattedTextField penalesField1_Octavos1;
+    private javax.swing.JFormattedTextField penalesField1_Octavos2;
+    private javax.swing.JFormattedTextField penalesField1_Octavos3;
+    private javax.swing.JFormattedTextField penalesField1_Octavos4;
+    private javax.swing.JFormattedTextField penalesField1_Octavos5;
+    private javax.swing.JFormattedTextField penalesField1_Octavos6;
+    private javax.swing.JFormattedTextField penalesField1_Octavos7;
+    private javax.swing.JFormattedTextField penalesField1_Octavos8;
+    private javax.swing.JFormattedTextField penalesField1_cuartos1;
+    private javax.swing.JFormattedTextField penalesField1_cuartos2;
+    private javax.swing.JFormattedTextField penalesField1_cuartos3;
+    private javax.swing.JFormattedTextField penalesField1_cuartos4;
+    private javax.swing.JFormattedTextField penalesField1_final1;
+    private javax.swing.JFormattedTextField penalesField1_semifinales1;
+    private javax.swing.JFormattedTextField penalesField1_semifinales2;
+    private javax.swing.JFormattedTextField penalesField1_tercerPuesto1;
+    private javax.swing.JFormattedTextField penalesField2_Octavos1;
+    private javax.swing.JFormattedTextField penalesField2_Octavos2;
+    private javax.swing.JFormattedTextField penalesField2_Octavos3;
+    private javax.swing.JFormattedTextField penalesField2_Octavos4;
+    private javax.swing.JFormattedTextField penalesField2_Octavos5;
+    private javax.swing.JFormattedTextField penalesField2_Octavos6;
+    private javax.swing.JFormattedTextField penalesField2_Octavos8;
+    private javax.swing.JFormattedTextField penalesField2_cuartos1;
+    private javax.swing.JFormattedTextField penalesField2_cuartos2;
+    private javax.swing.JFormattedTextField penalesField2_cuartos3;
+    private javax.swing.JFormattedTextField penalesField2_cuartos4;
+    private javax.swing.JFormattedTextField penalesField2_final1;
+    private javax.swing.JFormattedTextField penalesField2_semifinales1;
+    private javax.swing.JFormattedTextField penalesField2_semifinales2;
+    private javax.swing.JFormattedTextField penalesField2_tercerPuesto1;
     private javax.swing.JTabbedPane tabbedPane;
     // End of variables declaration//GEN-END:variables
 
