@@ -885,18 +885,8 @@ public class Ventana extends javax.swing.JFrame {
         lblNombreEstadioA1.setText("NombreEstadio");
 
         golesField1_A1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
-        golesField1_A1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                golesField1_A1ActionPerformed(evt);
-            }
-        });
 
         golesField2_A1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
-        golesField2_A1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                golesField2_A1ActionPerformed(evt);
-            }
-        });
 
         guionA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         guionA1.setText("-");
@@ -6064,7 +6054,6 @@ public class Ventana extends javax.swing.JFrame {
     private void guardarBtnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnAActionPerformed
         //Grupo grupoA = fixtureService.obtenerGrupo('a');
         leerGolesDeGrupoYGuardarCambios(fixtureService.obtenerGrupo('a'));
-        
     }//GEN-LAST:event_guardarBtnAActionPerformed
     
     private void guardarBtnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnBActionPerformed
@@ -6313,14 +6302,6 @@ public class Ventana extends javax.swing.JFrame {
     private void guardarBtnOctavosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnOctavosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_guardarBtnOctavosActionPerformed
-
-    private void golesField2_A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_golesField2_A1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_golesField2_A1ActionPerformed
-
-    private void golesField1_A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_golesField1_A1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_golesField1_A1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVerTablaDePoscioneH;
