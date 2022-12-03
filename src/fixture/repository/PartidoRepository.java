@@ -33,6 +33,8 @@ public class PartidoRepository {
     public ArrayList<Partido> findBy(Fase fase) {
         return (ArrayList<Partido>) partidos.stream().filter(partido -> partido.getFase().equals(fase)).collect(Collectors.toList());
     }
+    
+    
 
     // Buscar por Fase y Grupo
     public ArrayList<Partido> findBy(Fase fase, Grupo grupo) {
@@ -51,4 +53,16 @@ public class PartidoRepository {
         return (ArrayList<Partido>) partidosGrupo.stream().collect(Collectors.toList());
         
     }
+
+    public Partido find(int id) {
+        Partido partidoEncontrado = null;
+
+        for (Partido partido : partidos) {
+            if (partido.getId() == id) {
+                partidoEncontrado = partido;
+            }
+        }
+        return partidoEncontrado;
+    }
+    
 }

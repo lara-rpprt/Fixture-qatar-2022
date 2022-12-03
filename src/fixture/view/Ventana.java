@@ -6126,7 +6126,7 @@ public class Ventana extends javax.swing.JFrame {
     private void crearYCompletarTablaDePosiciones(Grupo grupo) {
         HashSet<Equipo> equipos = fixtureService.recuperarDatosDeEquipoDeEquipoRepository(grupo);
         
-        ArrayList<Equipo> equiposOrdenados = fixtureService.ordenarEquiposYCompletarOctavos(equipos, false);
+        ArrayList<Equipo> equiposOrdenados = fixtureService.ordenarEquiposYCompletarOctavos(equipos, grupo, false);
         
         ventanaTablaDePosiciones = new TablaDePosiciones(equiposOrdenados);
         ventanaTablaDePosiciones.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -6218,8 +6218,11 @@ public class Ventana extends javax.swing.JFrame {
             }
             i++;
         }
-
+        ArrayList <Equipo> ordenados = fixtureService.ordenarEquiposYCompletarOctavos(equiposGrupoActualizados, grupo, true);
         guardarCambios(grupo, equiposGrupoActualizados);
+        
+        //Despues se puede separar en otro método
+        loadPartidosOctavos();
     }
     
     private void guardarCambios(Grupo grupo, HashSet<Equipo> equiposGrupoActualizados) throws HeadlessException {
@@ -7954,12 +7957,16 @@ public class Ventana extends javax.swing.JFrame {
             equiposVisitantesOctavos[i].setHorizontalTextPosition(JLabel.LEFT);
 
             // Si los equipos no están definidos deshabilito los campos
-            if (p.getEquipo1() == null || p.getEquipo2() == null) {
+            if (p.getEquipo1() == null) {
                 golesLocalOctavos[i].setEnabled(false);
-                golesVisitantesOctavos[i].setEnabled(false);
-            } else {
-                // Escribo los goles en los fields
+            }else{
                 golesLocalOctavos[i].setText(String.valueOf(p.getGolesEquipo1()));
+            }
+            
+            if  (p.getEquipo2() == null) {
+                golesVisitantesOctavos[i].setEnabled(false);
+            }else {
+                // Escribo los goles en los fields
                 golesVisitantesOctavos[i].setText(String.valueOf(p.getGolesEquipo2()));
             }
 

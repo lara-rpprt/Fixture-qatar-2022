@@ -39,6 +39,8 @@ public interface FixtureService {
     ArrayList<Partido> obtenerPartidoFinal();
     
     Equipo obtenerEquipoPorID(String id);
+    
+    Partido obtenerPartidoPorID(int id);
    
     void guardarPartidosEnArchivo();
     
@@ -48,5 +50,5 @@ public interface FixtureService {
     
     HashSet<Equipo> recuperarDatosDeEquipoDeEquipoRepository(Grupo grupo);
     
-    ArrayList<Equipo> ordenarEquiposYCompletarOctavos(HashSet<Equipo> e, boolean guardandoCambios);
+    ArrayList<Equipo> ordenarEquiposYCompletarOctavos(HashSet<Equipo> e, Grupo grupo, boolean guardandoCambios);
 }   

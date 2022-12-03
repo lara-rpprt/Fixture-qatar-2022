@@ -17,6 +17,7 @@ import fixture.repository.PartidoRepository;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -86,6 +87,10 @@ public class FixtureServiceImpl implements FixtureService {
     public Equipo obtenerEquipoPorID(String id) {
         return equipoRepository.find(id);
     }
+    
+    public Partido obtenerPartidoPorID(int id) {
+        return partidoRepository.find(id);
+    }
 
     public void actualizarDatosDeEquiopoEnArchivo(Equipo equipoGrupo) {
         equipoRepository.actualizarDatosDeEquiopoEnArchivo(equipoGrupo);
@@ -151,7 +156,7 @@ public class FixtureServiceImpl implements FixtureService {
     }
 
     @Override
-    public ArrayList<Equipo> ordenarEquiposYCompletarOctavos(HashSet<Equipo> e, boolean guardandoCambios) {
+    public ArrayList<Equipo> ordenarEquiposYCompletarOctavos(HashSet<Equipo> e, Grupo grupo, boolean guardandoCambios) {
         ArrayList<Equipo> equipos = new ArrayList(e);
 
         // Criterios de ordenamiento:
@@ -159,7 +164,6 @@ public class FixtureServiceImpl implements FixtureService {
         //  2) Mayor diferencia de goles
         //  3) Mayor cantidad de goles totales
         // Dispongo de dos booleanos para informar al usuario si se requiere selección manual
-        // 1) Ordenar por mayor puntaje
         Collections.sort(equipos, new Comparator<Equipo>() {
             @Override
             public int compare(Equipo e1, Equipo e2) {
@@ -220,8 +224,8 @@ public class FixtureServiceImpl implements FixtureService {
                     public int compare(Equipo e1, Equipo e2) {
                         int diferenciaDeGolesE1 = e1.getGolesHechos() - e1.getGolesEnContra();
                         int diferenciaDeGolesE2 = e2.getGolesHechos() - e2.getGolesEnContra();
-                        
-                        if(diferenciaDeGolesE1 == diferenciaDeGolesE2){
+
+                        if (diferenciaDeGolesE1 == diferenciaDeGolesE2) {
                             return e1.getGolesHechos() > e2.getGolesHechos() ? -1 : 1;
                         }
                         return 0;
@@ -229,7 +233,68 @@ public class FixtureServiceImpl implements FixtureService {
                 });
             }
         }
+        
+        //Completar equipos de fase de Octavos
+        
+        HashMap<Character, Equipo[]> grupoEquiposPrimerosPuestos = new HashMap<>();
+        Equipo[] equiposParaOctavos = {equipos.get(0), equipos.get(1)};
+        grupoEquiposPrimerosPuestos.put(grupo.getLetra(), equiposParaOctavos);
+        
+        escribirEquiposEnOctavos(grupoEquiposPrimerosPuestos);
+        
+        
+        
+        
+        
+        
 
+        
+        
+        
         return equipos;
     }
-}
+    
+    private void escribirEquiposEnOctavos(HashMap<Character, Equipo[]> grupoEquiposPrimerosPuestos) {
+        //Primer puesto de tabla de posiciones
+        //Segundo puesto de tabla de posiciones
+
+        //Dónde ubicar 1er puesto
+        //Dónde ubicar 2do puesto
+        Character letra = (Character) grupoEquiposPrimerosPuestos.keySet().toArray()[0];
+        Partido partidoPrimerPuesto; 
+        Partido partidoSegundoPuesto;
+        
+           switch(letra) {
+               case 'a' : 
+                   //Buscar partido de ID 49
+                   partidoPrimerPuesto = obtenerPartidoPorID(49);
+                   partidoSegundoPuesto = obtenerPartidoPorID(52);
+                   
+                   partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('a')[0]);
+                   partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('a')[1]);
+                   
+                   
+                   break;
+                case 'b' : 
+                   //Buscar partido de ID 49
+                   partidoPrimerPuesto = obtenerPartidoPorID(52);
+                   partidoSegundoPuesto = obtenerPartidoPorID(49);
+                   
+                   partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('b')[0]);
+                   partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('b')[1]);
+                   break;   
+                
+                   
+           }
+        }
+                
+        
+        
+        //1ero Grupo A -> equipo1 de id 49 [Id del Partido]
+        //2do Grupo B -> equipo2 de id 49 [Id del Partido]
+        
+        //1ero Grupo A -> equipo1 de id 52 [Id del Partido]
+        //2do Grupo B -> equipo2 de id 52 [Id del Partido]
+        
+    }
+
