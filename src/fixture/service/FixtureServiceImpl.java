@@ -268,7 +268,7 @@ public class FixtureServiceImpl implements FixtureService {
             case 'b':
                 //Buscar partido de ID 49
                 partidoPrimerPuesto = obtenerPartidoPorID(51);
-                partidoSegundoPuesto = obtenerPartidoPorID(51);
+                partidoSegundoPuesto = obtenerPartidoPorID(49);
 
                 partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('b')[0]);
                 partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('b')[1]);
