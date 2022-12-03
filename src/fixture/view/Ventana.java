@@ -7965,8 +7965,9 @@ public class Ventana extends javax.swing.JFrame {
             
             if  (p.getEquipo2() == null) {
                 golesVisitantesOctavos[i].setEnabled(false);
-            }else {
+            } else {
                 // Escribo los goles en los fields
+                
                 golesVisitantesOctavos[i].setText(String.valueOf(p.getGolesEquipo2()));
             }
 

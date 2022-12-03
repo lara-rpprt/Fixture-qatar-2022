@@ -87,7 +87,7 @@ public class FixtureServiceImpl implements FixtureService {
     public Equipo obtenerEquipoPorID(String id) {
         return equipoRepository.find(id);
     }
-    
+
     public Partido obtenerPartidoPorID(int id) {
         return partidoRepository.find(id);
     }
@@ -233,27 +233,17 @@ public class FixtureServiceImpl implements FixtureService {
                 });
             }
         }
-        
+
         //Completar equipos de fase de Octavos
-        
         HashMap<Character, Equipo[]> grupoEquiposPrimerosPuestos = new HashMap<>();
         Equipo[] equiposParaOctavos = {equipos.get(0), equipos.get(1)};
         grupoEquiposPrimerosPuestos.put(grupo.getLetra(), equiposParaOctavos);
-        
-        escribirEquiposEnOctavos(grupoEquiposPrimerosPuestos);
-        
-        
-        
-        
-        
-        
 
-        
-        
-        
+        escribirEquiposEnOctavos(grupoEquiposPrimerosPuestos);
+
         return equipos;
     }
-    
+
     private void escribirEquiposEnOctavos(HashMap<Character, Equipo[]> grupoEquiposPrimerosPuestos) {
         //Primer puesto de tabla de posiciones
         //Segundo puesto de tabla de posiciones
@@ -261,40 +251,82 @@ public class FixtureServiceImpl implements FixtureService {
         //Dónde ubicar 1er puesto
         //Dónde ubicar 2do puesto
         Character letra = (Character) grupoEquiposPrimerosPuestos.keySet().toArray()[0];
-        Partido partidoPrimerPuesto; 
+        Partido partidoPrimerPuesto;
         Partido partidoSegundoPuesto;
-        
-           switch(letra) {
-               case 'a' : 
-                   //Buscar partido de ID 49
-                   partidoPrimerPuesto = obtenerPartidoPorID(49);
-                   partidoSegundoPuesto = obtenerPartidoPorID(52);
-                   
-                   partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('a')[0]);
-                   partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('a')[1]);
-                   
-                   
-                   break;
-                case 'b' : 
-                   //Buscar partido de ID 49
-                   partidoPrimerPuesto = obtenerPartidoPorID(52);
-                   partidoSegundoPuesto = obtenerPartidoPorID(49);
-                   
-                   partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('b')[0]);
-                   partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('b')[1]);
-                   break;   
+
+        switch (letra) {
+            case 'a':
+                //Buscar partido de ID 49
+                partidoPrimerPuesto = obtenerPartidoPorID(49);
+                partidoSegundoPuesto = obtenerPartidoPorID(51);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('a')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('a')[1]);
+
+                break;
                 
-                   
-           }
+            case 'b':
+                //Buscar partido de ID 49
+                partidoPrimerPuesto = obtenerPartidoPorID(51);
+                partidoSegundoPuesto = obtenerPartidoPorID(51);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('b')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('b')[1]);
+                break;
+
+            case 'c':
+                partidoPrimerPuesto = obtenerPartidoPorID(50);
+                partidoSegundoPuesto = obtenerPartidoPorID(52);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('c')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('c')[1]);
+                break;
+            
+            case 'd':
+                partidoPrimerPuesto = obtenerPartidoPorID(52);
+                partidoSegundoPuesto = obtenerPartidoPorID(50);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('d')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('d')[1]);
+                break;
+                
+            case 'e':
+                partidoPrimerPuesto = obtenerPartidoPorID(53);
+                partidoSegundoPuesto = obtenerPartidoPorID(55);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('e')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('e')[1]);
+                break;
+                
+            case 'f':
+                partidoPrimerPuesto = obtenerPartidoPorID(55);
+                partidoSegundoPuesto = obtenerPartidoPorID(53);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('f')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('f')[1]);
+                break;
+                
+            case 'g':
+                partidoPrimerPuesto = obtenerPartidoPorID(54);
+                partidoSegundoPuesto = obtenerPartidoPorID(56);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('g')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('g')[1]);
+                break;
+            
+            case 'h':
+                partidoPrimerPuesto = obtenerPartidoPorID(56);
+                partidoSegundoPuesto = obtenerPartidoPorID(54);
+
+                partidoPrimerPuesto.setEquipo1(grupoEquiposPrimerosPuestos.get('h')[0]);
+                partidoSegundoPuesto.setEquipo2(grupoEquiposPrimerosPuestos.get('h')[1]);
+                break;
+
         }
-                
-        
-        
-        //1ero Grupo A -> equipo1 de id 49 [Id del Partido]
-        //2do Grupo B -> equipo2 de id 49 [Id del Partido]
-        
-        //1ero Grupo A -> equipo1 de id 52 [Id del Partido]
-        //2do Grupo B -> equipo2 de id 52 [Id del Partido]
-        
     }
 
+    //1ero Grupo A -> equipo1 de id 49 [Id del Partido]
+    //2do Grupo B -> equipo2 de id 49 [Id del Partido]
+    //1ero Grupo A -> equipo1 de id 52 [Id del Partido]
+    //2do Grupo B -> equipo2 de id 52 [Id del Partido]
+}
