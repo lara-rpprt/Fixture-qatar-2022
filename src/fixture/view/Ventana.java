@@ -7902,22 +7902,11 @@ public class Ventana extends javax.swing.JFrame {
         golesVisitantesOctavos[6] = golesField2_Octavos7;
         golesVisitantesOctavos[7] = golesField2_Octavos8;
 
-        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseOctavos(); 
-        
-        Collections.sort(partidos, new Comparator<Partido>() {
-            @Override
-            public int compare(Partido p1, Partido p2) {
-                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
-            }
-        });
-
-        List<Partido> partidosOrdenados = partidos.stream()
-                .sorted(Comparator.comparing(Partido::getFechaYHora))
-                .collect(Collectors.toList());
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseOctavos();
 
         System.out.println(partidos);
         int i = 0;
-        for (Partido p : partidosOrdenados) {
+        for (Partido p : partidos) {
 
             // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
             idsPartidosOctavos.add(p.getId());
@@ -8013,20 +8002,9 @@ public class Ventana extends javax.swing.JFrame {
 
         ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseCuartos();
 
-        Collections.sort(partidos, new Comparator<Partido>() {
-            @Override
-            public int compare(Partido p1, Partido p2) {
-                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
-            }
-        });
-
-        List<Partido> partidosOrdenados = partidos.stream()
-                .sorted(Comparator.comparing(Partido::getFechaYHora))
-                .collect(Collectors.toList());
-
         System.out.println(partidos);
         int i = 0;
-        for (Partido p : partidosOrdenados) {
+        for (Partido p : partidos) {
 
             // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
             idsPartidosCuartos.add(p.getId());
@@ -8097,22 +8075,11 @@ public class Ventana extends javax.swing.JFrame {
 
         golesVisitantesTercerPuesto[0] = golesField2_tercerPuesto1;
 
-        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeTercerPuesto();;
-
-        Collections.sort(partidos, new Comparator<Partido>() {
-            @Override
-            public int compare(Partido p1, Partido p2) {
-                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
-            }
-        });
-
-        List<Partido> partidosOrdenados = partidos.stream()
-                .sorted(Comparator.comparing(Partido::getFechaYHora))
-                .collect(Collectors.toList());
+        ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeTercerPuesto();
 
         System.out.println(partidos);
         int i = 0;
-        for (Partido p : partidosOrdenados) {
+        for (Partido p : partidos) {
 
             // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
             idsPartidosTercerPuesto.add(p.getId());
@@ -8191,20 +8158,9 @@ public class Ventana extends javax.swing.JFrame {
 
         ArrayList<Partido> partidos = fixtureService.obtenerPartidosDeFaseSemifinales();
 
-        Collections.sort(partidos, new Comparator<Partido>() {
-            @Override
-            public int compare(Partido p1, Partido p2) {
-                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
-            }
-        });
-
-        List<Partido> partidosOrdenados = partidos.stream()
-                .sorted(Comparator.comparing(Partido::getFechaYHora))
-                .collect(Collectors.toList());
-
         System.out.println(partidos);
         int i = 0;
-        for (Partido p : partidosOrdenados) {
+        for (Partido p : partidos) {
 
             // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
             idsPartidosSemifinales.add(p.getId());
@@ -8277,20 +8233,9 @@ public class Ventana extends javax.swing.JFrame {
 
         ArrayList<Partido> partidos = fixtureService.obtenerPartidoFinal();
 
-        Collections.sort(partidos, new Comparator<Partido>() {
-            @Override
-            public int compare(Partido p1, Partido p2) {
-                return p1.getFechaYHora().isBefore(p2.getFechaYHora()) ? -1 : 1;
-            }
-        });
-
-        List<Partido> partidosOrdenados = partidos.stream()
-                .sorted(Comparator.comparing(Partido::getFechaYHora))
-                .collect(Collectors.toList());
-
         System.out.println(partidos);
         int i = 0;
-        for (Partido p : partidosOrdenados) {
+        for (Partido p : partidos) {
 
             // Lleno listado de ids de partido, para poder ubicar los goles y escribirlos en los fields
             idsPartidosFinal.add(p.getId());
